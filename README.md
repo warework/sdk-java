@@ -20,13 +20,13 @@ The recommended way to use the Warework SDK for Java in your project is to consu
 
 ```xml
 <dependencyManagement>
-  <dependencies>
-		<dependency>
-			<groupId>com.warework</groupId>
-			<artifactId>warework-java-boot-loader-se</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-  </dependencies>
+   <dependencies>
+      <dependency>
+         <groupId>com.warework</groupId>
+         <artifactId>warework-java-boot-loader-se</artifactId>
+         <version>3.0.0</version>
+      </dependency>
+   </dependencies>
 </dependencyManagement>
 ```
 
@@ -34,13 +34,13 @@ The recommended way to use the Warework SDK for Java in your project is to consu
 
 ```xml
 <dependencyManagement>
-  <dependencies>
-		<dependency>
-			<groupId>com.warework</groupId>
-			<artifactId>warework-java-boot-loader-servlet-6.0</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-  </dependencies>
+   <dependencies>
+      <dependency>
+         <groupId>com.warework</groupId>
+         <artifactId>warework-java-boot-loader-servlet-6.0</artifactId>
+         <version>3.0.0</version>
+      </dependency>
+   </dependencies>
 </dependencyManagement>
 ```
 
