@@ -1,0 +1,32 @@
+{
+	
+	parameters:	[
+		{name: "color", value: "red"}
+	],
+	
+	context: [		
+		
+			{
+					
+				name: "ctx-system-1",
+				
+				parameters:	[
+					{name: "color", value: "blue1"}
+				]		
+			
+			},
+
+			{
+				
+				name: "ctx-system-2",
+				
+				parameters:	[
+					{name: "color", value: "blue2"}
+				]	
+			
+			}			
+		]	
+	
+	}		
+
+}

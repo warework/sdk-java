@@ -1,0 +1,89 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework CORE (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.2.0
+
+- Updated resources manager to load resources from Warework servers.
+
+2.1.0
+
+- New default Scope Factory included for cross-platform projects.
+- New XML file extension included.
+- New VFS protocol support for resource management.
+
+2.0.0
+
+- All classes updated for Java 5 and Java ME 8 compatibility.
+- Fixed callbacks percentage calculation.
+
+1.3.0
+
+- Fixed ClasspathResourceLoader class to validate if context is null.
+- Fixed Scope bean. Now new Services created do not automatically include Service bean as the configuration for the Service.
+- Fixed validation of Scope at 'init' method in AbstractProvider class.
+- Fixed abstract Scope to remove Scopes from its context and from the global context.    
+- New Workflow Service Facade and Constant classes included.
+- New JSON support.
+- New CommonValueL1Constants class created.
+- New ProxyServiceConstants class created.
+- New 'warn' method included in ScopeFacade to log warning level messages. Old 'warning' method is now deprecated.
+- New 'info', 'debug', 'warn' and 'fatal' methods included in LogServiceFacade.
+- New 'execute' method included in ScopeFacade to perform Workflow operations.
+- New 'getType' method included in 'ReflectionL1Helper' class.
+- New 'parse' method included in 'StringL1Helper' class.
+- New 'destroy' method in AbstractClient class to handle cleanup of clients.
+- New 'import-domain-init-parameters' initialization parameter to include domain's initialization parameters.
+- Moved constants from StringL1Helper to CommonValueL1Constants.
+- Updated constants to uppercase. Lowercase constants are now deprecated.
+- Updated StringL1Helper and ReflectionL1Helper classes to work with CLDC 1.0 configurations.
+- Updated AbstractService class to use Loaders with short names.
+- Updated ScopeFacade and AbstractScope to support Workflow operations.
+- Updated LogServiceConstants and LogServiceImpl to support Workflow operations.
+- Removed class version method in every class.
+
+1.2.0
+
+- Updated AbstractScope class to create Services and Providers with short class names.
+- New methods included in ReflectionL1Helper to retrieve Services and Providers classes.
+- New string constants included in StringL1Helper.
+- New package name constants included in ScopeL1Constants.
+- Fixed ProxyService class. 'setClient' now includes in every Client the instance of the Proxy Service.
+- New constant included in LogServiceConstants class.
+- New data type constants included in ReflectionL1Helper class.
+- Included 'equals' and 'toString' methods in NullType class.
+- Included 'toString' method in StringL1Helper to transform a InputStream into a String object.
+- New AbstractResourceManager and ClasspathResourceLoader classes to load resources.
+
+1.1.2
+
+- Included artifact metadata class. 
+
+1.1.1	
+
+- New info, debug and warning log methods included in Scope Facade.
+- Callback objects updated. 
+
+1.1.0	
+
+- New Codec Helper class included.
+- Clients now can provide attributes to define specific features.
+- New classes included for callback operations.
+- Two new parameters included for Clients to control callback timeouts and native batch operations.
+- New constant included in ScopeL1Constants class to list resources in a Servlet context class. 
+
+1.0.1	
+
+- Updated Console Logger message presentation.
+- Included method 'existsClass' in ReflectionL1Helper class.
+- Fixed exception message in AbstractConnector class.
+- Fixed exception message in AbstractScopeFactory class.
+- Updated Client and Scope beans to support serialization in future versions.
+- Fixed Scope bean to avoid exception when searching for Providers, Services, ... in empty contexts/collections.
+- Log updated for startup and shutdown messages. 
+
+1.0.0	First release.

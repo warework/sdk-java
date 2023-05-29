@@ -1,0 +1,15 @@
+{
+	
+	parameters:	[
+		{name: "color", value: "red"}, 
+		{name: "is-cool", value: "true"}
+	],
+	
+	clients: [
+		{ name: "console-logger", connector: "console", parameters: [
+			{name: "map", value: "java.util.Hashtable"}, 
+			{name: "list", value: "java.util.Vector"}
+		]}
+	]
+
+}
