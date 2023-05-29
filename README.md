@@ -3,6 +3,14 @@
 The **Warework SDK for Java** allows Java developers to easily perform multiple backend operations
 on different platforms, using simple, common and elegant interfaces. Get started with the ***Warework Framework*** in minutes using ***Maven***.
 
+## Features
+
+* Modular and extremely portable: designed to run on desktop, server, mobile and really small devices.
+
+* Performs operations with logs, databases, file systems, mail,...***Warework is a multi-purpose Java framework***.
+
+* Common interfaces for third party libraries that perform the same tasks.
+
 ## Release Notes ##
 Changes to the SDK beginning with version 3.0.0 are tracked in [CHANGELOG.md][changes-file].
 
@@ -43,18 +51,6 @@ The recommended way to use the Warework SDK for Java in your project is to consu
    </dependencies>
 </dependencyManagement>
 ```
-
-## Features
-
-* Modular and extremely portable: designed to run on desktop, server, mobile and really small devices.
-
-* Performs operations with logs, databases, file systems, mail,...***Warework is a multi-purpose Java framework***.
-
-* Boots up immediately, there's no impact in your app resources.
-
-* Common interfaces for third party libraries that perform the same tasks.
-
-* And more!
 
 ## Building From Source
 
