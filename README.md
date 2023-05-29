@@ -16,41 +16,33 @@ To run the SDK you will need **Java 1.5+**.
 
 The recommended way to use the Warework SDK for Java in your project is to consume it from Maven:
 
-##### Example importing Warework for Standalone Environments #####
+##### Importing SDK for desktop applications #####
 
 ```xml
 <dependencyManagement>
   <dependencies>
-    <dependency>
-      <groupId>com.warework</groupId>
-      <artifactId>aws-java-sdk-bom</artifactId>
-      <version>3.0.0</version>
-    </dependency>
+		<dependency>
+			<groupId>com.warework</groupId>
+			<artifactId>warework-java-boot-loader-se</artifactId>
+			<version>3.0.0</version>
+		</dependency>
   </dependencies>
 </dependencyManagement>
 ```
 
-##### Using the SDK Maven modules #####
+##### Importing SDK for JEE web applications #####
 
 ```xml
-<dependencies>
-  <dependency>
-    <groupId>com.amazonaws</groupId>
-    <artifactId>aws-java-sdk-ec2</artifactId>
-  </dependency>
-  <dependency>
-    <groupId>com.amazonaws</groupId>
-    <artifactId>aws-java-sdk-s3</artifactId>
-  </dependency>
-  <dependency>
-    <groupId>com.amazonaws</groupId>
-    <artifactId>aws-java-sdk-dynamodb</artifactId>
-  </dependency>
-</dependencies>
+<dependencyManagement>
+  <dependencies>
+		<dependency>
+			<groupId>com.warework</groupId>
+			<artifactId>warework-java-boot-loader-servlet-6.0</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+  </dependencies>
+</dependencyManagement>
 ```
-
-See the [Set up the AWS SDK for Java][docs-setup] section of the developer guide for more
-information about installing the SDK through other means.
 
 ## Features
 
