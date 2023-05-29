@@ -46,23 +46,13 @@ The recommended way to use the Warework SDK for Java in your project is to consu
 
 ## Features
 
-* Provides easy-to-use HTTP clients for all supported AWS services, regions, and authentication
-    protocols.
+* Modular and extremely portable: designed to run on desktop, server, mobile and really small devices.
 
-* Client-Side Data Encryption for Amazon S3 - Helps improve the security of storing application data
-    in Amazon S3.
+* Performs operations with logs, databases, file systems, mail,...***Warework is a multi-purpose Java framework***.
 
-* Amazon DynamoDB Object Mapper - Uses Plain Old Java Object (POJOs) to store and retrieve Amazon
-    DynamoDB data.
+* Boots up immediately, there's no impact in your app resources.
 
-* Amazon S3 Transfer Manager - With a simple API, achieve enhanced the throughput, performance, and
-    reliability by using multi-threaded Amazon S3 multipart calls.
-
-* Amazon SQS Client-Side Buffering - Collect and send SQS requests in asynchronous batches,
-    improving application and network performance.
-
-* Automatically uses [IAM Instance Profile Credentials][aws-iam-credentials] on configured Amazon
-    EC2 instances.
+* Common interfaces for third party libraries that perform the same tasks.
 
 * And more!
 
