@@ -14,21 +14,17 @@ To run the SDK you will need **Java 1.5+**.
 
 #### Install the SDK ####
 
-The recommended way to use the AWS SDK for Java in your project is to consume it from Maven. Import
-the [aws-java-sdk-bom][] and specify the SDK Maven modules that your project needs in the
-dependencies.
+The recommended way to use the Warework SDK for Java in your project is to consume it from Maven:
 
-##### Importing the BOM #####
+##### Example importing Warework for Standalone Environments #####
 
 ```xml
 <dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>com.amazonaws</groupId>
+      <groupId>com.warework</groupId>
       <artifactId>aws-java-sdk-bom</artifactId>
-      <version>1.12.477</version>
-      <type>pom</type>
-      <scope>import</scope>
+      <version>3.0.0</version>
     </dependency>
   </dependencies>
 </dependencyManagement>
