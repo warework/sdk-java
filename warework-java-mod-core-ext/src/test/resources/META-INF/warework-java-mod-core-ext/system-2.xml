@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/scope.xsd">
+
+	<parameters>
+		<parameter name="context-loader" value="com.warework.loader.ProxyServiceXmlLoaderTest"/>
+	</parameters>	
+
+	<services>				
+			
+		<service name="log-service-1" class="com.warework.service.log.LogServiceImpl" >
+			<parameter name="config-class" value="com.warework.loader.ProxyServiceXmlLoader"/>			
+			<parameter name="config-target" value="/META-INF/warework-java-mod-core-ext/log-service-1.xml"/>
+		</service>
+		
+		<service name="log-service-2" class="com.warework.service.log.LogServiceImpl" >			
+			<parameter name="context-loader" value="com.warework.loader.ProxyServiceXmlLoaderTest"/>
+			<parameter name="config-class" value="com.warework.loader.ProxyServiceXmlLoader"/>			
+			<parameter name="config-target" value="/META-INF/warework-java-mod-core-ext/log-service-1.xml"/>
+		</service>		
+											
+	</services>	
+	
+</scope>

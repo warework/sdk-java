@@ -1,0 +1,74 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework CORE Extension Module (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.1.0
+
+- New class NetworkL2Helper.
+
+2.0.1
+
+- Removed XML file extension in ResourceL2Helper class.
+- New VFS protocol support for resource management.
+
+2.0.0
+
+- Updated dependencies to CORE 2.0.0.
+
+1.6.0
+
+- Updated ResourceL1Helper class to use CommonValueL2Constants constants.
+- New JSON support.
+- New CommonValueL2Constants class created.
+- Moved constants from StringL2Helper to CommonValueL2Constants.
+- New class ResourceL2Helper. Moved constants from ResourceL1Helper to ResourceL2Helper. Deprecated ResourceL1Helper class.
+- New class MathL2Helper. Deprecated MathL1Helper class.
+- New class DateL2Helper. Moved constants from DateL1Helper to DateL2Helper. Deprecated DateL1Helper class.
+- New method 'mapBean' included in 'ReflectionL2Helper' class.
+- Removed 'getType' method from 'ReflectionL2Helper' class (it is now at 'ReflectionL1Helper' class).
+
+1.5.0
+
+- Updated ScopeSAXLoader class to create Services and Providers with short class names.
+- Updated in ProxyServiceSAXLoader the way Clients are created.
+- New method 'getType' in ReflectionL2Helper class.
+- Fixed ProxyService class. 'setClient' now includes in every Client the instance of the Proxy Service.
+- Fixed ResourceLoader and DirectoryResources classes to validate if context is null.
+- New JSON file extension included in ResourceL1Helper class.
+
+1.4.1
+
+- Included artifact metadata class.
+
+1.4.0	
+
+- New methods for annotations in ReflectionL2Helper class.
+- New DirectoryResources class to load resources from directories.
+- New ResourceLoader class to load a single resource.
+- New annotation to identify ID fields.
+- Fixed AbstractSAXProvider to list resources from JAR files.
+
+1.3.0	
+
+- Adds serialization for CORE data model and beans.
+- New Object Deserializer for Config Loaders.
+- SAX Loaders are now final.
+
+1.2.1	
+
+- Log error in exceptions at AbstractSAXProvider.
+
+1.2.0	
+
+- New abstract Provider to parse XML files with SAX.
+
+1.1.0	
+
+- New JPQL (JPA Query Language) file extension included.
+- New BAR (Business Archive)  file extension included.
+
+1.0.0	First release.

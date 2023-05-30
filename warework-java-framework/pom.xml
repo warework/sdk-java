@@ -39,15 +39,14 @@
 		<project.build.jdk.vendor>sun</project.build.jdk.vendor>		
 		<project.test.jdk.version>1.8.0</project.test.jdk.version>
 		<project.test.jdk.vendor>oracle</project.test.jdk.vendor>	
-		<lib.warework.build-resources.version>3.0.0</lib.warework.build-resources.version>
-		<path.warework.build.resources>target/generated-resources/warework-java-build-resources-${lib.warework.build-resources.version}/src/main</path.warework.build.resources>
+		<path.warework.build.resources>target/generated-resources/warework-java-build-resources-${project.version}/src/main</path.warework.build.resources>
 	</properties>	
 	
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>warework-java-build-resources</artifactId>
-			<version>${lib.warework.build-resources.version}</version>
+			<version>${project.version}</version>
 			<classifier>bundle</classifier>
 			<type>zip</type>
 			<scope>provided</scope>
