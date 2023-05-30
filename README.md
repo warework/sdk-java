@@ -70,6 +70,21 @@ Setup the framework to perform log operations with Log4j and execute queries in 
          <version>3.0.0</version>
       </dependency>
    </dependencies>
+   <dependency>
+      <groupId>com.warework</groupId>
+      <artifactId>warework-java-mod-datastore-ext</artifactId>
+      <version>3.0.0</version>
+   </dependency>	
+   <dependency>
+      <groupId>com.warework</groupId>
+      <artifactId>warework-java-ser-log-log4j</artifactId>
+      <version>3.0.0</version>
+   </dependency>
+   <dependency>
+      <groupId>com.warework</groupId>
+      <artifactId>warework-java-ser-pool-c3p0</artifactId>
+      <version>3.0.0</version>
+   </dependency>		
 </dependencyManagement>
 ```
 
