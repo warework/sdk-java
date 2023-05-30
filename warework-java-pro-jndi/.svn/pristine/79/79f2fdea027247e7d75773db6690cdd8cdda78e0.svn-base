@@ -1,0 +1,422 @@
+----------------------------------------------------------------------
+       WAREWORK SOFTWARE LIBRARY LICENSE VERSION 1.0 AGREEMENT
+----------------------------------------------------------------------
+
+
+READ THE TERMS OF THIS AGREEMENT AND ANY PROVIDED SUPPLEMENTAL LICENSE 
+TERMS (COLLECTIVELY "AGREEMENT") CAREFULLY BEFORE INCLUDING THE WORK 
+IN YOUR PRODUCT. BY INCLUDING THE WORK, YOU AGREE TO THE TERMS OF THIS
+AGREEMENT. IF YOU DO NOT AGREE TO ALL THESE TERMS, DO NOT PLACE THIS
+WORK IN ANY COMPUTER HARDWARE.
+
+THIS TRANSLATED TEXT IS ONLY FOR THE CONVENIENCE OF UNDERSTANDING AND 
+IS NOT LEGALLY BINDING. ONLY THE SPANISH-LANGUAGE VERSION OF THE 
+LICENSE, WHICH IS BELLOW AND MUST EXIST IN YOUR PACKAGING, IS 
+AUTHORITATIVE AND APPLICABLE IN CASE LEGAL INTERPRETATION IS REQUIRED.
+
+THE COPYRIGHT HOLDER RESERVES THE RIGHT TO RECLASSIFY THIS WORK AT A 
+LATER DATE. DOING SO WILL NOT MODIFY THIS LICENSE AGREEMENT OF 
+PREVIOUSLY DISTRIBUTED WORKS.
+
+FOR INQUIRIES PLEASE CONTACT: info@warework.com
+
+
+1. DEFINITIONS
+
+"License" shall mean the terms and conditions for use, reproduction 
+and distribution as defined in this document.
+
+"Licensor" shall mean Roblefino S.L., the copyright owner that is
+granting the License, or an authorized entity that represents to 
+Roblefino S.L. but doesn't hold the copyright. 
+
+"Legal Entity" shall mean the union of the acting entity and all other 
+entities that control, are controlled by, or are under common control 
+with that entity. For the purposes of this definition, "control" means 
+(i) the power, direct or indirect, to cause the direction or 
+management of such entity, whether by contract or otherwise, or 
+(ii) ownership of fifty percent (50%) or more of the outstanding 
+shares, or (iii) beneficial ownership of such entity.
+
+"You" (or "Your") shall mean an individual or Legal Entity exercising 
+permissions granted by this License.
+
+"Source" form shall mean the preferred form for making modifications, 
+including but not limited to software source code, documentation 
+source, and configuration files.
+
+"Object" form shall mean any form resulting from mechanical 
+transformation or translation of a Source form, including but not 
+limited to compiled object code, generated documentation, and 
+conversions to other media types.
+
+"Work" shall mean the work of authorship in Object form, made 
+available under this License, as indicated by a copyright notice that
+exists in the Work.
+
+"Repository" shall mean a collection of Works stored in a place 
+authorized by the Licensor that allows You to obtain a copy of the 
+Work. 
+
+"Import" shall mean obtain a copy of the Work from a Repository.
+
+"Product" shall mean a work that is not affected by this License but
+uses a Work that is made available under this License. 
+
+"Include" shall mean link a Work to Your Product.
+
+"Install" shall mean to place a Work with Your Product on a target 
+computer hardware.
+
+"Internally" shall mean an individual or within the same organization.
+
+
+2. LICENSE TO USE. Subject to the terms and conditions of this 
+License, Licensor grants You a perpetual, worldwide, non-exclusive and
+transferable patent License to:
+
+   - Import the Work from a Repository authorized by the Licensor.
+
+   - Include a free of charge copy of the Work in the Object form in 
+     Your Products, provided that such copies contain all the original
+     proprietary notices.
+   
+   - Install and use the Work, in the Object form and for free, 
+     required by Your Product, on any computer hardware, as many times 
+     as You like and for as long as You like.
+   
+   - Internally distribute free copies of the Work in the Object form,
+     provided that such copies contain all the original proprietary 
+     notices.
+     
+   - Implement interfaces and/or extend classes of the Work for Your 
+     Product when Your Product represents a completely different work 
+     as the one is provided.
+
+If You institute patent litigation against any entity (including a 
+cross-claim or counterclaim in a lawsuit) alleging that the Work 
+constitutes direct or contributory patent infringement, then any 
+patent licenses granted to You under this License for that Work shall
+terminate as of the date such litigation is filed.
+
+
+3. RESTRICTIONS. The Work is copyrighted and all associated 
+intellectual property rights is retained by the Licensor. Except as 
+specifically authorized in any Supplemental License Terms, You may 
+not:
+
+   - Publish or distribute the Work in Internet or any other media.
+   
+   - Modify, decompile or reverse engineer the Work.
+   
+   - Encourage other individuals or systems to directly use the Work 
+     included in Your Product.
+   
+   - Sell Licenses or charge any price for the Work.
+   
+   - Remove any proprietary notices on the Work or on any Work 
+     element.
+     
+   - Use any Warework trademark in any way that might state or imply 
+     that You created the Work.
+      
+   - Construct a derivative Work by creating a Product that just
+     implements interfaces or upgrades the Work, and publish, sell, 
+     distribute and/or permit the use of this Product not Internally. 
+     
+   - Use this License for Your Products.
+   
+   - Use any Warework trademark in any way that might state or imply 
+     that Warework endorses Your Product.  
+
+
+4. WARRANTY. Unless required by applicable law or agreed to in 
+writing, Licensor provides the Work on an "AS IS" BASIS, WITHOUT 
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, 
+including, without limitation, any warranties or conditions of TITLE,
+NON-INFRINGEMENT, MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+PURPOSE. You are solely responsible for the appropriateness of using 
+the Work and assume any risks associated with Your exercise of 
+permissions under this License.
+
+
+5. DISCLAIMER OF WARRANTY. UNLESS SPECIFIED IN THIS AGREEMENT, ALL 
+EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, 
+INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE OR NON-INFRINGEMENT ARE DISCLAIMED, EXCEPT TO THE
+EXTENT THAT THESE DISCLAIMERS ARE HELD TO BE LEGALLY INVALID.
+
+
+6. LIMITATION OF LIABILITY. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO
+EVENT WILL THE LICENSOR BE LIABLE FOR ANY LOST REVENUE, PROFIT OR 
+DATA, OR FOR SPECIAL, INDIRECT, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE
+DAMAGES, HOWEVER CAUSED REGARDLESS OF THE THEORY OF LIABILITY, 
+ARISING OUT OF OR RELATED TO THE USE OF OR INABILITY TO USE SOFTWARE,
+EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+DAMAGES. In no event will Licensor's liability to You, whether in 
+contract, tort (including negligence), or otherwise, exceed the
+amount paid by You (if any) for the Work under this Agreement. The 
+foregoing limitations will apply even if the above stated warranty 
+fails of its essential purpose.
+
+
+7. TRADEMARKS AND LOGOS. You acknowledge and agree as between You and
+the Licensor that Licensor owns the Warework trademark and all 
+Warework-related trademarks and logos, and You agree to comply with 
+the Licensor Trademark and Logo Usage Requirements currently located 
+at http://www.warework.com/resources/cor/warework-tlur.pdf. Any use 
+You make of the Warework Marks inures to Licensor's benefit.
+
+
+8. TERMINATION. This Agreement is effective until terminated. You may 
+terminate this Agreement at any time by destroying all copies of the 
+Work. This Agreement will terminate immediately without notice from 
+the Licensor if You fail to comply with any provision of this 
+Agreement. Upon Termination, You must destroy all copies of Software.
+
+
+9. EXPORT REGULATIONS. All Software and technical data delivered under
+this Agreement are subject to Spain and E.U. export control laws and 
+may be subject to export or import regulations in other countries. You
+agree to comply strictly with all such laws and regulations and 
+acknowledge that You have the responsibility to obtain such licenses 
+to export, re-export, or import as may be required after delivery to 
+You.
+
+
+10. GOVERNING LAW. Any action related to this Agreement will be 
+governed by the law of Spain and controlling E.U. law. 
+
+
+11. SEVERABILITY. If any provision of this Agreement is held to be 
+unenforceable, this Agreement will remain in effect with the provision
+omitted, unless omission would frustrate the intent of the parties, in
+which case this Agreement will immediately terminate.
+
+
+12. INTEGRATION. This Agreement is the entire agreement between You 
+and the Licensor relating to its subject matter. It supersedes all 
+prior or contemporaneous oral or written communications, proposals, 
+representations and warranties and prevails over any conflicting or 
+additional terms of any quote, order, acknowledgment, or other 
+communication between the parties relating to its subject matter 
+during the term of this Agreement. No modification of this Agreement
+will be binding, unless in writing and signed by an authorized
+representative of each party.
+
+
+----------------------------------------------------------------------
+    ACUERDO DE LICENCIA DE LIBRERÍA SOFTWARE WAREWORK VERSIÓN 1.0
+----------------------------------------------------------------------
+
+
+LEA LOS TÉRMINOS DE ESTE ACUERDO Y CUALQUIER TÉRMINO DE LICENCIA 
+ADICIONAL PROVISTO (EN CONJUNTO "ACUERDO") ANTES DE INCLUIR EL TRABAJO
+EN SU PRODUCTO. CON LA INCLUSIÓN DEL TRABAJO, USTED ACEPTA LOS 
+TÉRMINOS DE ESTE ACUERDO. SI USTED NO ESTÁ DE ACUERDO CON ESTAS 
+CONDICIONES, NO COLOQUE ESTE TRABAJO EN NINGUN EQUIPO INFORMÁTICO.
+
+EL TITULAR DE LOS DERECHOS DE AUTOR SE RESERVA EL DERECHO DE 
+RECLASIFICAR ESTE TRABAJO EN UNA FECHA POSTERIOR. CON ELLO NO SE
+MODIFICA ESTE ACUERDO DE LICENCIA CON OBRAS DISTRIBUIDAS PREVIAMENTE.
+
+PARA CUALQUIER CONSULTA, POR FAVOR PÓNGASE EN CONTACTO CON NOSOTROS 
+EN LA SIGUIENTE DIRECCIÓN: info@warework.com
+
+
+1. DEFINICIONES
+
+"Licencia" significa los términos y condiciones de uso, la 
+reproducción y la distribución tal como se define en este documento.
+
+"Licenciante" significa Roblefino S.L., el propietario del copyright 
+que está concediendo la Licencia, o una entidad autorizada que 
+represente a Roblefino S.L. pero que no es titular del derecho de 
+autor.
+
+"Entidad Jurídica" hace referencia a la unión de la entidad que 
+interviene y todas los demás entidades que controlan, son controladas 
+por, o están bajo control común con esa entidad. A los efectos de esta 
+definición, "control" significa (I) el poder, directo o indirecto, 
+para hacer que la dirección o gestión de dicha entidad, ya sea por 
+contrato o no, o (II) la propiedad del cincuenta por ciento (50%) o 
+más de las acciones pendientes, o (iii) titularidad de dicha entidad.
+
+"Usted" (o "Su") significa una persona física o jurídica que ejerza
+permisos concedidos por esta Licencia.
+
+"Fuente" (formato) significa la forma preferida para realizar las 
+modificaciones, incluyendo pero no limitado a la fuente de código de 
+software, la documentación fuente y archivos de configuración.
+
+"Objeto" (formato) hace referencia a toda forma resultante de la 
+transformación mecánica o traducción de una forma de código Fuente, 
+incluyendo pero no limitado al código objeto compilado, documentación 
+generada, y las conversiones a otros tipos de medios.
+
+"Trabajo" significa la obra de autor en forma de Objetos, disponibles 
+bajo esta licencia, según lo indicado en un aviso de copyright que
+existe en el Trabajo.
+
+"Repositorio" significa la colección de Trabajos almacenados en un 
+lugar autorizado por el Licenciante que le permite a Usted obtener una 
+copia del Trabajo.
+
+"Importación" hace referencia a la obtención de una copia del Trabajo 
+de un Repositorio.
+
+"Producto" es un trabajo que no se ve afectado por esta licencia pero
+utiliza el Trabajo que se pone a disposición bajo esta Licencia.
+
+"Incluir" significa vincular un Trabajo en Su Producto.
+
+"Instalar" significa poner el Trabajo con Su Producto en una 
+computadora hardware.
+
+"Internamente" significa un individuo o dentro la misma organización.
+
+
+2. LICENCIA DE USO. Sujeto a los términos y condiciones de esta 
+Licencia, el Licenciante le otorga a Usted una Licencia perpetua, 
+mundial, no exclusiva y de patente transferible para que:
+
+    - Importe el Trabajo desde un Repositorio autorizado por el 
+      Licenciante.
+
+    - Incluya una copia gratuita del Trabajo en formato Objeto en Sus 
+      Productos, siempre que las copias contengan todos los avisos 
+      originales de propiedad.
+   
+    - Instalar y usar el Trabajo, en formato Objeto y de forma 
+      gratuita, requerido por su Producto, en cualquier equipo 
+      informático, tantas veces como Usted quiera y durante el tiempo 
+      que considere oportuno.
+   
+    - Distribuir Internamente copias gratuitas del Trabajo en formato 
+      Objeto, siempre que las copias contengan todos los comunicados 
+      originales de propiedad.
+     
+    - Implementar las interfaces y/o ampliar las clases del Trabajo 
+      para su Producto cuando Su Producto representa un trabajo 
+      completamente diferente al que se proporciona.
+
+Si Usted ejerce un litigio de patente en contra de cualquier entidad 
+(incluyendo una indemnización o contrademanda en un juicio), alegando 
+que el Trabajo constituye una infracción de patente directa o 
+contribuyente, entonces cualquier patente de licencia concedida a 
+Usted bajo esta Licencia y para ese Trabajo deberá terminar en la 
+fecha que dicho litigio es presentado.
+
+
+3. RESTRICCIONES. El Trabajo tiene copyright y todos los derechos de 
+propiedad intelectual son retenidos por el Licenciante. A excepción de
+lo expresamente autorizado en cualquiera de los Términos de Licencia 
+Adicionales, Usted no podrá:
+
+    - Publicar o distribuir el Trabajo en Internet o cualquier otro 
+      medio.
+   
+    - Modificar, decompilar o aplicar un proceso de ingeniería inversa
+      en el Trabajo.
+   
+    - Animar y facilitar a otras personas o sistemas a utilizar 
+      directamente el Trabajo incluido en su Producto.
+   
+    - Vender Licencias o cobrar cualquier importe por el Trabajo.
+   
+    - Eliminar cualquier aviso de propiedad del Trabajo o en cualquier 
+      elemento/componente del Trabajo.
+      
+    - Usar cualquier marca Warework de ninguna manera que pudiera 
+      afirmar o sugerir que Usted creó el Trabajo.  
+      
+    - Construir un Trabajo derivado mediante la creación de un 
+      Producto que sólo implementa las interfaces o actualiza el 
+      Trabajo, y publicar, vender, distribuir y/o permitir el uso del 
+      Producto no internamente.
+     
+    - Usar esta Licencia para Sus Productos.
+    
+    - Usar cualquier marca Warework de ninguna manera que pudiera 
+      afirmar o sugerir que Warework aprueba Su Producto.
+      
+
+4. GARANTÍA. A menos que sea requerido por la ley aplicable o se 
+acuerde por escrito, el Licenciante ofrece el Trabajo "TAL CUAL", SIN 
+GARANTÍAS NI CONDICIONES DE NINGÚN TIPO, ya sea expresa o implícita, 
+incluyendo, sin limitación, cualquier garantía o condición de TÍTULO, 
+NO-VULNERACIÓN, COMERCIALIZACIÓN o IDONEIDAD PARA UN PROPÓSITO 
+PARTICULAR. Usted es el único responsable de la conveniencia de 
+utilizar el Trabajo y asumir los riesgos asociados con su ejercicio de
+los permisos bajo esta Licencia.
+
+
+5. RENUNCIA DE GARANTÍA. A MENOS QUE SE ESPECIFIQUE EN ESTE ACUERDO, 
+TODAS LAS CONDICIONES EXPRESAS O IMPLICADAS, DECLARACIONES Y 
+GARANTÍAS, INCLUYENDO CUALQUIER GARANTÍA DE COMERCIALIZACIÓN, 
+IDONEIDAD PARA UN PROPÓSITO PARTICULAR O NO INFRACCIÓN ESTÁN 
+EXCLUIDAS, EXCEPTO EN LA MEDIDA EN QUE ESTAS RENUNCIAS SE CONSIDEREN 
+LEGALMENTE INVÁLIDAS.
+
+
+6. LIMITACIÓN DE LA RESPONSABILIDAD. EN LA MEDIDA EN QUE NO ESTÉ 
+PROHIBIDO POR LA LEY, EN NINGÚN CASO EL LICENCIANTE SERÁ RESPONSABLE 
+POR LA PÉRDIDA DE INGRESOS, BENEFICIOS O DATOS, O POR DAÑOS 
+ESPECIALES, INDIRECTOS, ACCIDENTALES O PUNITIVOS, SIN EMBARGO CAUSADOS
+INDEPENDIENTEMENTE DE LA TEORÍA DE RESPONSABILIDAD, DERIVADOS O 
+RELACIONADOS CON EL USO O IMPOSIBILIDAD DE USO DEL SOFTWARE, INCLUSO 
+SI EL LICENCIANTE HA SIDO ADVERTIDO DE LA POSIBILIDAD DE TALES DAÑOS. 
+En ningún caso la responsabilidad del Licenciante será hacia usted, ya
+sea por contrato, agravio (incluyendo negligencia), o de lo contrario,
+la suma pagada por usted (si hay) por el Trabajo conforme a este 
+Acuerdo. Las limitaciones anteriores se aplicarán incluso si la 
+antedicha garantía falta a su propósito esencial.
+
+
+7. MARCAS Y LOGOTIPOS. Usted reconoce y acepta que entre Usted y el 
+Licenciante el propietario de la marca Warework y todas las marcas y 
+logos relacionados con Warework son propiedad del Licenciante, y Usted
+se compromete a cumplir con la Marca del Licenciante y los Requisitos 
+de Uso de los Logotipos especificados en 
+http://resources.warework.com/cor/warework-tlur.pdf. Cualquier uso
+que Usted haga de las Marcas Warework redundará en beneficio del 
+Licenciador.
+
+
+8. FINALIZACIÓN. Este acuerdo será efectivo hasta su terminación. 
+Usted puede terminar este Acuerdo en cualquier momento destruyendo 
+todas las copias del Trabajo. Este acuerdo terminará inmediatamente 
+sin previo aviso por parte del Licenciante si usted no cumple con 
+cualquier disposición de este Acuerdo. Tras la rescisión, Usted deberá
+destruir todas las copias del Software.
+
+
+9. NORMAS DE EXPORTACIÓN. Todo el Software y datos técnicos entregados
+bajo este Acuerdo están sujetos a las leyes de control de exportación 
+de España y la U.E. y pueden estar sujetos a las regulaciones de 
+exportación e importación de otros países. Usted se compromete a 
+cumplir estrictamente con todas estas leyes y normas, y reconoce que 
+Usted tiene la responsabilidad de obtener las licencias 
+correspondientes de exportación, reexportación o importación que 
+puedan ser necesarias después de que le sean entregadas.
+
+
+10. LEGISLACIÓN APLICABLE. Cualquier acción relacionada con este 
+Acuerdo se regirá por la ley de España y la ley de control de la U.E. 
+
+
+11. DIVISIBILIDAD. Si alguna disposición de este Acuerdo se considera 
+inaplicable, el presente Acuerdo permanecerá en vigor con el 
+suministro omitido, salvo que la omisión pueda frustrar la intención 
+de las partes, en cuyo caso este acuerdo terminará inmediatamente. 
+
+
+12. INTEGRACIÓN. Este Acuerdo es el acuerdo completo entre Usted y el 
+Licenciante en relación con lo tratado. Éste reemplaza todas las 
+comunicaciones previas o contemporáneas orales o escritas, propuestas,
+representaciones y garantías, y prevalece sobre cualquier término 
+conflictivo o adicional de cualquier presupuesto, pedidos, 
+declaraciones u otras comunicaciones entre las partes en relación a su
+contenido durante la vigencia de este Acuerdo. Ninguna modificación de 
+este Acuerdo será vinculante, a menos que por escrito y firmado por un
+representante autorizado de cada parte.

@@ -1,0 +1,21 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework JNDI Provider (Java Ed.)
+----------------------------------------------------------------------
+
+2.0.1
+
+- Updated Provider initialization.
+
+2.0.0
+
+- Updated dependencies to CORE 2.0.0.
+
+1.0.2
+
+- Updated constants names.
+
+1.0.1
+
+- Included artifact metadata class. 
+
+1.0.0	First release.
