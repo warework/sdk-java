@@ -1,7 +1,7 @@
 # Warework SDK for Java
 
 The **Warework SDK for Java** allows Java developers to easily perform multiple backend operations
-on different platforms, using simple, common and elegant interfaces. Get started with the ***Warework Framework*** in minutes using ***Maven***.
+on different platforms, using simple, common and efficient interfaces. Get started with the ***Warework Framework*** in minutes using ***Maven***.
 
 ## Release Notes ##
 Changes to the SDK beginning with version 3.0.0 are tracked in [CHANGELOG.md][changes-file].
@@ -14,7 +14,7 @@ To run the SDK you will need **Java 1.5+**.
 
 #### Install the SDK ####
 
-The recommended way to use the Warework SDK for Java in your project is to consume it from Maven:
+The recommended way to use the Warework SDK for Java in your project is to download and execute it from Maven:
 
 ##### Importing SDK for desktop applications #####
 
@@ -52,3 +52,4 @@ The recommended way to use the Warework SDK for Java in your project is to consu
 
 * Common interfaces for third party libraries that perform the same tasks.
 
+[changes-file]: ./CHANGELOG.md
