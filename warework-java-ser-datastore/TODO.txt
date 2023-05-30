@@ -1,0 +1,7 @@
+- In RDBMSView, add x2 methods like executeQuery and executeQueryByName where you get a Vector with the beans that matches a given mapping profile.
+- In RDBMSView, add x2 methods like executeQuery and executeQueryByName where you get a single Bean that matches a given mapping profile.
+- Create abstract class to handle KeyValue Views and include in this class a 'toHashtable' method that copies the content of the Data Store into a Hashtable.
+- Add parameter to enable or disable batch operations   
+- Create a new View for RDBMS to perform basic ORM operations without the need to specify mapping dependencies.  
+- Create specific AbstractRDBMSCallback and AbstractResultRowMappingCallback. In Data Store Ext Module create specific Java 5 typed callbacks.
+- Include method 'toHashtable' in AbstractResultRows to retrieve a single result from the database as a Hashtable. This is fater than 'toBean' because users do not have to create a bean.

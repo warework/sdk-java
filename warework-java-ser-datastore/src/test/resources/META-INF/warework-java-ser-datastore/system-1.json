@@ -1,0 +1,14 @@
+{
+	
+	services: [
+		{ name: "log-service", service: "log", parameters: [
+			{name: "config-class", value: "ProxyServiceClasspathJson"}, 
+			{name: "config-target", value: "/META-INF/warework-java-ser-datastore/log-service-1.json"}
+		]},
+		{ name: "datastore-service", service: "datastore", parameters: [
+			{name: "config-class", value: "DatastoreClasspathJson"}, 
+			{name: "config-target", value: "/META-INF/warework-java-ser-datastore/datastore-service-1.json"}
+		]}
+	]
+
+}
