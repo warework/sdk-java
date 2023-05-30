@@ -1,0 +1,34 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework Data Store for Properties (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.0.1
+
+- Updated Data Store constants.
+
+2.0.0
+
+- Updated dependencies to CORE 2.0.0.
+- Deprecated methods, constants and classes removed.
+
+1.2.1
+
+- Updated dependencies to CORE 1.3.0 and Data Store Service 1.3.1.
+
+1.2.0
+
+- Included artifact metadata class. 
+- Refactor of every class, method and variable name with 'DataStore' to 'Datastore'.
+- Updated utility that load the resources in Connector class.
+- Fix to validate if context is null when loading the resource.
+
+1.1.0	
+
+- Simplified the process for locating the resource to load.
+- Updated to implement new Data Store Service 1.2.0 methods.
+
+1.0.0	First release.
