@@ -1,0 +1,9 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework File Client for Local File System (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.0.0	First release.

@@ -1,0 +1,27 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework Logger for Log4j (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.0.1
+
+- Updated dependencies to CORE Extension 2.1.0.
+
+2.0.0
+
+- Updated dependencies to CORE 2.0.0.
+- Deprecated methods, constants and classes removed.
+
+1.0.2
+
+- Updated the way configuration file is loaded. 
+- Updated constants names. 
+
+1.0.1
+
+- Included artifact metadata class. 
+
+1.0.0	First release.

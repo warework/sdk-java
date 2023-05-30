@@ -1,0 +1,1 @@
+- Read parameters from System, for example: String dbName = System.getProperty("RDS_DB_NAME"); 

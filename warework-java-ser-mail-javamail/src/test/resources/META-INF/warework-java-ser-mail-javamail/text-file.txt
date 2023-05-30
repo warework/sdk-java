@@ -1,0 +1,9 @@
+- La idea es tener x2 clientes: uno para enviar e-mails y otro para poder leerlos. Esto es así
+  porque el connection source de JavaMail (el objeto Session) puede obtener dos tipos diferentes
+  de conexiones (una para enviar e-mails y otra para poder leerlos).
+
+- Las conexiones pueden obtenerse del servidor de aplicaciones (p.e.: Glassfish)
+- http://ha-javamail.sourceforge.net/
+- http://www.coderanch.com/t/478667/Tomcat/Creating-JavaMail-session-pool
+
+- Implementar método 'reply' en interfaz del Mail Service. ver: http://www.programacion.com/articulo/api_javamail_91/4
