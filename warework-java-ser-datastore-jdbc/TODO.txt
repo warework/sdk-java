@@ -1,0 +1,2 @@
+- Begin transaction in Key-Value View?
+- If CORE defines a FileTextProvider (to text resources form classpath), JDBC Connector should load this Provider automatically.
