@@ -1,0 +1,17 @@
+{
+	
+	services: [
+	
+		{ name: "log-service", service: "log", parameters: [
+			{name: "config-class", value: "ProxyServiceClasspathJson"}, 
+			{name: "config-target", value: "/META-INF/warework-java-ser-converter/log-service-1.json"}
+		]},
+		
+		{ name: "converter-service", service: "converter", parameters: [
+			{name: "config-class", value: "ProxyServiceClasspathJson"}, 
+			{name: "config-target", value: "/META-INF/warework-java-ser-converter/converter-service-1.json"}
+		]}
+		
+	]
+
+}
