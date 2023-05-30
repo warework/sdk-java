@@ -221,5 +221,9 @@ view.executeUpdate(sql, null, null);
 
 ```
 
+## Documentation
+
+Refer to 2.x documentation [warework-java-dist-cloud-desktop-2.1.0.pdf][doc-file] for detailed information until it's updated.
 
 [changes-file]: ./CHANGELOG.md
+[doc-file]: ./warework-java-dist-cloud-desktop-2.1.0.pdf
