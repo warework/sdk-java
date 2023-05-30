@@ -171,7 +171,7 @@ Warework XML configuration file to setup and interface to perform operations wit
 
 ##### Java examples #####
 
-Boot up the framework by providing a context class ***MyApp.class*** to load the previously created config files:
+Boot up the framework by providing a context ***MyApp.class*** (any class from your project) to load the previously created config files:
 
 ```java
 ScopeFacade scope = ScopeContext.create(MyApp.class, "my-app-config", "my-app-name", null);
