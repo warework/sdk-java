@@ -73,7 +73,7 @@ Setup the framework to perform log operations with Log4j and execute queries in 
 </dependencyManagement>
 ```
 
-##### Main config file ##### (/META-INF/my-app-config.xml)
+##### Main config file (/META-INF/my-app-config.xml) #####
 
 Warework boots up by loading an XML file where you can specify which componentes of the framework (services and providers) will be available during the life span of the application:
 
@@ -91,21 +91,21 @@ Warework boots up by loading an XML file where you can specify which componentes
 		<service name="log-service" class="com.warework.service.log.LogServiceImpl" >
 			<parameter name="config-class" value="com.warework.loader.ProxyServiceXmlLoader"/>			
 			<parameter name="config-target" value="/META-INF/my-app-name/service/log-service.xml"/>
+		</service>		
+		<service name="pool-service" class="com.warework.service.pool.PoolServiceImpl">
+			<parameter name="config-class" value="com.warework.loader.ProxyServiceXmlLoader"/>
+			<parameter name="config-target" value="/META-INF/my-app-name/service/pool-service.xml" />
 		</service>	
 		<service name="datastore-service" class="com.warework.service.datastore.DatastoreServiceImpl">
 			<parameter name="config-class" value="com.warework.loader.DatastoreXmlLoader"/>	
 			<parameter name="config-target" value="/META-INF/my-app-name/service/datastore-service.xml"/>
 		</service>	
-		<service name="pool-service" class="com.warework.service.pool.PoolServiceImpl">
-			<parameter name="config-class" value="com.warework.loader.ProxyServiceXmlLoader"/>
-			<parameter name="config-target" value="/META-INF/my-app-name/service/pool-service.xml" />
-		</service>		
 	</services>
 	
 </scope>
 ```
 
-##### Log config files #####
+##### Log config files (/META-INF/my-app-name/service/log-service.xml) #####
 
 Warework XML configuration file to setup Log4j:
 
@@ -133,7 +133,7 @@ log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
 log4j.appender.stdout.layout.ConversionPattern=%d{yyyy/MM/dd HH:mm:ss.SSS} %-5p - [%t] - %m%n
 ```
 
-##### Connection pool config file #####
+##### Connection pool config file (/META-INF/my-app-name/service/pool-service.xml) #####
 
 Warework XML configuration file to setup C3P0:
 
@@ -148,7 +148,7 @@ Warework XML configuration file to setup C3P0:
 </proxy-service>
 ```
 
-##### Datastore config file #####
+##### Datastore config file (/META-INF/my-app-name/service/datastore-service.xml) #####
 
 Warework XML configuration file to setup and interface to perform operations with JDBC:
 
@@ -176,5 +176,35 @@ Boot up the framework by providing a context class ***MyApp.class*** to load the
 ```java
 ScopeFacade scope = ScopeContext.create(MyApp.class, "my-app-config", "my-app-name", null);
 ```
+
+Log a message with Log4j:
+
+```java
+scope.debug("Hello!");
+```
+
+Get an interface to perform operations with the relational database:
+
+```java
+// Get an instance of the Data Store Service. 
+DatastoreServiceFacade datastoreService = (DatastoreServiceFacade) scope.getService("datastore-service");
+
+// Get an instance of a RDBMS View interface.
+RDBMSView view = (RDBMSView) datastoreService.getView("my-jdbc-datastore");
+
+// Connect the Data Store.
+view.connect();
+
+// Begin a transaction in the database management system.
+view.beginTransaction();
+
+// Create the SQL statement to execute.
+String sql = "INSERT INTO HOME_USER (ID, NAME) VALUES (1, 'John Wood')";
+
+// Run the SQL update statement.
+view.executeUpdate(sql, null, null);
+
+```
+
 
 [changes-file]: ./CHANGELOG.md
