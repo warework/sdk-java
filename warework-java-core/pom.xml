@@ -13,8 +13,7 @@
 	<packaging>jar</packaging>
 	
 	<name>CORE</name>
-	<description></description>
-	<url></url>	
+	<description>Foundation components to perform core operations with the framework.</description>
 	<inceptionYear>2010</inceptionYear>
 	
 	<licenses>

@@ -9,8 +9,8 @@
   	<packaging>pom</packaging>
   
   	<name>Warework Framework</name>
-  	<description></description>
-	<url></url>	
+  	<description>Modular java framework to perform backend operations.</description>
+	<url>https://warework.com</url>	
 	<inceptionYear>2010</inceptionYear>
   
 	<licenses>
@@ -25,6 +25,11 @@
 		<url>https://warework.com</url>
 	</organization>
 	
+	<scm>
+		<connection>scm:git:https://github.com/warework/sdk-java.git</connection>	
+		<url>https://github.com/warework</url>
+	</scm>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>1.5</maven.compiler.target>
@@ -34,7 +39,7 @@
 		<project.build.jdk.vendor>sun</project.build.jdk.vendor>		
 		<project.test.jdk.version>1.8.0</project.test.jdk.version>
 		<project.test.jdk.vendor>oracle</project.test.jdk.vendor>	
-		<lib.warework.build-resources.version>3.0.0-SNAPSHOT</lib.warework.build-resources.version>
+		<lib.warework.build-resources.version>3.0.0</lib.warework.build-resources.version>
 		<path.warework.build.resources>target/generated-resources/warework-java-build-resources-${lib.warework.build-resources.version}/src/main</path.warework.build.resources>
 	</properties>	
 	
