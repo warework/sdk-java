@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework Web Compressors (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.0.1
+
+- Updated default HTML Compressor configuration.
+
+2.0.0	First release.

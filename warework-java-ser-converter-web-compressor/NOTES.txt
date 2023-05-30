@@ -1,0 +1,4 @@
+https://code.google.com/p/htmlcompressor/
+http://mvnrepository.com/artifact/com.googlecode.htmlcompressor/htmlcompressor/1.4
+http://server001.agilebackoffice.org/nexus/content/repositories/public/com/yahoo/platform/yui/yuicompressor/2.4.6/
+https://github.com/yui/yuicompressor

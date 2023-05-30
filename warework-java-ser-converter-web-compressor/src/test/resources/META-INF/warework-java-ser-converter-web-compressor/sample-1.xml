@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+	<!-- =========================================================================== -->
+	<!--                    			application name              				 -->
+	<!-- =========================================================================== -->
+
+	<display-name>portal</display-name>
+	
+	<!-- =========================================================================== -->
+	<!--                    			session config              				 -->
+	<!-- =========================================================================== -->
+
+    <session-config>
+      <session-timeout>10</session-timeout> 
+    </session-config>
+
+	<!-- =========================================================================== -->
+	<!--                    			welcome-file-list              				 -->
+	<!-- =========================================================================== -->
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<!-- =========================================================================== -->
+	<!--                    				error-page              				 -->
+	<!-- =========================================================================== -->
+
+	<error-page>
+    	<error-code>404</error-code>    	
+    	<location>/home.page</location>
+    </error-page>
+	<error-page>
+    	<error-code>403</error-code>    	
+    	<location>/home.page</location>
+    </error-page>
+	<error-page>
+    	<error-code>500</error-code>    	
+    	<location>/500.html</location>
+    </error-page>
+
+	<!-- =========================================================================== -->
+	<!--                    			context-param              					 -->
+	<!-- =========================================================================== -->
+
+	<context-param>
+		<description>Execution environment for the application (production, prepro, ...</description>
+		<param-name>DEPLOY-TARGET</param-name>		
+		<param-value>@deploy-target@</param-value>
+	</context-param>
+
+	<!-- =========================================================================== -->
+
+	<context-param>
+		<description>Enable or disable system cache</description>
+		<param-name>ENABLE-CACHE</param-name>		
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<description>Minutes to wait until next system update operation</description>
+		<param-name>SYSTEM-UPDATE-TIME</param-name>		
+		<param-value>15</param-value>
+	</context-param>
+	
+	<!-- =========================================================================== -->
+	
+	<context-param>
+		<description>Base URL for a user guide of a library</description>
+		<param-name>BASE_URL_USER-GUIDE</param-name>		
+		<param-value>[dev=http://ww-web-prepro/resources/lib/man;pre=http://ww-web-prepro/resources/lib/man;pro=http://guide.warework.com]</param-value>
+	</context-param>	
+	<context-param>
+		<description>Base URL for an API of a library</description>
+		<param-name>BASE_URL_API</param-name> 
+		<param-value>[dev=http://ww-web-prepro/resources/lib/api;pre=http://ww-web-prepro/resources/lib/api;pro=http://api.warework.com]</param-value>
+	</context-param>
+	<context-param>
+		<description>Base URL for the On-line tutorial of a library</description>
+		<param-name>BASE_URL_ONLINE-TUTORIAL</param-name> 
+		<param-value>[dev=http://ww-web-prepro/resources/lib/tut;pre=http://ww-web-prepro/resources/lib/tut;pro=http://tutorial.warework.com]</param-value>
+	</context-param>
+	<context-param>
+		<description>Base URL for a repository of a library</description>
+		<param-name>BASE_URL_REPOSITORY</param-name>		
+		<param-value>[dev=http://ww-web-prepro/resources/lib/rep;pre=http://ww-web-prepro/resources/lib/rep;pro=http://repository.warework.com]</param-value>
+	</context-param>
+	<context-param>
+		<description>Base URL for the changes log of a library</description>
+		<param-name>BASE_URL_CHANGES-LOG</param-name>
+		<param-value>[dev=http://ww-web-prepro/resources/lib/log;pre=http://ww-web-prepro/resources/lib/log;pro=http://log.warework.com]</param-value>
+	</context-param>		
+	<context-param>
+		<description>Base URL for a license of a library</description>
+		<param-name>BASE_URL_LICENSE</param-name>		
+		<param-value>[dev=http://ww-web-prepro/resources/lib/lic;pre=http://ww-web-prepro/resources/lib/lic;pro=http://resources.warework.com/lib/lic]</param-value>
+	</context-param>		
+	<context-param>
+		<description>Portal resources</description>
+		<param-name>BASE_URL_PORTAL-RESOURCES</param-name>
+		<param-value>[dev=http://ww-web-prepro/resources/por;pre=http://ww-web-prepro/resources/por;pro=http://resources.warework.com/por]</param-value>
+	</context-param>	
+	<context-param>
+		<description>Portal web resources</description>
+		<param-name>URL_WEB-RESOURCES</param-name> 
+		<param-value>[dev=/portal;pre=http://ww-web-prepro/resources/por/web;pro=http://resources.warework.com/por/web]</param-value>
+	</context-param>		
+	<context-param>
+		<description>Trademark and logo usage agreements</description>
+		<param-name>URL_CORPORATE-GUIDELINES</param-name> 
+		<param-value>[dev=http://ww-web-prepro/resources/cor/warework-tlur.pdf;pre=http://ww-web-prepro/resources/cor/warework-tlur.pdf;pro=http://resources.warework.com/cor/warework-tlur.pdf]</param-value>
+	</context-param>
+	
+	<!-- =========================================================================== -->
+	<!--                    				servlets              					 -->
+	<!-- =========================================================================== -->
+
+	<servlet>
+
+		<servlet-name>action</servlet-name>
+
+		<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>		
+		<init-param>
+        	<param-name>chainConfig</param-name>
+        	<param-value>org/apache/struts/tiles/chain-config.xml</param-value>
+    	</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>3</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>3</param-value>
+		</init-param>
+		
+		<load-on-startup>0</load-on-startup>
+
+	</servlet>	
+	
+ 	<servlet> 	
+    	<servlet-name>ResourceServlet</servlet-name>    	
+    	<servlet-class>com.warework.app.co.portal.web.servlet.ResourceServlet</servlet-class>    	
+  	</servlet>
+  	
+ 	<servlet> 	
+    	<servlet-name>DownloadLibraryServlet</servlet-name>    	
+    	<servlet-class>com.warework.app.co.portal.web.servlet.DownloadLibraryServlet</servlet-class>    	
+  	</servlet>
+  	
+ 	<servlet> 	
+    	<servlet-name>BugReportServlet</servlet-name>    	
+    	<servlet-class>com.warework.app.co.portal.web.servlet.BugReportServlet</servlet-class>    	
+  	</servlet>
+
+ 	<servlet> 	
+    	<servlet-name>SessionCounterServlet</servlet-name>    	
+    	<servlet-class>com.warework.app.co.portal.web.servlet.SessionCounterServlet</servlet-class>    	
+  	</servlet>
+
+	<!-- =========================================================================== -->
+	<!--                    			servlet-mapping              				 -->
+	<!-- =========================================================================== -->
+
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>*.page</url-pattern>
+	</servlet-mapping>	
+	
+  	<servlet-mapping>
+    	<servlet-name>ResourceServlet</servlet-name>
+    	<url-pattern>/rs</url-pattern>
+  	</servlet-mapping>	
+  	
+  	<servlet-mapping>
+    	<servlet-name>DownloadLibraryServlet</servlet-name>
+    	<url-pattern>/dls</url-pattern>
+  	</servlet-mapping>  	
+  	
+  	<servlet-mapping>
+    	<servlet-name>BugReportServlet</servlet-name>
+    	<url-pattern>/brs</url-pattern>
+  	</servlet-mapping> 
+  	
+  	<servlet-mapping>
+    	<servlet-name>SessionCounterServlet</servlet-name>
+    	<url-pattern>/scs</url-pattern>
+  	</servlet-mapping> 
+
+	<!-- =========================================================================== -->
+	<!--                    			   listeners                 				 -->
+	<!-- =========================================================================== -->
+
+	<listener>
+		<listener-class>com.warework.app.co.portal.web.PortalContextListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>com.warework.app.co.portal.web.SessionCounterListener</listener-class>
+	</listener>
+
+	<!-- =========================================================================== -->
+	<!--                    			   filters	                 				 -->
+	<!-- =========================================================================== -->
+
+	<filter>
+        <filter-name>PortalRequestFilter</filter-name>
+        <filter-class>com.warework.app.co.portal.web.PortalRequestFilter</filter-class>        
+    </filter>
+    
+	<!-- =========================================================================== -->
+	<!--                    			   filters mapping            				 -->
+	<!-- =========================================================================== -->
+
+	<filter-mapping>
+        <filter-name>PortalRequestFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
