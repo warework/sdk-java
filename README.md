@@ -201,23 +201,26 @@ scope.debug("Hello!");
 Get an interface to perform operations with the relational database:
 
 ```java
-// Get an instance of the Data Store Service. 
-DatastoreServiceFacade datastoreService = (DatastoreServiceFacade) scope.getService("datastore-service");
+// Get an instance of the Data Store service. 
+DatastoreServiceFacade service = (DatastoreServiceFacade) scope.getService("datastore-service");
 
-// Get an instance of a RDBMS View interface.
-RDBMSView view = (RDBMSView) datastoreService.getView("my-jdbc-datastore");
+// Get the interface to perform operations with relational databases.
+RDBMSView database = (RDBMSView) service.getView("my-jdbc-datastore");
 
-// Connect the Data Store.
-view.connect();
+// Connect with the database.
+database.connect();
 
-// Begin a transaction in the database management system.
-view.beginTransaction();
+// Begin a transaction in the database.
+database.beginTransaction();
 
 // Create the SQL statement to execute.
 String sql = "INSERT INTO HOME_USER (ID, NAME) VALUES (1, 'John Wood')";
 
 // Run the SQL update statement.
-view.executeUpdate(sql, null, null);
+database.executeUpdate(sql, null, null);
+
+// Commit changes in database.
+database.commit();
 
 ```
 
