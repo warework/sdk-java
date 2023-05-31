@@ -1,0 +1,6 @@
+- Include new method "addVariables" which accepts Map to add multiple variables at the same time. DO NOT SPECIFY TYPES IN MAP => Map<String, Object> and check the type at runtime because DataStores will invoke this method and DataStores revieve Hashtable without type.
+- Create a KeyValue View for OO Data Stores. 
+- Include new parameter in 'ObjectQueryProvider' to retrieve the query serialized.
+- Create an annotation that loads and executes a query in a DDBB and sets the result in an attribute of an object.
+- Add types in ObjectDatastoreView methods: http://java.dzone.com/articles/generic-crud-facade-your
+

@@ -1,0 +1,22 @@
+- GPL compatibility with Apache 2.0 license
+
+	The GPL compatibility is 1-way with Apache 2.0 license - meaning it's fine to use Apache licensed work in 
+	a GPL work, but the reverse is not true - you cannot simply use GPL (or LGPL) in Apache 2.0 license works. 
+	The LGPL cannot be relicensed under anything other than GPL/AGPL, but it can be used in projects released 
+	under another license by linking to it.
+	
+	The modifications you've made to the LGPL project must be released under the LGPL too (or GPL/AGPL) - your 
+	project may link to that modified version and the combined work may still be released under the Apache 2.0 
+	license.
+	
+	You can incorporate your Apache 2.0 work in a closed-source project, but you cannot direcly copy LGPL into 
+	it. Linking to LGPL from closed source projects is OK.
+	
+	In java, you can treat each .class file as an individual library which is linked - so the requirement is that 
+	the LGPL licensed .class must also be released in source form - with prominent notice that the LGPL is used, 
+	a copy of the LGPL and GPL licenses must be included and displayed along with any other license, and you must 
+	provide the information required to link a modified version of it to your apache 2.0 work (in the form of 
+	scripts which automate the linking, or documentation)
+ 
+ 	http://stackoverflow.com/questions/7262068/apache-lgpl-closed-and-ioen-source]
+ 

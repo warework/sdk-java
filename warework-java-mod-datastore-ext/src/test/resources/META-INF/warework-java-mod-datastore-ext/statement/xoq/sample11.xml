@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/object-query.xsd">
+
+	<object>com.warework.service.datastore.query.oo.SampleBean</object>
+
+	<order-by>
+		<asc attribute="name"/>
+		<desc attribute="birthDate"/>
+		<asc attribute="phone"/>
+	</order-by>
+
+</query>

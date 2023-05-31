@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy-service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/proxy-service.xsd">
+
+	<parameters>
+		<parameter name="name" value="john"/>
+		<parameter name="color" value="red"/>					
+	</parameters>	
+	
+	<clients>		
+		<client name="console-logger" connector="com.warework.service.log.client.connector.ConsoleConnector"/>		
+	</clients>
+	
+</proxy-service>

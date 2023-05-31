@@ -1,0 +1,55 @@
+XML Object Query 
+
+<query name="">
+
+	<object>com.chafi.ContactType</object>
+	
+	<where>
+		<and>
+			<expression>
+				<attribute>id</attribute>
+				<operator>EQUAL_TO</operator>
+				<value-operand>
+					<type>java.lang.Integer</type>
+					<value>500</value>
+					<format></format>
+					<locale></locale>
+					<time-zone></time-zone>
+				</value-operand>
+			</expression>
+			<or>
+				<expression>
+					<attribute>id</attribute>
+					<operator>EQUAL_TO</operator>
+					<provider-operand>
+						<provider-name>user-ddbb</provider-name>
+						<provider-object>user.name</provider-object>						
+					</provider-operand>
+				</expression>
+				<expression>
+					<attribute>name</attribute>
+					<operator>LIKE</operator>
+					<variable-operand name="USER_NAME"/>
+				</expression>
+				<not>
+					<expression>
+						<attribute>id</attribute>
+						<operator>IS_NULL</operator>
+					</expression>					
+				</not>				
+			</or>
+		</and>
+	</where>
+	
+	<order-by>
+		<asc field="id"/>
+		<desc field="name"/>
+	</order-by>
+
+	<page number="" size="" />
+	
+	<parameters>
+		<parameter name="" value=""/>
+	</parameters>	
+
+</query>

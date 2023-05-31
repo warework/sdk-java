@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+	Warework Data Store Service XML schema.
+	
+	@author Jose Schiaffino
+	@version 3.0.0  
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="datastore-service" type="DataStoreService"/>
+
+	<xsd:complexType name="DataStoreService">	
+		<xsd:sequence>			
+			<xsd:element name="parameters" type="Parameters" minOccurs="0" maxOccurs="1"  />						
+			<xsd:element name="datastores" type="DataStores" minOccurs="0" maxOccurs="1" />									
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Parameters">	
+		<xsd:sequence>
+			<xsd:element name="parameter" type="Parameter" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+	
+	<xsd:complexType name="Parameter">	
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="value" type="xsd:string" use="required"/>			
+	</xsd:complexType>		
+
+	<xsd:complexType name="DataStores">	
+		<xsd:sequence>
+			<xsd:element name="datastore" type="DataStore" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+
+	<xsd:complexType name="DataStore">	
+		<xsd:sequence>			
+			<xsd:element name="parameters" type="Parameters" minOccurs="0" maxOccurs="1"  />						
+			<xsd:element name="views" type="Views" minOccurs="0" maxOccurs="1" />									
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required"/>					
+		<xsd:attribute name="connector" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="Views">	
+		<xsd:sequence>
+			<xsd:element name="view" type="View" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+	
+	<xsd:complexType name="View">
+		<xsd:sequence>
+			<xsd:element name="parameter" type="Parameter" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>		
+		<xsd:attribute name="name" type="xsd:string" use="required"/>	
+		<xsd:attribute name="class" type="xsd:string" use="required"/>
+		<xsd:attribute name="provider" type="xsd:string" use="optional"/>				
+	</xsd:complexType>	
+	
+</xsd:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/object-query.xsd">
+
+	<object>com.warework.service.datastore.query.oo.SampleBean</object>
+
+	<where>
+		<not>
+			<and>
+				<expression>
+					<attribute>name</attribute>
+					<operator>NOT_LIKE</operator>
+					<value-operand>
+						<type>String</type>
+						<value>James</value>
+					</value-operand>
+				</expression>
+				<or>
+					<expression>
+						<attribute>name</attribute>
+						<operator>NOT_LIKE</operator>
+						<value-operand>
+							<type>java.lang.String</type>
+							<value>Arnold</value>
+						</value-operand>
+					</expression>
+					<expression>
+						<attribute>name</attribute>
+						<operator>IS_NOT_NULL</operator>
+					</expression>
+				</or>
+			</and>
+		</not>
+	</where>
+
+</query>

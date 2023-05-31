@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/object-query.xsd">
+
+	<object>com.warework.service.datastore.query.oo.SampleBean</object>
+
+	<where>
+		<and>
+			<expression>
+				<attribute>name</attribute>
+				<operator>EQUAL_TO</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>NOT_EQUAL_TO</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>GREATER_THAN</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>GREATER_THAN_OR_EQUAL_TO</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>LESS_THAN</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>LESS_THAN_OR_EQUAL_TO</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>LIKE</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>NOT_LIKE</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>IS_NULL</operator>
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>IS_NOT_NULL</operator>
+			</expression>
+		</and>
+	</where>
+
+</query>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+	Warework Object Query XML schema.
+	
+	@author Jose Schiaffino
+	@version 3.0.0  
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="query" type="Query" nillable="false"/>
+
+	<xsd:complexType name="Query">	
+		<xsd:sequence>			
+			<xsd:element name="object" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false"/>						
+			<xsd:element name="where" type="Where" minOccurs="0" maxOccurs="1" nillable="false" />
+			<xsd:element name="order-by" type="OrderBy" minOccurs="0" maxOccurs="1" nillable="false" />
+			<xsd:element name="page" type="Page" minOccurs="0" maxOccurs="1" nillable="false" />
+			<xsd:element name="parameters" type="Parameters" minOccurs="0" maxOccurs="1" nillable="false" />										
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="optional" />
+	</xsd:complexType>
+
+	<xsd:complexType name="Where">		
+		<xsd:choice>			
+			<xsd:element name="expression" type="Expression" minOccurs="1" maxOccurs="1" nillable="false"/>			
+			<xsd:element name="and" type="And" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="or" type="Or" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="not" type="Not" minOccurs="1" maxOccurs="1" nillable="false"/>												
+		</xsd:choice>		
+	</xsd:complexType>	
+	
+	<xsd:complexType name="And">	
+		<xsd:sequence>			
+			<xsd:element name="expression" type="Expression" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+			<xsd:element name="and" type="And" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+			<xsd:element name="or" type="Or" minOccurs="0" maxOccurs="unbounded" nillable="false"/>	
+			<xsd:element name="not" type="Not" minOccurs="0" maxOccurs="unbounded" nillable="false"/>													
+		</xsd:sequence>	
+	</xsd:complexType>		
+	
+	<xsd:complexType name="Or">	
+		<xsd:sequence>			
+			<xsd:element name="expression" type="Expression" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+			<xsd:element name="and" type="And" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+			<xsd:element name="or" type="Or" minOccurs="0" maxOccurs="unbounded" nillable="false"/>	
+			<xsd:element name="not" type="Not" minOccurs="0" maxOccurs="unbounded" nillable="false"/>													
+		</xsd:sequence>	
+	</xsd:complexType>
+	
+	<xsd:complexType name="Not">		
+		<xsd:choice>			
+			<xsd:element name="expression" type="Expression" minOccurs="1" maxOccurs="1" nillable="false"/>			
+			<xsd:element name="and" type="And" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="or" type="Or" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="not" type="Not" minOccurs="1" maxOccurs="1" nillable="false"/>												
+		</xsd:choice>		
+	</xsd:complexType>
+	
+	<xsd:complexType name="Expression">	
+		<xsd:sequence>			
+			<xsd:element name="attribute" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="operator" type="Operator" minOccurs="1" maxOccurs="1" nillable="false"/>		
+			<xsd:choice minOccurs="0" maxOccurs="1">			
+				<xsd:element name="value-operand" type="ParseStringOperandExpression" minOccurs="1" maxOccurs="1" nillable="false"/>
+				<xsd:element name="provider-operand" type="ProviderOperandExpression" minOccurs="1" maxOccurs="1" nillable="false"/>
+				<xsd:element name="variable-operand" type="VariableOperandExpression" minOccurs="1" maxOccurs="1" nillable="false"/>											
+			</xsd:choice>				
+		</xsd:sequence>			
+	</xsd:complexType>		
+	
+  		<xsd:simpleType name="Operator">
+    		<xsd:restriction base="xsd:string">
+      			<xsd:enumeration value="EQUAL_TO"/>
+      			<xsd:enumeration value="EQ"/>      			
+      			<xsd:enumeration value="NOT_EQUAL_TO"/>
+      			<xsd:enumeration value="NE"/>      			
+      			<xsd:enumeration value="LESS_THAN"/>
+      			<xsd:enumeration value="LT"/>      			
+      			<xsd:enumeration value="LESS_THAN_OR_EQUAL_TO"/>
+      			<xsd:enumeration value="LE"/>      			
+      			<xsd:enumeration value="GREATER_THAN"/>
+      			<xsd:enumeration value="GT"/>      			
+      			<xsd:enumeration value="GREATER_THAN_OR_EQUAL_TO"/>
+      			<xsd:enumeration value="GE"/>      			
+      			<xsd:enumeration value="IS_NULL"/>
+      			<xsd:enumeration value="IN"/>      			
+      			<xsd:enumeration value="IS_NOT_NULL"/>
+      			<xsd:enumeration value="NN"/>      			
+      			<xsd:enumeration value="LIKE"/>
+      			<xsd:enumeration value="LK"/>     			      			
+      			<xsd:enumeration value="NOT_LIKE"/>
+      			<xsd:enumeration value="NL"/>      			
+    		</xsd:restriction>
+  		</xsd:simpleType>	
+	
+		<xsd:complexType name="ParseStringOperandExpression">	
+			<xsd:sequence>
+				<xsd:element name="type" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false"/>
+				<xsd:element name="value" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false"/>
+				<xsd:element name="format" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="false"/>
+				<xsd:element name="locale" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="false"/>
+				<xsd:element name="time-zone" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="false"/>
+			</xsd:sequence>	
+		</xsd:complexType>	
+	
+		<xsd:complexType name="ProviderOperandExpression">	
+			<xsd:sequence>
+				<xsd:element name="provider-name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false"/>
+				<xsd:element name="provider-object" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false"/>
+			</xsd:sequence>	
+		</xsd:complexType>	
+		
+		<xsd:complexType name="VariableOperandExpression">	
+			<xsd:attribute name="name" type="xsd:string" use="required" />
+		</xsd:complexType>	
+
+	<xsd:complexType name="OrderBy">
+		<xsd:sequence>
+			<xsd:choice minOccurs="1" maxOccurs="unbounded">
+				<xsd:element name="asc" type="Asc" minOccurs="0" maxOccurs="unbounded" />
+				<xsd:element name="desc" type="Desc" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:choice>
+		</xsd:sequence>	
+	</xsd:complexType>
+	
+		<xsd:complexType name="Asc">	
+			<xsd:attribute name="attribute" type="xsd:string" use="required" />
+		</xsd:complexType>	
+		
+		<xsd:complexType name="Desc">	
+			<xsd:attribute name="attribute" type="xsd:string" use="required" />
+		</xsd:complexType>
+	
+	<xsd:complexType name="Page">
+		<xsd:attribute name="number" type="xsd:integer" use="required"/>
+		<xsd:attribute name="size" type="xsd:integer" use="required"/>				
+	</xsd:complexType>
+	
+	<xsd:complexType name="Parameters">	
+		<xsd:sequence>
+			<xsd:element name="parameter" type="Parameter" maxOccurs="unbounded" minOccurs="0" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+	
+	<xsd:complexType name="Parameter">	
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="value" type="xsd:string" use="required"/>			
+	</xsd:complexType>
+	
+</xsd:schema>

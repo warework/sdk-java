@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/object-query.xsd">
+
+	<object>com.warework.service.datastore.query.oo.SampleBean</object>
+
+	<where>
+		<and>
+			<expression>
+				<attribute>name</attribute>
+				<operator>EQ</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>NE</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>GT</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>GE</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>LT</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>LE</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>LK</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>NL</operator>
+				<variable-operand name="user.name" />
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>IN</operator>
+			</expression>
+			<expression>
+				<attribute>name</attribute>
+				<operator>NN</operator>
+			</expression>
+		</and>
+	</where>
+
+</query>

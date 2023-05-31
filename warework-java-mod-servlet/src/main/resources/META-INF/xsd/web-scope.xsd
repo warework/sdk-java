@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+	Warework Web Scope XML schema.
+	
+	@author Jose Schiaffino
+	@version 3.0.0  
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="scope" type="Scope"/>
+
+	<xsd:complexType name="Scope">	
+		<xsd:sequence>
+			<xsd:element name="providers" type="Providers" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="objects" type="Objects" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="services" type="Services" minOccurs="0" maxOccurs="1" />							
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Parameters">	
+		<xsd:sequence>
+			<xsd:element name="parameter" type="Parameter" maxOccurs="unbounded" minOccurs="0" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+	
+	<xsd:complexType name="Parameter">	
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="value" type="xsd:string" use="required"/>			
+	</xsd:complexType>		
+
+	<xsd:complexType name="Providers">	
+		<xsd:sequence>
+			<xsd:element name="provider" type="Provider" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+
+	<xsd:complexType name="Provider">	
+		<xsd:sequence>
+			<xsd:element name="parameter" type="Parameter" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+		<xsd:attribute name="name" type="xsd:string" use="required"/>					
+		<xsd:attribute name="class" type="xsd:string" use="required"/>
+		<xsd:attribute name="scope" type="xsd:string" use="optional" default="system"/>
+	</xsd:complexType>	
+
+	<xsd:complexType name="Objects">	
+		<xsd:sequence>
+			<xsd:element name="object" type="ObjectReference" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+	
+	<xsd:complexType name="ObjectReference">
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="provider" type="xsd:string" use="required"/>
+		<xsd:attribute name="object" type="xsd:string" use="required"/>	
+		<xsd:attribute name="scope" type="xsd:string" use="optional" default="system"/>		
+	</xsd:complexType>	
+	
+	<xsd:complexType name="Services">	
+		<xsd:sequence>
+			<xsd:element name="service" type="Service" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+
+	<xsd:complexType name="Service">	
+		<xsd:sequence>
+			<xsd:element name="parameter" type="Parameter" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+		<xsd:attribute name="name" type="xsd:string" use="required"/>					
+		<xsd:attribute name="class" type="xsd:string" use="required"/>
+		<xsd:attribute name="scope" type="xsd:string" use="optional" default="system"/>
+	</xsd:complexType>
+	
+</xsd:schema>
