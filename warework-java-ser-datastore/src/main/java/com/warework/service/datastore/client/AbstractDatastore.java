@@ -11,7 +11,7 @@ import com.warework.service.log.LogServiceConstants;
  * Client that defines common operations for Data Stores.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractDatastore extends AbstractClient implements
 		DatastoreFacade {

@@ -24,7 +24,7 @@ import jakarta.servlet.descriptor.JspConfigDescriptor;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractServletContextScope extends AbstractJakartaContext.AbstractServletContextScope {
 

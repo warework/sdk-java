@@ -30,7 +30,7 @@ import com.warework.service.log.client.Log4jLogger;
  * resource with it.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractLog4jConnector extends AbstractLoggerConnector {
 

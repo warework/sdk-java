@@ -97,7 +97,7 @@ import com.warework.service.mail.client.JavaMailSender;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class JavaMailSenderConnector extends AbstractJavaMailConnector {
 

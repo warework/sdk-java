@@ -14,7 +14,7 @@ import com.warework.service.datastore.client.connector.PropertiesConnector;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class PropertiesDatastoreTest extends AbstractSerDatastorePropertiesTestCase {
 

@@ -10,7 +10,7 @@ import com.warework.service.log.LogServiceConstants;
  * Data Store that performs operations with a Hashtable.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class HashtableDatastore extends AbstractDatastore {
 

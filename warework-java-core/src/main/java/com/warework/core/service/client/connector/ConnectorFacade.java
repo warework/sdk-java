@@ -9,7 +9,7 @@ import com.warework.core.service.client.ClientFacade;
  * This facade holds the information required to create connections for Clients.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface ConnectorFacade {
 

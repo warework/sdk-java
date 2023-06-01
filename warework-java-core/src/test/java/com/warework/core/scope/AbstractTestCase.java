@@ -20,7 +20,7 @@ import junit.framework.TestCase;
  * Common context utilities for test cases.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractTestCase extends TestCase {
 
@@ -48,7 +48,7 @@ public abstract class AbstractTestCase extends TestCase {
 	 * Default implementation for the context of the Scopes.<br>
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	protected static abstract class AbstractContext implements Context {
 

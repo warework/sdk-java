@@ -8,7 +8,7 @@ import com.warework.core.scope.ScopeFacade;
  * Provides a default implementation for a callback operation.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class DefaultCallbackImpl extends AbstractCallback {
 

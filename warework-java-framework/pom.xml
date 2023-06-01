@@ -9,7 +9,7 @@
   	<packaging>pom</packaging>
   
   	<name>Warework Framework</name>
-  	<description>Modular java framework to perform backend operations.</description>
+  	<description>Modular Java framework to perform backend operations.</description>
 	<url>https://warework.com</url>	
 	<inceptionYear>2010</inceptionYear>
   
@@ -35,11 +35,13 @@
 		<maven.compiler.target>1.5</maven.compiler.target>
     	<maven.compiler.source>1.5</maven.compiler.source>
 		<project.build.jdk.spec>1.5</project.build.jdk.spec>
-		<project.build.jdk.version>1.5.0</project.build.jdk.version>
+		<project.build.jdk.version>1.5</project.build.jdk.version>
 		<project.build.jdk.vendor>sun</project.build.jdk.vendor>		
-		<project.test.jdk.version>1.8.0</project.test.jdk.version>
-		<project.test.jdk.vendor>oracle</project.test.jdk.vendor>	
-		<path.warework.build.resources>target/generated-resources/warework-java-build-resources-${project.version}/src/main</path.warework.build.resources>
+		<project.test.jdk.version>1.8</project.test.jdk.version>
+		<project.test.jdk.vendor>oracle</project.test.jdk.vendor>
+		<project.generated.dependencies>${project.build.directory}/generated-dependencies</project.generated.dependencies>	
+		<project.generated.dependencies.buildResources>${project.generated.dependencies}/warework-java-build-resources-${project.version}/src/main</project.generated.dependencies.buildResources>
+		<project.generated.sources.java>${project.build.directory}/generated-sources/java</project.generated.sources.java>
 	</properties>	
 	
 	<dependencies>
@@ -60,60 +62,40 @@
         		<targetPath>META-INF</targetPath>
             	<directory>license</directory>
                 <filtering>false</filtering>
-            </resource>
+            </resource>           
         </resources>	
 	
 		<pluginManagement>
-			<plugins>			
+			<plugins>
 				<plugin>
-	        		<groupId>org.apache.maven.plugins</groupId>
-	        		<artifactId>maven-compiler-plugin</artifactId>
-	        		<version>3.10.1</version>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-toolchains-plugin</artifactId>
+					<version>3.1.0</version>
+					<configuration>
+						<toolchains>
+							<jdk>
+								<version>${project.build.jdk.version}</version>
+								<vendor>${project.build.jdk.vendor}</vendor>
+							</jdk>
+						</toolchains>
+					</configuration>
 					<executions>
-	          			<execution>
-	            			<id>compile</id>
-	            			<goals>
-	              				<goal>compile</goal>
-	            			</goals>
-	            			<configuration>
-	          					<jdkToolchain>
-	        						<version>${project.build.jdk.version}</version>
-	        						<vendor>${project.build.jdk.vendor}</vendor>
-	    						</jdkToolchain>
-	        				</configuration>
-	          			</execution> 
-	          			<execution>
-	            			<id>default-testCompile</id>
-	            			<goals>
-	              				<goal>testCompile</goal>
-	            			</goals>
-	            			<configuration>
-	          					<jdkToolchain>
-	        						<version>${project.test.jdk.version}</version>
-	        						<vendor>${project.test.jdk.vendor}</vendor>
-	    						</jdkToolchain>
-	        				</configuration>
-	          			</execution>         			
-	        		</executions>
-	      		</plugin>
-				<plugin>
-	        		<groupId>org.apache.maven.plugins</groupId>
-	        		<artifactId>maven-surefire-plugin</artifactId>
-	        		<version>3.0.0-M7</version>
-	        		<configuration>
-	          			<jdkToolchain>
-	        				<version>${project.test.jdk.version}</version>
-	        				<vendor>${project.test.jdk.vendor}</vendor>
-	    				</jdkToolchain>
-	        		</configuration>
-	      		</plugin>	
+						<execution>
+							<id>validate-toolchains</id>
+							<phase>validate</phase>							
+							<goals>
+								<goal>toolchain</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>					
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>3.3.0</version>
+					<version>3.4.0</version>
 					<executions>
 						<execution>
-							<id>regex-property</id>
+							<id>setup-regex-property</id>
 							<phase>initialize</phase>
 							<goals>
 								<goal>regex-property</goal>
@@ -127,29 +109,28 @@
 							</configuration>
 						</execution>
 						<execution>
-				            <id>maven-version</id>
+				            <id>setup-maven-version</id>
 				            <phase>initialize</phase>
 				        	<goals>
 								<goal>maven-version</goal>
 							</goals>
-						</execution>
+						</execution>			
 					</executions>
-				</plugin>		
+				</plugin>	
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.3.0</version>
+					<version>3.6.0</version>
 					<executions>
 						<execution>
-							<id>unpack-build-resources</id>
+							<id>setup-dependencies</id>
 							<phase>initialize</phase>
 							<goals>
 								<goal>unpack-dependencies</goal>
 							</goals>						
 							<configuration>
-								<outputDirectory>${project.build.directory}/generated-resources</outputDirectory>
-								<includeGroupIds>${project.groupId}</includeGroupIds>
-								<includeArtifacIds>warework-java-build-resources</includeArtifacIds>							
+								<outputDirectory>${project.generated.dependencies}</outputDirectory>
+								<includeGroupIds>${project.groupId}</includeGroupIds>							
 								<excludeTransitive>true</excludeTransitive>
 							</configuration>
 						</execution>
@@ -157,18 +138,18 @@
 				</plugin>
 				<plugin>
 					<groupId>com.google.code.maven-replacer-plugin</groupId>
-					<artifactId>maven-replacer-plugin</artifactId>
-					<version>1.4.1</version>
+					<artifactId>replacer</artifactId>
+					<version>1.5.3</version>
 					<executions>                
 		                <execution>
 		                	<id>generate-lib-version</id>
-		                    <phase>process-sources</phase>
+		                    <phase>generate-sources</phase>
 		                    <goals>
 		                        <goal>replace</goal>
 		                    </goals>
 							<configuration>
-				                <file>${path.warework.build.resources}/java-template/artifact_metadata.template</file>
-				                <outputFile>src/main/java/com/warework/lib/${template.lib-version.file-name}.java</outputFile>
+				                <file>${project.generated.dependencies.buildResources}/java-template/artifact_metadata.template</file>
+				                <outputFile>${project.generated.sources.java}/com/warework/lib/${template.lib-version.file-name}.java</outputFile>
 				                <replacements>
 				                    <replacement>
 				                        <token>@class.name@</token>
@@ -184,19 +165,90 @@
 		            </executions>
 				</plugin>
 				<plugin>
+	        		<groupId>org.apache.maven.plugins</groupId>
+	        		<artifactId>maven-resources-plugin</artifactId>
+	        		<version>3.3.1</version>
+ 					<executions>      
+          				<execution>
+            				<id>generate-sources</id>
+            				<phase>generate-sources</phase>
+            				<goals>
+              					<goal>resources</goal>
+            				</goals>
+            				<configuration>
+              					<outputDirectory>${project.generated.sources.java}</outputDirectory>
+              					<resources>          
+                					<resource>
+                  						<directory>src/main/java</directory>
+                  						<filtering>true</filtering>
+                					</resource>
+              					</resources>              
+            				</configuration>            
+          				</execution>  
+          				<execution>
+            				<id>default-resources</id>
+            				<phase>generate-resources</phase>
+            				<goals>
+              					<goal>resources</goal>
+            				</goals>
+            				<configuration>
+              					<outputDirectory>${project.generated.sources.java}/META-INF</outputDirectory>
+              					<resources>          
+                					<resource>
+                  						<directory>license</directory>
+                  						<filtering>false</filtering>
+                					</resource>
+              					</resources>              
+            				</configuration>            
+          				</execution>  
+          				<execution>
+            				<id>generate-classes-resources</id>
+            				<phase>generate-resources</phase>
+            				<goals>
+              					<goal>resources</goal>
+            				</goals>
+            				<configuration>
+              					<outputDirectory>${project.build.directory}/classes/META-INF</outputDirectory>
+              					<resources>          
+                					<resource>
+                  						<directory>license</directory>
+                  						<filtering>false</filtering>
+                					</resource>
+              					</resources>              
+            				</configuration>            
+          				</execution>  
+          				<execution>
+            				<id>generate-testClasses-resources</id>
+            				<phase>generate-test-resources</phase>
+            				<goals>
+              					<goal>testResources</goal>
+            				</goals>
+            				<configuration>
+              					<outputDirectory>${project.build.directory}/test-classes/META-INF</outputDirectory>
+              					<resources>          
+                					<resource>
+                  						<directory>license</directory>
+                  						<filtering>false</filtering>
+                					</resource>
+              					</resources>              
+            				</configuration>            
+          				</execution>				
+        			</executions>	        		
+	      		</plugin>				
+				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>license-maven-plugin</artifactId>
-					<version>2.0.0</version>
+					<version>2.0.1</version>
 					<configuration>
 						<verbose>false</verbose>
 						<addSvnKeyWords>false</addSvnKeyWords>
 						<organizationName>${project.organization.name}</organizationName>
 	        			<projectName>${project.name}</projectName>
-	        			<descriptionTemplate>${path.warework.build.resources}/license-template/license-description-template.ftl</descriptionTemplate>
+	        			<descriptionTemplate>${project.generated.dependencies.buildResources}/license-template/license-description-template.ftl</descriptionTemplate>	        			
 					</configuration>
 					<executions>
 						<execution>
-							<id>update-java-sources-header</id>
+							<id>update-sources-license</id>
 							<phase>process-sources</phase>
 							<goals>
 								<goal>update-file-header</goal>
@@ -204,8 +256,7 @@
 							<configuration>
 								<licenseName>apache_v2</licenseName>
 								<roots>
-									<root>src/main/java</root>
-									<root>src/main/resources</root>
+									<root>target/generated-sources/java</root>
 								</roots>
 								<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
 	        					<processStartTag>=========================LICENSE_START==================================</processStartTag>
@@ -214,31 +265,56 @@
 							</configuration>
 						</execution>
 					</executions>
-				</plugin>
+				</plugin>	      						
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-toolchains-plugin</artifactId>
-					<version>3.1.0</version>
-					<configuration>
-						<toolchains>
-							<jdk>
-								<version>${project.build.jdk.version}</version>
-								<vendor>${project.build.jdk.vendor}</vendor>
-							</jdk>
-						</toolchains>
-					</configuration>
+	        		<groupId>org.apache.maven.plugins</groupId>
+	        		<artifactId>maven-compiler-plugin</artifactId>
+	        		<version>3.11.0</version>
 					<executions>
-						<execution>
-							<goals>
-								<goal>toolchain</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>			
+	          			<execution>
+	            			<id>default-compile</id>
+	            			<goals>
+	              				<goal>compile</goal>
+	            			</goals>
+	            			<configuration>
+	          					<jdkToolchain>
+	        						<version>${project.build.jdk.version}</version>
+	        						<vendor>${project.build.jdk.vendor}</vendor>
+	    						</jdkToolchain>
+	    						<compileSourceRoots>${project.generated.sources.java}</compileSourceRoots>
+	        				</configuration>
+	          			</execution> 
+	          			<execution>
+	            			<id>default-testCompile</id>
+	            			<goals>
+	              				<goal>testCompile</goal>
+	            			</goals>
+	            			<configuration>
+								<source>${project.test.jdk.version}</source>
+                    			<target>${project.test.jdk.version}</target>								
+	          					<jdkToolchain>
+	        						<version>${project.test.jdk.version}</version>
+	        						<vendor>${project.test.jdk.vendor}</vendor>
+	    						</jdkToolchain>
+	        				</configuration>
+	          			</execution>         			
+	        		</executions>
+	      		</plugin>
+				<plugin>
+	        		<groupId>org.apache.maven.plugins</groupId>
+	        		<artifactId>maven-surefire-plugin</artifactId>
+	        		<version>3.1.0</version>
+	        		<configuration>
+	          			<jdkToolchain>
+	        				<version>${project.test.jdk.version}</version>
+	        				<vendor>${project.test.jdk.vendor}</vendor>
+	    				</jdkToolchain>
+	        		</configuration>
+	      		</plugin>		
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.2.2</version>
+					<version>3.3.0</version>
 					<configuration>
 						<archive>
 							<manifestEntries>
@@ -259,33 +335,53 @@
             				</goals>
           				</execution>
         			</executions>
-				</plugin>	
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-source-plugin</artifactId>
-					<version>3.2.1</version>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>3.6.0</version>
 					<executions>
 						<execution>
-							<id>attach-sources</id>
+							<id>bundle-sources</id>
+							<phase>package</phase>
 							<goals>
-								<goal>jar</goal>
+								<goal>single</goal>
 							</goals>
+							<configuration>
+								<finalName>${project.build.finalName}</finalName>
+								<appendAssemblyId>true</appendAssemblyId>
+								<descriptors>
+									<descriptor>${project.generated.dependencies.buildResources}/assembly/distribution-sources.xml</descriptor>
+								</descriptors>
+								<archive>
+        							<manifestEntries>
+										<Build-Jdk-Spec>${project.build.jdk.spec}</Build-Jdk-Spec>
+										<Built-By>${project.organization.name}</Built-By>
+										<Maven-Version>${maven.version}</Maven-Version>
+									</manifestEntries>
+									<manifest>
+										<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+										<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+									</manifest>
+      							</archive>
+							</configuration>
 						</execution>
 					</executions>
-				</plugin>			
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.4.0</version>
+					<version>3.5.0</version>
 					<executions>
 						<execution>
-							<id>attach-javadocs</id>
+							<id>bundle-javadocs</id>
 							<goals>
 								<goal>resource-bundle</goal>
 								<goal>jar</goal>
 							</goals>
 							<configuration>
-	              				<show>protected</show>              				
+	              				<show>protected</show>   
+	              				<sourcepath>${project.generated.sources.java}</sourcepath>           				
 	            			</configuration>
 						</execution>
 					</executions>

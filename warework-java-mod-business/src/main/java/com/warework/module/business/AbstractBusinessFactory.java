@@ -9,7 +9,7 @@ import com.warework.core.util.helper.ReflectionL2Helper;
  * Base functionality for the business factory.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractBusinessFactory {
 

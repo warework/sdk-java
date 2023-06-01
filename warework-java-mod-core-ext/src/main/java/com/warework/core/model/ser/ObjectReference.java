@@ -7,7 +7,7 @@ import java.io.Serializable;
  * that exists in a Provider.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class ObjectReference extends
 		com.warework.core.model.ObjectReference implements Serializable {

@@ -24,7 +24,7 @@ import jakarta.servlet.ServletContext;
  * help to migrate to another logger in the future if it's needed.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ServletLogger extends AbstractServletLogger {
 

@@ -8,7 +8,7 @@ import com.warework.core.scope.AbstractCoreTestCase;
  * Tests common strings operations.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class StringL1HelperTest extends AbstractCoreTestCase {
 

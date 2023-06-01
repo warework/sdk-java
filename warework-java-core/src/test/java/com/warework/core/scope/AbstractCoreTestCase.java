@@ -8,7 +8,7 @@ import com.warework.loader.ScopeClasspathJsonLoader;
  * Common context utilities for CORE test cases.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractCoreTestCase extends AbstractTestCase {
 

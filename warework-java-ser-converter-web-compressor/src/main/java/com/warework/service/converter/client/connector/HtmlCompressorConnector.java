@@ -296,7 +296,7 @@ import com.warework.service.log.LogServiceConstants;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class HtmlCompressorConnector extends AbstractConverterConnector {
 

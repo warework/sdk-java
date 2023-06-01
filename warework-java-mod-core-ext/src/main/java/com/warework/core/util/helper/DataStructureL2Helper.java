@@ -30,7 +30,7 @@ import com.warework.core.util.data.OrderBy;
  * <code>java.util.Map</code> operations.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class DataStructureL2Helper extends DataStructureL1Helper {
 

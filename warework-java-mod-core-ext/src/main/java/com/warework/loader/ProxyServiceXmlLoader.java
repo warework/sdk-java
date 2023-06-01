@@ -17,7 +17,7 @@ import com.warework.core.util.bean.ser.Parameter;
  * parses its content.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public final class ProxyServiceXmlLoader extends AbstractSaxLoader {
 

@@ -6,7 +6,7 @@ import com.warework.core.scope.ScopeFacade;
  * Base implementation for exceptions.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractL1Exception extends Exception {
 

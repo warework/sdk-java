@@ -21,7 +21,7 @@ import com.warework.service.datastore.query.oo.SampleBean;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ObjectQueryProviderTest extends AbstractModDatastoreExtTestCase {
 

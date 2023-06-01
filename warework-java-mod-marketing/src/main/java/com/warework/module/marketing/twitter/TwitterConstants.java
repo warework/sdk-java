@@ -5,7 +5,7 @@ import com.warework.core.util.helper.DateL2Helper;
 /**
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class TwitterConstants {
 

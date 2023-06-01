@@ -20,7 +20,7 @@ import com.warework.service.datastore.model.ser.View;
  * and parse its content.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class DatastoreXmlLoader extends AbstractSaxLoader {
 

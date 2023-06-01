@@ -112,7 +112,7 @@ import com.warework.service.log.client.LoggerFacade;
  * </code> <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class LogServiceImpl extends AbstractProxyService implements LogServiceFacade {
 

@@ -40,7 +40,7 @@ import jakarta.servlet.http.HttpSessionListener;
 /**
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractJakartaContext extends AbstractContext
 		implements ServletContextListener, HttpSessionListener, ServletRequestListener, Filter {
@@ -65,7 +65,7 @@ public abstract class AbstractJakartaContext extends AbstractContext
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractServletContextScope extends AbstractContext.AbstractServletContextScope
 			implements ServletContext {
@@ -243,7 +243,7 @@ public abstract class AbstractJakartaContext extends AbstractContext
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractHttpSessionScope extends AbstractContext.AbstractHttpSessionScope
 			implements HttpSession {
@@ -386,7 +386,7 @@ public abstract class AbstractJakartaContext extends AbstractContext
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractServletRequestScope extends AbstractContext.AbstractServletRequestScope
 			implements ServletRequest {
@@ -550,7 +550,7 @@ public abstract class AbstractJakartaContext extends AbstractContext
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractHttpServletRequestScope
 			extends AbstractJakartaContext.AbstractServletRequestScope implements HttpServletRequest {

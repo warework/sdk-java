@@ -14,7 +14,7 @@ import com.warework.core.util.bean.ser.Parameter;
  * Loads a JSON file with the configutation of a Scope and parses its content.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ScopeJsonLoader extends ScopeClasspathJsonLoader {
 

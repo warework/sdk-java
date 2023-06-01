@@ -13,7 +13,7 @@ import com.warework.service.datastore.query.oo.Query;
  * View for Object Data Stores.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface ObjectDatastoreView extends DatastoreView {
 

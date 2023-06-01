@@ -12,7 +12,7 @@ import com.warework.service.mail.client.connector.JavaMailSenderConnector;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSerMailJavaMailTestCase extends AbstractTestCase {
 

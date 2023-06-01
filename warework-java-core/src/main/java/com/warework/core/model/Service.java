@@ -12,7 +12,7 @@ import com.warework.core.util.helper.DataStructureL1Helper;
  * Bean that holds the information required to create a Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public class Service {
 

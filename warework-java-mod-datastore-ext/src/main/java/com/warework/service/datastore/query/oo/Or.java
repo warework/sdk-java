@@ -11,7 +11,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * <code>(expr1 OR expr2 OR exp3 ...)</code>.
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class Or extends AbstractComposedExpression {
 

@@ -11,7 +11,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * Provides a default implementation for an exception.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractL2Exception extends AbstractL1Exception {
 

@@ -6,7 +6,7 @@ import com.warework.core.service.client.ClientFacade;
  * Client that perform log operations.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface LoggerFacade extends ClientFacade {
 

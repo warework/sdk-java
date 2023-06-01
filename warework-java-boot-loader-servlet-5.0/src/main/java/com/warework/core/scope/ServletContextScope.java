@@ -8,7 +8,7 @@ import jakarta.servlet.ServletContext;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ServletContextScope extends AbstractServletContextScope implements ServletContext {
 

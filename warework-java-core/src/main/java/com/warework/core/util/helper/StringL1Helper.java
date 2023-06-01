@@ -22,7 +22,7 @@ import com.warework.core.util.io.LengthInputStream;
  * Performs common strings operations.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class StringL1Helper {
 
@@ -152,7 +152,7 @@ public abstract class StringL1Helper {
 	 * JavaScript compressor.
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	private static class JavaScriptCompressor {
 

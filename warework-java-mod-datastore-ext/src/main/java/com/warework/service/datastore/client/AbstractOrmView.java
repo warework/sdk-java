@@ -14,7 +14,7 @@ import com.warework.service.log.LogServiceConstants;
  * View that defines common operations for ORM Data Stores.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public abstract class AbstractOrmView extends AbstractObjectDatastoreView
 		implements OrmView {

@@ -83,7 +83,7 @@ import com.warework.core.service.ProxyServiceFacade;
  * connections, it will provide a reusable database connection.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface PoolServiceFacade extends ProxyServiceFacade {
 

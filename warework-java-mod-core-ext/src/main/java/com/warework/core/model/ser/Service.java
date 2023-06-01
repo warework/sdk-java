@@ -13,7 +13,7 @@ import com.warework.core.util.helper.DataStructureL1Helper;
  * Bean that holds the information required to create a Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class Service extends com.warework.core.model.Service implements
 		Serializable {

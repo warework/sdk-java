@@ -15,7 +15,7 @@ import com.warework.service.log.LogServiceConstants;
  * Provides a default implementation for a Client.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractClient implements ClientFacade {
 

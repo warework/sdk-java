@@ -20,7 +20,7 @@ import com.warework.service.log.LogServiceConstants;
  * Loads an XML file and parses its content.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSaxLoader extends DefaultHandler implements LoaderFacade {
 

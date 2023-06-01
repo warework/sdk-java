@@ -5,7 +5,7 @@ package com.warework.core.model;
  * that exists in a Provider.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public class ObjectReference {
 

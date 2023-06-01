@@ -7,7 +7,7 @@ import java.util.List;
  * Bean that holds the information required to create a Provider.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class Provider extends com.warework.core.model.Provider implements
 		Serializable {

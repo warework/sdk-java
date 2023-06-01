@@ -12,7 +12,7 @@ import com.warework.service.file.FileServiceConstants;
  * Default file reference implementation.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractFileRef implements FileRef {
 

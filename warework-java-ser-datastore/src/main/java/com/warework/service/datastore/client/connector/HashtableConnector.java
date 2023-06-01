@@ -33,7 +33,7 @@ import com.warework.service.datastore.client.HashtableDatastore;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class HashtableConnector extends AbstractDatastoreConnector {
 

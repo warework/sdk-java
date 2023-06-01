@@ -4,7 +4,7 @@ package com.warework.core.util;
  * Common constant values.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class CommonValueL2Constants extends CommonValueL1Constants {
 

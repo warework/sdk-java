@@ -18,7 +18,7 @@ import com.warework.core.model.Scope;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class HttpServletRequestScope extends AbstractHttpServletRequestScope {
 

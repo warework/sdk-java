@@ -89,7 +89,7 @@ import com.warework.service.pool.client.PoolerFacade;
  * connections, it will provide a reusable database connection.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class PoolServiceImpl extends AbstractProxyService implements PoolServiceFacade {
 

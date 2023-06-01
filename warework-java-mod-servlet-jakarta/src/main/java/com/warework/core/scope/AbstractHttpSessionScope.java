@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpSessionContext;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 @SuppressWarnings("deprecation")
 public abstract class AbstractHttpSessionScope extends AbstractJakartaContext.AbstractHttpSessionScope {

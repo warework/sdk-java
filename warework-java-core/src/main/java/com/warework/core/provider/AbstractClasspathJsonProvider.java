@@ -19,7 +19,7 @@ import com.warework.service.log.LogServiceConstants;
  * that represents the JSON file.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractClasspathJsonProvider extends AbstractProvider {
 

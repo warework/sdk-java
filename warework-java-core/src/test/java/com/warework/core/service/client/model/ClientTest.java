@@ -11,7 +11,7 @@ import com.warework.core.util.bean.Parameter;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ClientTest extends AbstractCoreTestCase {
 

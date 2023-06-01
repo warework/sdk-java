@@ -8,7 +8,7 @@ import com.warework.core.util.helper.StringL1Helper;
  * Constants for the Converter Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ConverterServiceConstants extends ProxyServiceConstants {
 

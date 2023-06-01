@@ -15,7 +15,7 @@ import com.warework.service.log.LogServiceConstants;
  * provides. <br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 final class DefaultView extends AbstractViewsLogic {
 

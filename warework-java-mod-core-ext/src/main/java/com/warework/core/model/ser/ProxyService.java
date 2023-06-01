@@ -15,7 +15,7 @@ import com.warework.core.util.helper.DataStructureL2Helper;
  * Bean that holds the information required to create a Proxy Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class ProxyService extends com.warework.core.model.ProxyService
 		implements Serializable {

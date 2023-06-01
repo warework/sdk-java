@@ -8,7 +8,7 @@ import com.warework.core.scope.ScopeFacade;
  * the Service will be.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface ServiceFacade {
 

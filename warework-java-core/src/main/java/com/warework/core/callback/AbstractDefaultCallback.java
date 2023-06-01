@@ -9,7 +9,7 @@ import com.warework.core.scope.ScopeFacade;
  * used internally by the Framework. Users rarely use it in their apps.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractDefaultCallback extends AbstractBaseCallback {
 

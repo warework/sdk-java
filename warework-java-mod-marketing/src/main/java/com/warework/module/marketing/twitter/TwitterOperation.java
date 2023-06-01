@@ -3,7 +3,7 @@ package com.warework.module.marketing.twitter;
 /**
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public enum TwitterOperation {
 

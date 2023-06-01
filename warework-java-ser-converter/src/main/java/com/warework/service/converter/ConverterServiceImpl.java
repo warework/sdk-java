@@ -118,7 +118,7 @@ import com.warework.service.log.LogServiceConstants;
  * </code>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ConverterServiceImpl extends AbstractProxyService implements ConverterServiceFacade {
 

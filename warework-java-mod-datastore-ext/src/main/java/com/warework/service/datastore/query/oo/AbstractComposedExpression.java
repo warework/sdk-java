@@ -8,7 +8,7 @@ import java.util.Collection;
  * <code>(expr1 AND expr2 OR exp3 ...)</code>.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractComposedExpression extends AbstractExpression {
 

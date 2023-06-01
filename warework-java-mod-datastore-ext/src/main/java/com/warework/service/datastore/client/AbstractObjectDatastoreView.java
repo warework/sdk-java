@@ -34,7 +34,7 @@ import com.warework.service.log.LogServiceConstants;
  * View that defines common operations for Object Data Stores.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractObjectDatastoreView extends AbstractDatastoreView implements ObjectDatastoreView {
 

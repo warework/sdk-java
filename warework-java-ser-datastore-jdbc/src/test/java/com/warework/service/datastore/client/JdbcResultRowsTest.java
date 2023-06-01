@@ -18,7 +18,7 @@ import com.warework.service.datastore.view.RdbmsView;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class JdbcResultRowsTest extends AbstractSerDatastoreJdbcTestCase {
 

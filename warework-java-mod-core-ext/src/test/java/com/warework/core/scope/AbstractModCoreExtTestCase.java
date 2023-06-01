@@ -14,7 +14,7 @@ import com.warework.loader.ScopeXmlLoader;
  * Common context utilities for CORE extension test cases.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractModCoreExtTestCase extends AbstractTestCase {
 

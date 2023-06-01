@@ -7,7 +7,7 @@ import com.warework.core.service.client.ClientFacade;
  * Client that transforms a given object into another object.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface ConverterFacade extends ClientFacade {
 

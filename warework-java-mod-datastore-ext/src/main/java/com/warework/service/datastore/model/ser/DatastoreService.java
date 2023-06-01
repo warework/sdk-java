@@ -18,7 +18,7 @@ import com.warework.service.datastore.view.DatastoreView;
  * Bean that holds the information for a Data Store Service.
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class DatastoreService extends
 		com.warework.service.datastore.model.DatastoreService implements

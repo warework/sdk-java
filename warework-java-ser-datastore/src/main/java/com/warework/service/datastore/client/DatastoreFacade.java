@@ -9,7 +9,7 @@ import com.warework.core.service.client.ClientFacade;
  * Client to perform Data Store operations.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface DatastoreFacade extends ClientFacade {
 

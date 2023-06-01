@@ -8,7 +8,7 @@ import com.warework.core.util.helper.StringL1Helper;
  * Constants for the Data Store Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public abstract class DatastoreServiceConstants extends ProxyServiceConstants {
 

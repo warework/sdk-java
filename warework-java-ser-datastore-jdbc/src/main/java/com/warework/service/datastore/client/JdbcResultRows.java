@@ -22,7 +22,7 @@ import com.warework.service.log.LogServiceConstants;
  * instead of this implementation class.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class JdbcResultRows extends AbstractResultRows {
 

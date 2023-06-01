@@ -15,7 +15,7 @@ import com.warework.core.util.helper.StringL1Helper;
  * Bean that holds a name-value pair to represent a parameter.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class Parameter {
 

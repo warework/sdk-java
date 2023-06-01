@@ -18,7 +18,7 @@ import com.warework.service.converter.client.connector.XmlCompressorConnector;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSerConverterWebCompressorTestCase extends AbstractTestCase {
 

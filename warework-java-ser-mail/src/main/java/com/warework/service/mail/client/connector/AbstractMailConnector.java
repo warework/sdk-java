@@ -8,7 +8,7 @@ import com.warework.service.mail.MailServiceImpl;
  * connections with mail servers.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractMailConnector extends AbstractConnector {
 

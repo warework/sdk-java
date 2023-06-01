@@ -17,7 +17,7 @@ import com.warework.service.log.LogServiceConstants;
  * Loads a JSON file and parses its content.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractJsonLoader extends AbstractLoader {
 

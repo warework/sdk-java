@@ -48,7 +48,7 @@ import com.warework.core.util.CommonValueL2Constants;
  * Performs common strings operations.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class StringL2Helper extends StringL1Helper {
 

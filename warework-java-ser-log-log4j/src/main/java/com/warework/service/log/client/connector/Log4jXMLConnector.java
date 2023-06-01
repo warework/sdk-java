@@ -44,7 +44,7 @@ import org.apache.log4j.xml.DOMConfigurator;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class Log4jXMLConnector extends AbstractLog4jConnector {
 

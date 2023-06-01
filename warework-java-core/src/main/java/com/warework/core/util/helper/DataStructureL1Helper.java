@@ -17,7 +17,7 @@ import java.util.Vector;
  * Performs common List, Map, Enumeration and Iterator operations.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class DataStructureL1Helper {
 

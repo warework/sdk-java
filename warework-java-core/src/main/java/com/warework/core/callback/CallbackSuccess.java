@@ -4,7 +4,7 @@ package com.warework.core.callback;
  * Holds the information required for a successfully executed operation.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class CallbackSuccess {
 

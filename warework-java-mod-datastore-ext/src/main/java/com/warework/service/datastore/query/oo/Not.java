@@ -7,7 +7,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * Represents a NOT expression.
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class Not extends AbstractExpression {
 

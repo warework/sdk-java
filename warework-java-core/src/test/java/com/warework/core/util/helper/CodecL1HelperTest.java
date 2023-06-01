@@ -6,7 +6,7 @@ import com.warework.core.scope.AbstractCoreTestCase;
  * Tests common collections operations.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class CodecL1HelperTest extends AbstractCoreTestCase {
 

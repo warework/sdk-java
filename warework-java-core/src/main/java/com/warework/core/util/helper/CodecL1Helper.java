@@ -7,7 +7,7 @@ import java.io.IOException;
  * 
  * @author Robert Harder (rob@iharder.net) for Base64 implementation.
  * @author Jose Schiaffino
- * @version 3.0.0 (Base64 version 2.3.7)
+ * @version ${project.version} (Base64 version 2.3.7)
  */
 public abstract class CodecL1Helper {
 

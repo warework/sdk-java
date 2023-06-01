@@ -93,7 +93,7 @@ import com.warework.service.log.LogServiceConstants;
  * <br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class HashtableViewImpl extends AbstractDatastoreView implements
 		KeyValueView {

@@ -27,7 +27,7 @@ import com.warework.service.log.LogServiceConstants;
  * Helper to load resources from a given directory.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class DirectoryResources extends AbstractResourceManager {
 

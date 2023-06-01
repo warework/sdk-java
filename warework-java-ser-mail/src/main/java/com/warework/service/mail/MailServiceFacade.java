@@ -165,7 +165,7 @@ import com.warework.core.service.ServiceException;
  * </code> <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface MailServiceFacade extends ProxyServiceFacade {
 

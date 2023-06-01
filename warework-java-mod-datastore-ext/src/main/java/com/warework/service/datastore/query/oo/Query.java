@@ -16,7 +16,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * Defines how to perform a query in an Object-Oriented Data Store.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class Query<E> implements Serializable {
 

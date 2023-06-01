@@ -171,7 +171,7 @@ import com.warework.service.mail.client.MailClientFacade;
  * </code> <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class MailServiceImpl extends AbstractProxyService implements MailServiceFacade {
 

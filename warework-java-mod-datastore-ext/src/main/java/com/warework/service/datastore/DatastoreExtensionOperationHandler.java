@@ -12,7 +12,7 @@ import com.warework.service.log.LogServiceConstants;
  * Handles Data Store Extension Services operations.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class DatastoreExtensionOperationHandler extends DatastoreOperationHandler {
 

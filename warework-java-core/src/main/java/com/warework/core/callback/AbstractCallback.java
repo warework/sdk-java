@@ -9,7 +9,7 @@ import com.warework.core.scope.ScopeFacade;
  * that users should extend to implement their callbacks.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractCallback extends AbstractBaseCallback {
 

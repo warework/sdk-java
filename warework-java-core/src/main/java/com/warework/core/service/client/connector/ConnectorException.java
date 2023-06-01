@@ -8,7 +8,7 @@ import com.warework.core.scope.ScopeFacade;
  * creation of a connection for a client.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ConnectorException extends AbstractL1Exception {
 

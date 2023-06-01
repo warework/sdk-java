@@ -25,7 +25,7 @@ import com.warework.service.log.LogServiceConstants;
  * File Client that performs operations with the local file system.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class LocalFileSystemClient extends AbstractFileClient {
 

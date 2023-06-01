@@ -25,7 +25,7 @@ import com.warework.service.log.LogServiceFacade;
  * <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class FtpConnector extends AbstractFileClientConnector {
 
@@ -198,7 +198,7 @@ public final class FtpConnector extends AbstractFileClientConnector {
 	 * <br>
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public final class LogClientCommandListener implements ProtocolCommandListener {
 

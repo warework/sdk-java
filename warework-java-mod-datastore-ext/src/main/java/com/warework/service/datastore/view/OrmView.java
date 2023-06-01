@@ -1209,7 +1209,7 @@ package com.warework.service.datastore.view;
  * <br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface OrmView extends RdbmsView, ObjectDatastoreView {
 

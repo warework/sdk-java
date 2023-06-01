@@ -6,7 +6,7 @@ import java.io.InputStream;
  * Wrapper for <code>java.io.InputStream</code> with content length.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class LengthInputStream extends AbstractInputStreamWrapper {
 

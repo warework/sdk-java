@@ -25,7 +25,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class ParseStringOperandExpression extends AbstractOperandExpression {
 

@@ -8,7 +8,7 @@ import com.warework.core.util.helper.ResourceL1Helper;
  * Manager to load resources.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractResourceManager {
 

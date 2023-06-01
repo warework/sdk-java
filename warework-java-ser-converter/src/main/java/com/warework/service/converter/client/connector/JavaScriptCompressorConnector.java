@@ -19,7 +19,7 @@ import com.warework.service.converter.client.JavaScriptCompressor;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class JavaScriptCompressorConnector extends
 		AbstractConverterConnector {

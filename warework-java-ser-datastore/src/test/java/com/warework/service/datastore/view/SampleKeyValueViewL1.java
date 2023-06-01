@@ -10,7 +10,7 @@ import com.warework.service.datastore.AbstractDatastoreView;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class SampleKeyValueViewL1 extends AbstractDatastoreView implements KeyValueView {
 

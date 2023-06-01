@@ -12,7 +12,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class Client extends com.warework.core.model.Client implements
 		Serializable {

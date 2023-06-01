@@ -10,7 +10,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * Bean that holds the information of a Data Store.
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class Datastore extends com.warework.service.datastore.model.Datastore
 		implements Serializable {

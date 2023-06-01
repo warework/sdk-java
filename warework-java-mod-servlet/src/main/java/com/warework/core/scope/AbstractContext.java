@@ -9,7 +9,7 @@ import com.warework.service.log.LogServiceConstants;
 /**
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractContext {
 
@@ -52,7 +52,7 @@ public abstract class AbstractContext {
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractServletContextScope extends AbstractSynchronizedScope {
 
@@ -125,7 +125,7 @@ public abstract class AbstractContext {
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractHttpSessionScope extends AbstractSynchronizedScope {
 
@@ -198,7 +198,7 @@ public abstract class AbstractContext {
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractServletRequestScope extends AbstractScope {
 

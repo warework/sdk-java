@@ -27,7 +27,7 @@ import com.warework.service.log.LogServiceConstants;
  * File Client that performs operations with SFTP servers.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class SftpClient extends AbstractFileClient {
 

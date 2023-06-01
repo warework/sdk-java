@@ -8,7 +8,7 @@ import com.warework.core.scope.ScopeFacade;
  * and when loading objects.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class LoaderException extends AbstractL1Exception {
 

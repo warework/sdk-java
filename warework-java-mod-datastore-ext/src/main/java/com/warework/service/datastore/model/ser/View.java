@@ -9,7 +9,7 @@ import com.warework.service.datastore.model.Datastore;
  * Bean that holds the information for a View of a Data Store.
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class View extends com.warework.service.datastore.model.View implements
 		Serializable {

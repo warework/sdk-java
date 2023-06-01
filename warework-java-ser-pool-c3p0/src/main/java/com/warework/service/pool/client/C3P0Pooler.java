@@ -29,7 +29,7 @@ import com.warework.service.log.LogServiceConstants;
  * will find specific parameters for c3p0 to make it work as you require.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class C3P0Pooler extends AbstractClient implements PoolerFacade {
 

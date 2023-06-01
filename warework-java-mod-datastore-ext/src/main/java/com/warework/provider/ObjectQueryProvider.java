@@ -75,7 +75,7 @@ import com.warework.loader.ObjectQueryXmlLoader;
  * <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ObjectQueryProvider extends AbstractSaxProvider {
 

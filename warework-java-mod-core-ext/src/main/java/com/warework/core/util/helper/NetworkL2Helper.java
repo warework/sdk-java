@@ -26,7 +26,7 @@ import com.warework.core.util.json.JsonObject;
  * Performs common network operations.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class NetworkL2Helper {
 

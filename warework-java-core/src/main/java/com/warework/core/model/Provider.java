@@ -8,7 +8,7 @@ import com.warework.core.util.bean.Parameter;
  * Bean that holds the information required to create a Provider.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public class Provider {
 

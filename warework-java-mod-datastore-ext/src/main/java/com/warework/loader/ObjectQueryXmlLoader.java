@@ -27,7 +27,7 @@ import com.warework.service.datastore.query.oo.Where;
  * Loads an XML file that represents an object-query and parses its content.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ObjectQueryXmlLoader extends AbstractSaxLoader {
 

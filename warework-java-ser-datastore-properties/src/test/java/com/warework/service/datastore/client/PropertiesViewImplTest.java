@@ -16,7 +16,7 @@ import com.warework.service.datastore.view.KeyValueView;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class PropertiesViewImplTest extends AbstractSerDatastorePropertiesTestCase {
 

@@ -59,7 +59,7 @@ import com.warework.service.pool.PoolServiceFacade;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class PooledObjectProvider extends AbstractProvider {
 

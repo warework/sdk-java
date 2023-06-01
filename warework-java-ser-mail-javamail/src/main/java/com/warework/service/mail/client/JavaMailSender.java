@@ -24,7 +24,7 @@ import com.warework.service.mail.client.connector.JavaMailSenderConnector;
  * Mail Client that performs operations with JavaMail.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class JavaMailSender extends AbstractClient implements MailClientFacade {
 

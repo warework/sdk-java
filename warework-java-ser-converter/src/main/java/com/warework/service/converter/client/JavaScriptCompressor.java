@@ -11,7 +11,7 @@ import com.warework.service.log.LogServiceConstants;
  * JavaScript compressor.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class JavaScriptCompressor extends AbstractClient implements ConverterFacade {
 

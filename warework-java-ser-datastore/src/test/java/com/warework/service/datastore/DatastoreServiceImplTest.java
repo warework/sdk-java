@@ -17,7 +17,7 @@ import com.warework.service.datastore.view.SampleKeyValueViewL1;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class DatastoreServiceImplTest extends AbstractSerDatastoreTestCase {
 

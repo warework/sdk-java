@@ -20,7 +20,7 @@ import com.warework.service.log.LogServiceConstants;
  * View, you should extend this class.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractDatastoreView extends AbstractViewsLogic {
 

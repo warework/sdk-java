@@ -24,7 +24,7 @@ import com.warework.service.log.LogServiceConstants;
  * Defines common operations for File Clients.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractFileClient extends AbstractClient implements FileClientFacade {
 

@@ -16,7 +16,7 @@ import com.warework.service.log.LogServiceConstants;
  * Handles Data Store Services operations.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public class DatastoreOperationHandler extends ProxyServiceOperationHandler {
 

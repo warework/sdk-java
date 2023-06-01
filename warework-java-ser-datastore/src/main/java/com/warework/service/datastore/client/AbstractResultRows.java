@@ -15,7 +15,7 @@ import com.warework.service.log.LogServiceConstants;
  * Common operations for database result sets.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractResultRows implements ResultRows {
 

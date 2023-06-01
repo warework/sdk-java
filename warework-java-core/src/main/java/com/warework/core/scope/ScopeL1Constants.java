@@ -7,7 +7,7 @@ import com.warework.core.util.helper.ReflectionL1Helper;
  * Constants for Scopes.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class ScopeL1Constants {
 

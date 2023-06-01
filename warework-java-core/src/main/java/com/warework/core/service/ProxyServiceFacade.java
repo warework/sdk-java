@@ -12,7 +12,7 @@ import com.warework.core.service.client.connector.ConnectorFacade;
  * <code>createService</code> method of the Scope where the Service will be.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface ProxyServiceFacade extends ServiceFacade {
 

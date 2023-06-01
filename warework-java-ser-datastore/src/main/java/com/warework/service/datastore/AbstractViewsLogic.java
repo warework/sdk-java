@@ -11,7 +11,7 @@ import com.warework.service.datastore.view.DatastoreView;
  * Defines the rules that each Data Store View must implement.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 abstract class AbstractViewsLogic implements DatastoreView {
 

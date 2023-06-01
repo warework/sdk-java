@@ -13,7 +13,7 @@ import com.warework.module.business.dao.DaoException;
  * Entity functionality for business objects.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractEntityBusiness<T> extends AbstractBusiness {
 

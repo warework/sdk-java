@@ -8,7 +8,7 @@ import com.warework.core.NullType;
  * Identifies generic SQL types for <code>null</code> values.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class JdbcNullType extends NullType {
 

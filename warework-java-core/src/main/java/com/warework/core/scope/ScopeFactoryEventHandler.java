@@ -6,7 +6,7 @@ import com.warework.core.model.Scope;
  * Definition of Scope creation events.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface ScopeFactoryEventHandler {
 

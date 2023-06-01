@@ -9,7 +9,7 @@ import com.warework.core.service.client.ClientFacade;
  * Client to perform mail operations.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface MailClientFacade extends ClientFacade {
 

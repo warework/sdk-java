@@ -17,7 +17,7 @@ import com.warework.service.workflow.flowbase.FlowbaseFunction;
  * Everything about reflection operations, data types and common values.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class ReflectionL1Helper {
 

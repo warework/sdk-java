@@ -19,7 +19,7 @@ import com.warework.core.util.helper.ReflectionL2Helper;
  * content.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ScopeXmlLoader extends AbstractSaxLoader {
 

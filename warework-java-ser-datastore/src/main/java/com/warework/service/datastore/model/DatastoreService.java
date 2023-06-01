@@ -15,7 +15,7 @@ import com.warework.service.datastore.view.DatastoreView;
  * Bean that holds the information for a Data Store Service.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class DatastoreService extends ProxyService {
 

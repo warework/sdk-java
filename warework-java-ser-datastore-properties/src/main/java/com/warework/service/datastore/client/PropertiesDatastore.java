@@ -16,7 +16,7 @@ import com.warework.service.log.LogServiceConstants;
  * Data Store that performs operations with a properties file.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class PropertiesDatastore extends AbstractDatastore {
 

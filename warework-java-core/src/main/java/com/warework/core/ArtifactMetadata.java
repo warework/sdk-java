@@ -4,7 +4,7 @@ package com.warework.core;
  * Version information for Warework components.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface ArtifactMetadata {
 

@@ -7,7 +7,7 @@ import com.warework.core.AbstractL1Exception;
  * finalization.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public class ScopeException extends AbstractL1Exception {
 

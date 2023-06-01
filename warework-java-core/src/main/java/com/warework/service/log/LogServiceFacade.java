@@ -111,7 +111,7 @@ import com.warework.core.service.ProxyServiceFacade;
  * </code> <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface LogServiceFacade extends ProxyServiceFacade {
 

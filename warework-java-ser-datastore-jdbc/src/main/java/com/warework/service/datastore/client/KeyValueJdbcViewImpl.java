@@ -154,7 +154,7 @@ import com.warework.service.log.LogServiceConstants;
  * <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class KeyValueJdbcViewImpl extends AbstractDatastoreView implements KeyValueView {
 

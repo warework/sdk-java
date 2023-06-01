@@ -8,7 +8,7 @@ import com.warework.core.scope.ScopeFacade;
  * operation.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ServiceException extends AbstractL1Exception {
 

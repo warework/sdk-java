@@ -8,7 +8,7 @@ import com.warework.core.scope.ScopeFacade;
  * finalization or when a list of the names of the objects is requested.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ProviderException extends AbstractL1Exception {
 

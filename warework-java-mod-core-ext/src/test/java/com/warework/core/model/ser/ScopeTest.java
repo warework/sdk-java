@@ -19,7 +19,7 @@ import com.warework.service.log.client.connector.ConsoleConnector;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ScopeTest extends AbstractModCoreExtTestCase {
 

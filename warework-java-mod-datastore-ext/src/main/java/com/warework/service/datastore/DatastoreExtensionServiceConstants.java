@@ -4,7 +4,7 @@ package com.warework.service.datastore;
  * Constants for the Data Store Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class DatastoreExtensionServiceConstants extends DatastoreServiceConstants {
 

@@ -11,7 +11,7 @@ import com.warework.core.util.helper.StringL1Helper;
  * Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public class Client {
 

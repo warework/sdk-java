@@ -49,7 +49,7 @@ import com.warework.core.util.helper.StringL1Helper;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class CacheProvider extends AbstractProvider {
 

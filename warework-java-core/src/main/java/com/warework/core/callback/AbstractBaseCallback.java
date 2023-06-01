@@ -15,7 +15,7 @@ import com.warework.service.log.LogServiceConstants;
  * be used only internally by the Framework. <br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public abstract class AbstractBaseCallback {
 

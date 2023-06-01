@@ -75,7 +75,7 @@ import com.warework.service.log.LogServiceConstants;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class StandardProvider extends AbstractProvider {
 

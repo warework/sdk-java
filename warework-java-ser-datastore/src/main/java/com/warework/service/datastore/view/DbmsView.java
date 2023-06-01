@@ -6,7 +6,7 @@ import com.warework.core.service.client.ClientException;
  * View for Database Management Systems.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface DbmsView extends DatastoreView {
 

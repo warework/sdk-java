@@ -13,7 +13,7 @@ import java.util.Set;
  * Bean that holds a name-value pair to represent a parameter.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class Parameter extends com.warework.core.util.bean.Parameter implements
 		Serializable {

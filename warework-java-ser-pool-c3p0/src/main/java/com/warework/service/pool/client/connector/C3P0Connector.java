@@ -90,7 +90,7 @@ import com.warework.service.pool.client.C3P0Pooler;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class C3P0Connector extends AbstractPoolerConnector {
 

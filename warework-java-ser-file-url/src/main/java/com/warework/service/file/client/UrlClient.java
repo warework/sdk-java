@@ -20,7 +20,7 @@ import com.warework.service.log.LogServiceConstants;
  * File Client that performs operations with URL.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class UrlClient extends AbstractFileClient {
 

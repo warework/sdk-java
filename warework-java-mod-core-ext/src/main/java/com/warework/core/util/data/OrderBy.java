@@ -11,7 +11,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * Defines the order of the attributes for the result of the query.
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class OrderBy implements Serializable {
 

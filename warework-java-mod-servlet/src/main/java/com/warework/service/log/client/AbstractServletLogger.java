@@ -25,7 +25,7 @@ import com.warework.service.log.LogServiceConstants;
  * help to migrate to another logger in the future if it's needed.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractServletLogger extends AbstractClient implements LoggerFacade {
 

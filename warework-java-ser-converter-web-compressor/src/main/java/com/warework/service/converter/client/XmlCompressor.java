@@ -8,7 +8,7 @@ import com.warework.service.log.LogServiceConstants;
  * XML compressor.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class XmlCompressor extends AbstractClient implements ConverterFacade {
 

@@ -4,7 +4,7 @@ package com.warework.core.service;
  * Constants for Proxy Services.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class ProxyServiceConstants extends ServiceConstants {
 

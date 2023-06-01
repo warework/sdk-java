@@ -11,7 +11,7 @@ import com.warework.service.file.client.connector.FtpConnector;
  * FTP file reference wrapper.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class FileRefFtpImpl extends AbstractFileRef {
 

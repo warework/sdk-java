@@ -15,7 +15,7 @@ package com.warework.service.datastore.query.oo;
  * </ul>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class ValueOperandExpression extends AbstractOperandExpression {
 

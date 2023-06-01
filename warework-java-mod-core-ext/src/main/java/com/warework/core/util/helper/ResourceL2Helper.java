@@ -12,7 +12,7 @@ import com.warework.core.util.CommonValueL2Constants;
  * Performs common resources operations.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class ResourceL2Helper extends ResourceL1Helper {
 

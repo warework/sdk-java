@@ -14,7 +14,7 @@ import com.warework.service.datastore.DatastoreServiceFacade;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class JdbcDatastoreTest extends AbstractSerDatastoreJdbcTestCase {
 

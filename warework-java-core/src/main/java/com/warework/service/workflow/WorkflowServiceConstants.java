@@ -10,7 +10,7 @@ import com.warework.core.util.helper.StringL1Helper;
  * Constants for the Workflow Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.1
+ * @version ${project.version}
  */
 public final class WorkflowServiceConstants extends ProxyServiceConstants {
 

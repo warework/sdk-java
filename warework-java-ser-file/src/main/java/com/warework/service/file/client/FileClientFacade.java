@@ -14,7 +14,7 @@ import com.warework.service.file.FileRef;
  * Performs File operations.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface FileClientFacade extends ClientFacade {
 

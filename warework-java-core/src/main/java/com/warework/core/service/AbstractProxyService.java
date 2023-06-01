@@ -23,7 +23,7 @@ import com.warework.service.log.LogServiceConstants;
  * Clients.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractProxyService extends AbstractService implements ProxyServiceFacade {
 

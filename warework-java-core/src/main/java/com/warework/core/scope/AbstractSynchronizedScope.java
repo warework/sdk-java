@@ -25,7 +25,7 @@ import com.warework.service.log.LogServiceFacade;
  * threads access the same scope instance.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSynchronizedScope extends AbstractScope {
 

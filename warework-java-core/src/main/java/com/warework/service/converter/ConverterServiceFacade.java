@@ -113,7 +113,7 @@ import com.warework.core.service.ServiceException;
  * </code>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface ConverterServiceFacade extends ProxyServiceFacade {
 

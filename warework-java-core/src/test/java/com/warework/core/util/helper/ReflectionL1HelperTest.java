@@ -7,7 +7,7 @@ import com.warework.core.scope.AbstractCoreTestCase;
  * Tests common reflection operations.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ReflectionL1HelperTest extends AbstractCoreTestCase {
 
@@ -18,7 +18,7 @@ public class ReflectionL1HelperTest extends AbstractCoreTestCase {
 	/**
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 *
 	 */
 	private final class SampleArtifactMetadata1 implements ArtifactMetadata {

@@ -4,7 +4,7 @@ package com.warework.service.workflow.flowbase;
  * Flowbase functions.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface FlowbaseFunction {
 

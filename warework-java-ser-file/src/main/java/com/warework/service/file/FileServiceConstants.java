@@ -13,7 +13,7 @@ import com.warework.service.file.client.AbstractFileClient;
  * Constants for the File Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class FileServiceConstants extends ProxyServiceConstants {
 

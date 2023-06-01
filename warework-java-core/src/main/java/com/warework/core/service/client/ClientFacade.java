@@ -8,7 +8,7 @@ import com.warework.core.service.client.connector.ConnectorFacade;
  * This facade defines basic operations for Clients managed by a Proxy Service.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface ClientFacade {
 

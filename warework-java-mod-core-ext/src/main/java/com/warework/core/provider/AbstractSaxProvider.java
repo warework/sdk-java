@@ -7,7 +7,7 @@ import com.warework.core.util.helper.ResourceL2Helper;
  * represents the XML file.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSaxProvider extends AbstractResourceProvider {
 

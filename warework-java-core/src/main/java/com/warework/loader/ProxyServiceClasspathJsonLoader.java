@@ -14,7 +14,7 @@ import com.warework.service.log.LogServiceConstants;
  * Parses a JSON object with the configutation of a Proxy Service.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public class ProxyServiceClasspathJsonLoader extends AbstractJsonLoader {
 

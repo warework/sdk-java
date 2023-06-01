@@ -25,7 +25,7 @@ import com.warework.service.log.LogServiceConstants;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSerFileTestCase extends AbstractTestCase {
 

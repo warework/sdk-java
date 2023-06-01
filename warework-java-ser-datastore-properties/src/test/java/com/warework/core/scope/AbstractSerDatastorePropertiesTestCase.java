@@ -10,7 +10,7 @@ import com.warework.service.datastore.DatastoreServiceImpl;
  * Common context utilities for Properties Datastore test cases.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSerDatastorePropertiesTestCase extends AbstractTestCase {
 

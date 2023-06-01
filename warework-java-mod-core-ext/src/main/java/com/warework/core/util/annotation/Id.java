@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * Annotation for ID fields.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)

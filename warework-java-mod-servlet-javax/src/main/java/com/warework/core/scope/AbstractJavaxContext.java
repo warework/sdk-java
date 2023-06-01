@@ -40,7 +40,7 @@ import com.warework.service.log.client.connector.ServletConnector;
 /**
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractJavaxContext extends AbstractContext
 		implements ServletContextListener, HttpSessionListener, ServletRequestListener, Filter {
@@ -65,7 +65,7 @@ public abstract class AbstractJavaxContext extends AbstractContext
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractServletContextScope extends AbstractContext.AbstractServletContextScope
 			implements ServletContext {
@@ -241,7 +241,7 @@ public abstract class AbstractJavaxContext extends AbstractContext
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractHttpSessionScope extends AbstractContext.AbstractHttpSessionScope
 			implements HttpSession {
@@ -383,7 +383,7 @@ public abstract class AbstractJavaxContext extends AbstractContext
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractServletRequestScope extends AbstractContext.AbstractServletRequestScope
 			implements ServletRequest {
@@ -546,7 +546,7 @@ public abstract class AbstractJavaxContext extends AbstractContext
 	 * 
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	public static abstract class AbstractHttpServletRequestScope
 			extends AbstractJavaxContext.AbstractServletRequestScope implements HttpServletRequest {

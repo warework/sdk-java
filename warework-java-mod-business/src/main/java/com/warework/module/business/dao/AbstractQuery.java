@@ -20,7 +20,7 @@ import com.warework.service.datastore.client.ResultRows;
 /**
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractQuery<T> {
 

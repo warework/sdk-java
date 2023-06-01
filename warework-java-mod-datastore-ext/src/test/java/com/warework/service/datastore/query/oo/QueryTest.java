@@ -9,7 +9,7 @@ import com.warework.core.scope.ScopeL1Constants;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class QueryTest extends AbstractModDatastoreExtTestCase {
 

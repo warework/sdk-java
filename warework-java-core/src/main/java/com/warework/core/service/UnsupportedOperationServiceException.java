@@ -6,7 +6,7 @@ import com.warework.core.service.client.UnsupportedOperationClientException;
  * Thrown when a Service encounters a Client does not support an operation.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class UnsupportedOperationServiceException extends ServiceException {
 

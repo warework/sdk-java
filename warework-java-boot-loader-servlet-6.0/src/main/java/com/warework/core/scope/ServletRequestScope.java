@@ -9,7 +9,7 @@ import jakarta.servlet.ServletConnection;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ServletRequestScope extends AbstractServletRequestScope {
 

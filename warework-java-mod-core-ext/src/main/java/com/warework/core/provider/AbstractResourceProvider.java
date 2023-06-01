@@ -18,7 +18,7 @@ import com.warework.service.log.LogServiceConstants;
  * represents that file.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractResourceProvider extends AbstractProvider {
 

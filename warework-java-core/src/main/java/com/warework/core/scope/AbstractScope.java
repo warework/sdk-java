@@ -35,7 +35,7 @@ import com.warework.service.workflow.WorkflowServiceFacade;
  * Provides a default implementation for a Scope.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractScope implements ScopeFacade {
 

@@ -8,7 +8,7 @@ import com.warework.loader.ScopeClasspathJsonLoader;
  * Common context utilities for Datastore Service test cases.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSerDatastoreTestCase extends AbstractTestCase {
 

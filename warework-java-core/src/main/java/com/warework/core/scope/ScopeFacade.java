@@ -255,7 +255,7 @@ import com.warework.core.service.ServiceFacade;
  * </code> <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface ScopeFacade {
 

@@ -8,7 +8,7 @@ import com.warework.service.pool.PoolServiceImpl;
  * Poolers.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractPoolerConnector extends AbstractConnector {
 

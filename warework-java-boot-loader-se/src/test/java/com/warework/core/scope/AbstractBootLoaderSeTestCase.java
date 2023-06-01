@@ -13,7 +13,7 @@ import junit.framework.TestCase;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractBootLoaderSeTestCase extends TestCase {
 

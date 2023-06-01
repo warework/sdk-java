@@ -8,7 +8,7 @@ import com.warework.service.datastore.DatastoreServiceImpl;
  * connections for Data Stores.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractDatastoreConnector extends AbstractConnector {
 

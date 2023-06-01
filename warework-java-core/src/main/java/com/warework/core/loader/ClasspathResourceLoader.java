@@ -12,7 +12,7 @@ import com.warework.service.log.LogServiceConstants;
  * Manager to load resources from the classpath.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ClasspathResourceLoader extends AbstractResourceManager {
 

@@ -138,7 +138,7 @@ import com.warework.core.service.client.ClientException;
  * </code> <br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface ResultRows {
 

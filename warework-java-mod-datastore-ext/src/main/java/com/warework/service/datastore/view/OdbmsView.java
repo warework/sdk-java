@@ -963,7 +963,7 @@ package com.warework.service.datastore.view;
  * <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface OdbmsView extends DbmsView, ObjectDatastoreView {
 

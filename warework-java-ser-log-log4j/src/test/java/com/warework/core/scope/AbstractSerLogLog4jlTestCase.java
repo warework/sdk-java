@@ -4,7 +4,7 @@ package com.warework.core.scope;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSerLogLog4jlTestCase extends AbstractTestCase {
 

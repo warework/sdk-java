@@ -644,7 +644,7 @@ import com.warework.service.datastore.view.DatastoreView;
  * <br>
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public interface DatastoreServiceFacade extends ProxyServiceFacade {
 

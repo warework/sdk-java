@@ -10,7 +10,7 @@ import com.warework.service.log.LogServiceConstants;
  * Converter to encode and decode in Base64.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class StringFormatter extends AbstractClient implements ConverterFacade {
 

@@ -14,7 +14,7 @@ import com.warework.service.datastore.model.ser.View;
  * Parses a JSON object with the configutation of a Proxy Service.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class DatastoreJsonLoader extends DatastoreClasspathJsonLoader {
 

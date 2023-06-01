@@ -15,7 +15,7 @@ import com.warework.service.log.LogServiceConstants;
  * Cascading Style Sheets compressor.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class CssCompressor extends AbstractClient implements ConverterFacade {
 

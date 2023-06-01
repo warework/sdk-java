@@ -11,7 +11,7 @@ import com.warework.service.file.client.connector.LocalFileSystemConnector;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class LocalFileSystemClientTest extends AbstractSerFileTestCase {
 

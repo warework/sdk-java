@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ApiRate implements Serializable {
 

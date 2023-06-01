@@ -6,7 +6,7 @@ import com.warework.core.service.client.ReplyCodeClientException;
  * Thrown when a Service encounters a problem and provides a response code.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ReplyCodeServiceException extends ServiceException {
 

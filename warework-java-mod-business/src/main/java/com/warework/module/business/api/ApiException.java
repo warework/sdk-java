@@ -6,7 +6,7 @@ import com.warework.module.business.AbstractBusinessException;
 /**
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class ApiException extends AbstractBusinessException {
 

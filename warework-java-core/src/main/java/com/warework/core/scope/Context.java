@@ -9,7 +9,7 @@ import com.warework.core.model.Scope;
  * retrieve, search, list and remove Scopes.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface Context {
 

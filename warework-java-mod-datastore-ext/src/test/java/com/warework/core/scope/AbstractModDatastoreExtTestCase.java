@@ -14,7 +14,7 @@ import com.warework.loader.ObjectDeserializerLoader;
  * cases.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractModDatastoreExtTestCase extends AbstractTestCase {
 

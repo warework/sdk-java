@@ -8,7 +8,7 @@ import com.warework.loader.ScopeClasspathJsonLoader;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractSerConverterTestCase extends AbstractTestCase {
 

@@ -8,7 +8,7 @@ import com.warework.core.util.helper.StringL2Helper;
  * Constants to specify operators.
  * 
  * @author Jose Schiaffino
- * @version 2.0.0
+ * @version ${project.version}
  */
 public final class Operator implements Serializable {
 

@@ -7,7 +7,7 @@ import com.warework.core.scope.ScopeFacade;
  * Business exceptions.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractBusinessException extends AbstractL1Exception {
 

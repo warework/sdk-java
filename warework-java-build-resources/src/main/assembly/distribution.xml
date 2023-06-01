@@ -17,6 +17,11 @@
 			<outputDirectory>/src/main/license-template</outputDirectory>
 			<destName>license-description-template.ftl</destName>
 		</file>
+		<file>
+			<source>src/main/assembly/distribution-sources.xml</source>
+			<outputDirectory>/src/main/assembly</outputDirectory>
+			<destName>distribution-sources.xml</destName>
+		</file>
 	</files>
 
 </assembly>

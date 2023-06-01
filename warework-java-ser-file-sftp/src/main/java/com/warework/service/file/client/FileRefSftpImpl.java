@@ -9,7 +9,7 @@ import com.warework.service.file.client.connector.SftpConnector;
  * SFTP file reference wrapper.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class FileRefSftpImpl extends AbstractFileRef {
 

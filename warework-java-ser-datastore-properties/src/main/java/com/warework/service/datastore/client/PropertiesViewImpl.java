@@ -116,7 +116,7 @@ import com.warework.service.log.LogServiceConstants;
  * <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class PropertiesViewImpl extends AbstractDatastoreView implements KeyValueView {
 

@@ -14,7 +14,7 @@ import com.warework.service.log.LogServiceConstants;
  * Helper to load resources.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ResourceLoader extends AbstractResourceManager {
 

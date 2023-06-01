@@ -7,7 +7,7 @@ import com.warework.core.service.ServiceException;
  * 
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public class HashtableDatastoreTest extends AbstractHashtableDatastoreTest {
 

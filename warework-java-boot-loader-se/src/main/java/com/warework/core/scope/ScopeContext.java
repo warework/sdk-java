@@ -82,7 +82,7 @@ import com.warework.service.log.LogServiceConstants;
  * </code> <br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class ScopeContext {
 
@@ -94,7 +94,7 @@ public final class ScopeContext {
 	 * Default implementation for the context of the Scopes.<br>
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	private static abstract class AbstractContext implements Context {
 

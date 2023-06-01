@@ -6,7 +6,7 @@ import com.warework.core.service.client.ClientException;
  * Defines basic rules for each Data Store View.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface DatastoreView {
 

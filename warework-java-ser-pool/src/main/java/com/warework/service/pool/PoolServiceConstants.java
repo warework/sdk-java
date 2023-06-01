@@ -8,7 +8,7 @@ import com.warework.core.util.helper.StringL1Helper;
  * Constants for the Pool Service.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class PoolServiceConstants extends ProxyServiceConstants {
 

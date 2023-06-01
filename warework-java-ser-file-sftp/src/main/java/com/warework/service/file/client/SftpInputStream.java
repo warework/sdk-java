@@ -8,7 +8,7 @@ import com.warework.core.util.io.LengthInputStream;
  * Wrapper for <code>java.io.InputStream</code> for SFTP Clients.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public final class SftpInputStream extends LengthInputStream {
 

@@ -11,7 +11,7 @@ import com.warework.core.service.client.ClientException;
  * An abstract representation of file and directory pathnames.<br>
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public interface FileRef extends Comparable<FileRef> {
 

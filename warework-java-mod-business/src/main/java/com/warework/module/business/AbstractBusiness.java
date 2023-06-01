@@ -34,7 +34,7 @@ import com.warework.service.log.LogServiceConstants;
  * Base functionality for business objects.
  * 
  * @author Jose Schiaffino
- * @version 3.0.0
+ * @version ${project.version}
  */
 public abstract class AbstractBusiness {
 
@@ -53,7 +53,7 @@ public abstract class AbstractBusiness {
 	 * Wrapper to compare beans.
 	 * 
 	 * @author Jose Schiaffino
-	 * @version 3.0.0
+	 * @version ${project.version}
 	 */
 	private final class ComparableBean<T> implements Comparable<ComparableBean<T>> {
 
