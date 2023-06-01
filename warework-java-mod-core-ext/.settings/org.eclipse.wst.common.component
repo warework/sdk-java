@@ -8,8 +8,6 @@
                         
         
         <wb-resource deploy-path="/" source-path="/license"/>
-                
-        <wb-resource deploy-path="/" source-path="/src/main/resources/META-INF/xsd"/>
                     
     
     </wb-module>

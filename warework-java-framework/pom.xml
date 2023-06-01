@@ -41,7 +41,7 @@
 		<project.test.jdk.vendor>oracle</project.test.jdk.vendor>
 		<project.generated.dependencies>${project.build.directory}/generated-dependencies</project.generated.dependencies>	
 		<project.generated.dependencies.buildResources>${project.generated.dependencies}/warework-java-build-resources-${project.version}/src/main</project.generated.dependencies.buildResources>
-		<project.generated.sources.java>${project.build.directory}/generated-sources/java</project.generated.sources.java>
+		<project.generated.sources.java>${project.build.directory}/generated-sources/java</project.generated.sources.java>		
 	</properties>	
 	
 	<dependencies>
