@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.warework</groupId>
 		<artifactId>warework-java-framework</artifactId>
-		<version>3.0.0</version>	
+		<version>3.0.0-SNAPSHOT</version>	
 	</parent>
 	
 	<artifactId>warework-java-boot-loader-se</artifactId>

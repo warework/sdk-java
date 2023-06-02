@@ -4,7 +4,7 @@
   
   	<groupId>com.warework</groupId>
   	<artifactId>warework-java-framework</artifactId>
-  	<version>3.0.0</version>
+  	<version>3.0.0-SNAPSHOT</version>
   
   	<packaging>pom</packaging>
   
@@ -19,6 +19,14 @@
 			<url>https://apache.org/licenses/LICENSE-2.0</url>
 		</license>
 	</licenses>	
+
+	<developers>
+		<developer>
+			<id>jschiaffino</id>
+            <name>Jose Schiaffino</name>
+            <email>jschiaffino@warework.com</email>
+        </developer>
+    </developers>	
 
 	<organization>
 		<name>WAREWORK</name>
@@ -61,7 +69,23 @@
 		</dependency>		
 	</dependencies>
 	
+	<distributionManagement>
+    	<snapshotRepository>
+      		<id>snapshots.warework.com</id>
+      		<name>snapshots</name>
+      		<url>https://repo.warework.com/maven/snapshots</url>
+      		<uniqueVersion>false</uniqueVersion>
+    	</snapshotRepository>
+  	</distributionManagement>		
+	
 	<build>
+ 		<extensions>
+      		<extension>
+        		<groupId>org.apache.maven.wagon</groupId>
+        		<artifactId>wagon-ftp</artifactId>
+        		<version>3.5.3</version>
+      		</extension>
+    	</extensions>		
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -386,8 +410,8 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 	            	<artifactId>maven-deploy-plugin</artifactId>
-	                <version>3.0.0</version>
-				</plugin>
+	                <version>3.0.0-SNAPSHOT</version>
+				</plugin>				
 			</plugins>
 		</pluginManagement>
 	</build>  
