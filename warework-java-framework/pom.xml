@@ -53,18 +53,15 @@
 			<type>zip</type>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>		
 	</dependencies>
 	
 	<build>
-	
-		<resources>
-        	<resource>
-        		<targetPath>META-INF</targetPath>
-            	<directory>license</directory>
-                <filtering>false</filtering>
-            </resource>           
-        </resources>	
-	
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -393,7 +390,6 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		
 	</build>  
   
 </project>

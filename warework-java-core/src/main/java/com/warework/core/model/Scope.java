@@ -245,7 +245,7 @@ public class Scope {
 	 *               <br>
 	 */
 	public void setTimeout(final long millis) {
-		setInitParameter(ScopeL1Constants.PARAMETER_SCOPE_TIMEOUT, new Long(millis));
+		setInitParameter(ScopeL1Constants.PARAMETER_SCOPE_TIMEOUT, Long.valueOf(millis));
 	}
 
 	/**

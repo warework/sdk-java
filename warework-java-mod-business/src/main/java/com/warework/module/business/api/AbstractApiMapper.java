@@ -63,7 +63,8 @@ public abstract class AbstractApiMapper<T> implements ApiMapper<T> {
 
 	/**
 	 * 
-	 * @return
+	 * @return API response keys.<br>
+	 *         <br>
 	 * @throws ApiException
 	 */
 	public Collection<String> getKeys() throws ApiException {
@@ -76,7 +77,8 @@ public abstract class AbstractApiMapper<T> implements ApiMapper<T> {
 
 	/**
 	 * 
-	 * @return
+	 * @return Operation name.<br>
+	 *         <br>
 	 */
 	protected final String getOperation() {
 		return operation;
@@ -84,7 +86,8 @@ public abstract class AbstractApiMapper<T> implements ApiMapper<T> {
 
 	/**
 	 * 
-	 * @return
+	 * @return Scope Facade instance.<br>
+	 *         <br>
 	 */
 	protected final ScopeFacade getScopeFacade() {
 		return scope;
@@ -92,7 +95,8 @@ public abstract class AbstractApiMapper<T> implements ApiMapper<T> {
 
 	/**
 	 * 
-	 * @return
+	 * @return API facade instance.<br>
+	 *         <br>
 	 */
 	protected final ApiFacade getAPIFacade() {
 		return apiFacade;
@@ -102,7 +106,8 @@ public abstract class AbstractApiMapper<T> implements ApiMapper<T> {
 	 * 
 	 * @param message
 	 * @param e
-	 * @return
+	 * @return New exception.<br>
+	 *         <br>
 	 */
 	protected final ApiException createException(final String message, final Exception e) {
 		return new ApiException(getScopeFacade(), message, e, LogServiceConstants.LOG_LEVEL_WARN);
@@ -141,7 +146,8 @@ public abstract class AbstractApiMapper<T> implements ApiMapper<T> {
 	/**
 	 * 
 	 * @param message
-	 * @return
+	 * @return New log message.<br>
+	 *         <br>
 	 */
 	private String log(final String message) {
 		return "[BUSINESS-'" + getOperation() + "'@'" + getClass().getName() + "'] - " + message;

@@ -698,7 +698,7 @@ public final class JsonArray {
 	 * <br>
 	 */
 	public JsonArray put(double value) throws JsonException {
-		Double d = new Double(value);
+		Double d = Double.valueOf(value);
 		JsonObject.testValidity(d);
 		this.put(d);
 		return this;
@@ -728,7 +728,7 @@ public final class JsonArray {
 	 * <br>
 	 */
 	public JsonArray put(long value) {
-		this.put(new Long(value));
+		this.put(Long.valueOf(value));
 		return this;
 	}
 
@@ -824,7 +824,7 @@ public final class JsonArray {
 	 * <br>
 	 */
 	public JsonArray put(int index, double value) throws JsonException {
-		this.put(index, new Double(value));
+		this.put(index, Double.valueOf(value));
 		return this;
 	}
 
@@ -868,7 +868,7 @@ public final class JsonArray {
 	 * <br>
 	 */
 	public JsonArray put(int index, long value) throws JsonException {
-		this.put(index, new Long(value));
+		this.put(index, Long.valueOf(value));
 		return this;
 	}
 

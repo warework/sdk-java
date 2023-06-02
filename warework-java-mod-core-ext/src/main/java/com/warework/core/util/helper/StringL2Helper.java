@@ -560,16 +560,16 @@ public abstract class StringL2Helper extends StringL1Helper {
 
 		// Parse Byte.
 		if (type.equals(Byte.class)) {
-			return new Byte(string);
+			return Byte.valueOf(string);
 		} else if (type.equals(byte.class)) {
-			return new Byte(string).byteValue();
+			return Byte.valueOf(string).byteValue();
 		}
 
 		// Parse Short.
 		if (type.equals(Short.class)) {
-			return new Short(string);
+			return Short.valueOf(string);
 		} else if (type.equals(short.class)) {
-			return new Short(string).shortValue();
+			return Short.valueOf(string).shortValue();
 		}
 
 		// Parse Integer.
@@ -581,9 +581,9 @@ public abstract class StringL2Helper extends StringL1Helper {
 
 		// Parse Long.
 		if (type.equals(Long.class)) {
-			return new Long(string);
+			return Long.valueOf(string);
 		} else if (type.equals(long.class)) {
-			return new Long(string).longValue();
+			return Long.valueOf(string).longValue();
 		}
 
 		// Parse BigInteger.
@@ -1055,13 +1055,13 @@ public abstract class StringL2Helper extends StringL1Helper {
 		// Return the decimal number.
 		Number result = numberFormat.parse(string);
 		if (type.equals(Float.class)) {
-			return new Float(result.floatValue());
+			return Float.valueOf(result.floatValue());
 		} else if (type.equals(float.class)) {
-			return new Float(result.floatValue()).floatValue();
+			return result.floatValue();
 		} else if (type.equals(Double.class)) {
-			return new Double(result.doubleValue());
+			return Double.valueOf(result.doubleValue());
 		} else {
-			return new Double(result.doubleValue()).doubleValue();
+			return result.doubleValue();
 		}
 
 	}
@@ -1081,13 +1081,7 @@ public abstract class StringL2Helper extends StringL1Helper {
 	 */
 	private static Character parseCharacter(Class<?> type, String string) throws ParseException {
 		if (string.length() == 1) {
-
-			if (type.equals(Character.class)) {
-				return new Character(string.charAt(0));
-			} else {
-				return string.charAt(0);
-			}
-
+			return (type.equals(Character.class)) ? Character.valueOf(string.charAt(0)) : string.charAt(0);
 		} else if (string.length() > 1) {
 			throw new ParseException("Can not parse given string as a character", 1);
 		} else {

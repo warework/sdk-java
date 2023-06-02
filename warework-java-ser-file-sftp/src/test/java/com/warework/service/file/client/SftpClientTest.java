@@ -37,10 +37,10 @@ public final class SftpClientTest extends AbstractSerFileTestCase {
 		final Map<String, Object> parameters = new HashMap<String, Object>();
 
 		//
-		parameters.put(SftpConnector.PARAMETER_HOST, HOSTNAME);
-		parameters.put(SftpConnector.PARAMETER_PORT, Integer.valueOf(22));
-		parameters.put(SftpConnector.PARAMETER_USER, USERNAME);
-		parameters.put(SftpConnector.PARAMETER_PASSWORD, PASSWORD);
+		parameters.put(SftpConnector.PARAMETER_HOST, System.getProperty("hostname"));
+		parameters.put(SftpConnector.PARAMETER_PORT, Integer.valueOf(System.getProperty("port")));
+		parameters.put(SftpConnector.PARAMETER_USER, System.getProperty("username"));
+		parameters.put(SftpConnector.PARAMETER_PASSWORD, System.getProperty("password"));
 		parameters.put(SftpConnector.PARAMETER_STRICT_HOST_KEY_CHECKING, Boolean.FALSE);
 
 		//

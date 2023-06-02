@@ -37,10 +37,10 @@ public final class FtpClientTest extends AbstractSerFileTestCase {
 		final Map<String, Object> parameters = new HashMap<String, Object>();
 
 		//
-		parameters.put(FtpConnector.PARAMETER_HOST, HOSTNAME);
-		parameters.put(FtpConnector.PARAMETER_PORT, Integer.valueOf(3800));
-		parameters.put(FtpConnector.PARAMETER_USER, USERNAME);
-		parameters.put(FtpConnector.PARAMETER_PASSWORD, PASSWORD);
+		parameters.put(FtpConnector.PARAMETER_HOST, System.getProperty("hostname"));
+		parameters.put(FtpConnector.PARAMETER_PORT, Integer.valueOf(System.getProperty("port")));
+		parameters.put(FtpConnector.PARAMETER_USER, System.getProperty("username"));
+		parameters.put(FtpConnector.PARAMETER_PASSWORD, System.getProperty("password"));
 		parameters.put(FtpConnector.PARAMETER_DEBUG_COMMANDS, Boolean.TRUE);
 		parameters.put(FtpConnector.PARAMETER_FILE_TYPE, FtpConnector.FILE_TYPE_BINARY);
 		parameters.put(FtpConnector.PARAMETER_LOCAL_MODE, FtpConnector.MODE_PASSIVE);

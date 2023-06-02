@@ -438,41 +438,17 @@ public final class JdbcResultRows extends AbstractResultRows {
 
 				// Return the numeric value.
 				if (type.equals(BigDecimal.class)) {
-					if (number instanceof BigDecimal) {
-						return (E) number;
-					} else {
-						return (E) new BigDecimal(number.doubleValue());
-					}
+					return (number instanceof BigDecimal) ? (E) number : (E) new BigDecimal(number.doubleValue());
 				} else if (type.equals(Double.class)) {
-					if (number instanceof Double) {
-						return (E) number;
-					} else {
-						return (E) new Double(number.doubleValue());
-					}
+					return (number instanceof Double) ? (E) number : (E) Double.valueOf(number.doubleValue());
 				} else if (type.equals(Float.class)) {
-					if (number instanceof Float) {
-						return (E) number;
-					} else {
-						return (E) new Float(number.floatValue());
-					}
+					return (number instanceof Float) ? (E) number : (E) Float.valueOf(number.floatValue());
 				} else if (type.equals(Long.class)) {
-					if (number instanceof Long) {
-						return (E) number;
-					} else {
-						return (E) new Long(number.longValue());
-					}
+					return (number instanceof Long) ? (E) number : (E) Long.valueOf(number.longValue());
 				} else if (type.equals(Integer.class)) {
-					if (number instanceof Integer) {
-						return (E) number;
-					} else {
-						return (E) new Integer(number.intValue());
-					}
+					return (number instanceof Integer) ? (E) number : (E) Integer.valueOf(number.intValue());
 				} else if (type.equals(Short.class)) {
-					if (number instanceof Short) {
-						return (E) number;
-					} else {
-						return (E) new Short(number.shortValue());
-					}
+					return (number instanceof Short) ? (E) number : (E) Short.valueOf(number.shortValue());
 				} else {
 					throw new ClientException(getScopeFacade(), "WAREWORK cannot retrieve the value for row '" + row()
 							+ "' and column '" + columnIndex

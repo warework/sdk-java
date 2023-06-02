@@ -32,14 +32,6 @@ public abstract class AbstractTestCase extends TestCase {
 	
 	protected static final String SCOPE_NAME = "test";
 
-	// Global test properties.
-	
-	protected static final String HOSTNAME = "hml-srv-test-1.monteluz.home.net";
-
-	protected static final String USERNAME = "hml-test";
-
-	protected static final String PASSWORD = "n59PLtLcUyutjkNh_bUV";
-
 	// ///////////////////////////////////////////////////////////////////
 	// INNER CLASSES
 	// ///////////////////////////////////////////////////////////////////

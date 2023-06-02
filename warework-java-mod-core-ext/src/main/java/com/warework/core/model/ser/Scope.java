@@ -260,7 +260,7 @@ public class Scope extends com.warework.core.model.Scope implements Serializable
 	 *               <br>
 	 */
 	public void setTimeout(final long millis) {
-		setInitParameter(ScopeL1Constants.PARAMETER_SCOPE_TIMEOUT, new Long(millis));
+		setInitParameter(ScopeL1Constants.PARAMETER_SCOPE_TIMEOUT, Long.valueOf(millis));
 	}
 
 	/**

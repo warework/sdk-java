@@ -1159,7 +1159,7 @@ public final class JsonObject {
 	 * <br>
 	 */
 	public JsonObject put(String key, double value) throws JsonException {
-		this.put(key, new Double(value));
+		this.put(key, Double.valueOf(value));
 		return this;
 	}
 
@@ -1199,7 +1199,7 @@ public final class JsonObject {
 	 * <br>
 	 */
 	public JsonObject put(String key, long value) throws JsonException {
-		this.put(key, new Long(value));
+		this.put(key, Long.valueOf(value));
 		return this;
 	}
 
@@ -1503,7 +1503,7 @@ public final class JsonObject {
 						return d;
 					}
 				} else {
-					Long myLong = new Long(string);
+					Long myLong = Long.valueOf(Long.parseLong(string));
 					if (string.equals(myLong.toString())) {
 						if (myLong == myLong.intValue()) {
 							return myLong.intValue();

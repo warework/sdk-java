@@ -419,11 +419,11 @@ public abstract class AbstractDatastoreView extends AbstractViewsLogic {
 							LogServiceConstants.LOG_LEVEL_WARN);
 
 					// Set a default value.
-					callbackWait = new Long(-1);
+					callbackWait = Long.valueOf(-1);
 
 				}
 			} else {
-				callbackWait = new Long(-1);
+				callbackWait = Long.valueOf(-1);
 			}
 
 		}

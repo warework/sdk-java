@@ -8,7 +8,7 @@ import com.warework.core.util.bean.Parameter;
  * Bean that holds the information for a View of a Data Store.
  * 
  * @author Jose Schiaffino
- * @version 2.1.0
+ * @version ${project.version}
  */
 public class View {
 

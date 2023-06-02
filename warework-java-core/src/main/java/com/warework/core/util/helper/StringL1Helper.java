@@ -1279,12 +1279,12 @@ public abstract class StringL1Helper {
 
 		// Parse Byte.
 		if (type.equals(Byte.class)) {
-			return new Byte(Byte.parseByte(string));
+			return Byte.valueOf(string);
 		}
 
 		// Parse Class.
 		if (type.equals(Short.class)) {
-			return new Short(Short.parseShort(string));
+			return Short.valueOf(string);
 		}
 
 		// Parse Integer.
@@ -1294,7 +1294,7 @@ public abstract class StringL1Helper {
 
 		// Parse Long.
 		if (type.equals(Long.class)) {
-			return new Long(Long.parseLong(string));
+			return Long.valueOf(string);
 		}
 
 		// Parse String, StringBuffer and StringBuilder.
@@ -1307,7 +1307,7 @@ public abstract class StringL1Helper {
 		// Parse Character.
 		if (type.equals(Character.class)) {
 			if (string.length() == 1) {
-				return new Character(string.charAt(0));
+				return Character.valueOf(string.charAt(0));
 			} else {
 				throw new IllegalArgumentException("Can not parse given string as a character");
 			}

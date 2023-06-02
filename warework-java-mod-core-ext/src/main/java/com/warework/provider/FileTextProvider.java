@@ -234,12 +234,12 @@ public final class FileTextProvider extends AbstractProvider {
 
 		// Remove new line character.
 		if (isInitParameter(PARAMETER_REMOVE_NEW_LINE_CHARACTER)) {
-			characters.add(new Character('\n'));
+			characters.add(Character.valueOf('\n'));
 		}
 
 		// Remove new line character.
 		if (isInitParameter(PARAMETER_REMOVE_TAB_CHARACTER)) {
-			characters.add(new Character('\t'));
+			characters.add(Character.valueOf('\t'));
 		}
 
 		// Store the characters to remove in an array.

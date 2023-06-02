@@ -9,7 +9,7 @@ import com.warework.core.model.Client;
  * Bean that holds the information of a Data Store.
  * 
  * @author Jose Schiaffino
- * @version 2.1.0
+ * @version ${project.version}
  */
 public class Datastore extends Client {
 

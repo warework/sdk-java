@@ -59,11 +59,11 @@ public abstract class AbstractSerMailJavaMailTestCase extends AbstractTestCase {
 		//
 		final Map<String, Object> params1 = new HashMap<String, Object>();
 		{
-			params1.put("mail.host", "ww-dev-srv2");
+			params1.put("mail.host", "hostname");
 			params1.put("mail.port", "25");
 			params1.put("mail.transport.protocol", "smtp");
-			params1.put("mail.user", "dev-test@warework.com");
-			params1.put("mail.password", "test-mail");
+			params1.put("mail.user", "username");
+			params1.put("mail.password", "password");
 			params1.put("mail.smtp.auth", "true");
 		}
 
@@ -74,11 +74,11 @@ public abstract class AbstractSerMailJavaMailTestCase extends AbstractTestCase {
 		//
 		final Map<String, Object> params2 = new HashMap<String, Object>();
 		{
-			params2.put("mail.host", "ww-dev-srv2");
+			params1.put("mail.host", "hostname");
 			params2.put("mail.port", "25");
 			params2.put("mail.transport.protocol", "smtp");
-			params2.put("mail.user", "dev-test@warework.com");
-			params2.put("mail.password", "test-mail");
+			params1.put("mail.user", "username");
+			params1.put("mail.password", "password");
 			params2.put("mail.smtp.auth", "true");
 			params2.put("mail.message.charset", "utf-8");
 			params2.put("mail.message.subtype", "html");
