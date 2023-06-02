@@ -1,0 +1,34 @@
+package com.warework.lib;
+
+import com.warework.core.ArtifactMetadata;
+
+/**
+ * Version information for Warework components.<br>
+ * 
+ * @author Jose Schiaffino
+ * @version @artifact.version@
+ */
+public final class @class.name@ implements ArtifactMetadata {
+
+	// ///////////////////////////////////////////////////////////////////
+	// CONSTANTS
+	// ///////////////////////////////////////////////////////////////////
+
+	// Warework component version.
+	private static final String VERSION = "@artifact.version@";
+
+	// ///////////////////////////////////////////////////////////////////
+	// PUBLIC METHODS
+	// ///////////////////////////////////////////////////////////////////
+
+	/**
+	 * Gets the artifact version.
+	 * 
+	 * @return Version of the Warework component.<br>
+	 * <br>
+	 */
+	public String getVersion() {
+		return VERSION;
+	}
+
+}

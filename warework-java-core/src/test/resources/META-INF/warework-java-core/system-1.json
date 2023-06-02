@@ -1,0 +1,21 @@
+{
+	
+	parameters:	[
+		{name: "color", value: "red"}, 
+		{name: "is-cool", value: "true"}
+	],
+	
+	objects: [
+		{ name: "map", provider: "standard-provider", object: "map"},
+		{ name: "list", provider: "standard-provider", object: "list"}
+	],	
+	
+	providers: [
+		{ name: "singleton-provider", provider: "singleton"},
+		{ name: "standard-provider", provider: "standard", parameters:	[
+			{name: "map", value: "java.util.Hashtable"}, 
+			{name: "list", value: "java.util.Vector"}
+		]}
+	]
+
+}

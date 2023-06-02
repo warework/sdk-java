@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.warework</groupId>
+		<artifactId>warework-java-framework</artifactId>
+		<version>3.0.0</version>	
+	</parent>
+	
+	<artifactId>warework-java-mod-jsp-jakarta</artifactId>
+	
+	<packaging>jar</packaging>
+	
+	<name>Jakarta JSP Module</name>
+	<description>JSP utilities to provide Warework functionality in Jakarta JEE containers.</description>
+	<inceptionYear>2022</inceptionYear>
+	
+	<licenses>
+		<license>
+			<name>apache license, version 2.0</name>
+			<url>https://apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+    	<maven.compiler.source>1.8</maven.compiler.source>	
+		<project.build.jdk.spec>1.8</project.build.jdk.spec>
+		<project.build.jdk.version>1.8.0</project.build.jdk.version>
+		<project.build.jdk.vendor>oracle</project.build.jdk.vendor>	
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.warework</groupId>
+			<artifactId>warework-java-mod-servlet-jakarta</artifactId>
+			<version>${project.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+    		<groupId>jakarta.servlet</groupId>
+    		<artifactId>jakarta.servlet-api</artifactId>
+    		<version>5.0.0</version>
+    		<scope>provided</scope>
+		</dependency>
+		<dependency>
+    		<groupId>jakarta.servlet.jsp</groupId>
+    		<artifactId>jakarta.servlet.jsp-api</artifactId>
+    		<version>3.0.0</version>
+    		<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+	
+	<build>
+		<pluginManagement>
+			<plugins>			
+				<plugin>
+					<groupId>com.google.code.maven-replacer-plugin</groupId>
+					<artifactId>replacer</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.google.code.maven-replacer-plugin</groupId>
+				<artifactId>replacer</artifactId>
+			</plugin>	
+				<plugin>
+	        		<groupId>org.apache.maven.plugins</groupId>
+	        		<artifactId>maven-resources-plugin</artifactId>
+ 					<executions>      
+          				<execution>
+            				<id>default-resources</id>
+            				<phase>generate-source-tags</phase>
+            				<goals>
+              					<goal>resources</goal>
+            				</goals>
+            				<configuration>
+              					<outputDirectory>${project.generated.sources.java}/META-INF/tags</outputDirectory>
+              					<resources>          
+                					<resource>
+                  						<directory>src/main/resources/META-INF/tags</directory>
+                  						<filtering>false</filtering>
+                					</resource>
+              					</resources>              
+            				</configuration>            
+          				</execution>   
+          				<execution>
+            				<id>generate-classes-resources</id>
+            				<phase>generate-classes-tags</phase>
+            				<goals>
+              					<goal>resources</goal>
+            				</goals>
+            				<configuration>
+              					<outputDirectory>${project.build.directory}/classes/META-INF/tags</outputDirectory>
+              					<resources>          
+                					<resource>
+                  						<directory>src/main/resources/META-INF/tags</directory>
+                  						<filtering>false</filtering>
+                					</resource>
+              					</resources>              
+            				</configuration>            
+          				</execution>  				
+        			</executions>	        		
+	      		</plugin>			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-toolchains-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	
+</project>
+

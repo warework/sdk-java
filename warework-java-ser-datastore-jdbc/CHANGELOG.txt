@@ -1,0 +1,45 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework Data Store for JDBC (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.0.1
+
+- Updated dependencies to Data Store Service 2.0.1.
+
+2.0.0
+
+- Updated dependencies to CORE 2.0.0.- Updated dependencies to Data Store Service 2.0.1.
+- Deprecated methods, constants and classes removed.
+
+1.3.1
+
+- Updated dependencies to CORE 1.3.0 and Data Store Service 1.3.1.
+
+1.3.0
+
+- Included artifact metadata class. 
+- Refactor of every class, method and variable name with 'DataStore' to 'Datastore'.
+
+1.2.0
+
+- Updated to implement new Data Store Service 1.2.0 methods.
+
+1.1.2
+
+- Fixed error in method 'keys()' of class 'KeyValueJDBCViewImpl'. Now works when PARAMETER_NativeResultSet is FALSE. 
+- Logs included after query operations are performed.
+
+1.1.1
+
+- Log queries at 'executeQuery' and 'executeQueryByName' methods of JDBCViewImpl class.
+
+1.1.0
+
+- JDBCViewImpl log messages fixed.
+- New JDBCResultRows class (wrapper implementation for JDBC ResultSet).
+
+1.0.0	First release.

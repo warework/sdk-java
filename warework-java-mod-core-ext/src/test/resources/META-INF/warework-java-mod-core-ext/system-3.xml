@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scope name="system-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/scope.xsd">
+	
+	<providers>	
+		
+		<provider name="filetext-provider" class="com.warework.provider.FileTextProvider">
+			<parameter name="file-extension" value="txt" />
+			<parameter name="config-target" value="/META-INF/warework-java-mod-core-ext/txt" />
+		</provider>	
+		
+		<provider name="properties-provider" class="com.warework.provider.PropertiesProvider">
+			<parameter name="file-extension" value="txt" />
+			<parameter name="config-target" value="/META-INF/warework-java-mod-core-ext/properties/sample-1.properties" />
+		</provider>			
+		
+	</providers>
+
+	<services>
+		<service name="log-service" class="com.warework.service.log.LogServiceImpl" >
+			<parameter name="config-class" value="com.warework.loader.ProxyServiceXmlLoader"/>			
+			<parameter name="config-target" value="/META-INF/warework-java-mod-core-ext/log-service-1.xml"/>
+		</service>									
+	</services>	
+			
+</scope>

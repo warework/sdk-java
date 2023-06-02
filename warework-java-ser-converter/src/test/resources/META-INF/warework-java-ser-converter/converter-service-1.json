@@ -1,0 +1,37 @@
+{
+	
+	clients: [
+	
+		{ name: "base64-encoder", connector: "Base64Converter", parameters: [
+			{name: "operation-mode", value: "encode"}
+		]},
+		
+		{ name: "base64-decoder", connector: "Base64Converter", parameters: [
+			{name: "operation-mode", value: "decode"}
+		]},
+		
+		{ name: "js-compressor", connector: "JavaScriptCompressor"},
+		
+		{ name: "uppercase-formatter", connector: "StringFormatter", parameters: [
+			{name: "operation-mode", value: "to-upper-case"}
+		]},
+		
+		{ name: "lowercase-formatter", connector: "StringFormatter", parameters: [
+			{name: "operation-mode", value: "to-lower-case"}
+		]},
+		
+		{ name: "trim-formatter", connector: "StringFormatter", parameters: [
+			{name: "operation-mode", value: "trim"}
+		]},
+		
+		{ name: "first-letter-to-lowercase-formatter", connector: "StringFormatter", parameters: [
+			{name: "operation-mode", value: "first-letter-to-lower-case"}
+		]},
+		
+		{ name: "first-letter-to-uppercase-formatter", connector: "StringFormatter", parameters: [
+			{name: "operation-mode", value: "first-letter-to-upper-case"}
+		]}
+		
+	]
+
+}

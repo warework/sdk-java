@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+	Warework Proxy Service XML schema.
+	
+	@author Jose Schiaffino
+	@version 3.0.0  
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="proxy-service" type="ProxyService"/>
+
+	<xsd:complexType name="ProxyService">	
+		<xsd:sequence>			
+			<xsd:element name="parameters" type="Parameters" minOccurs="0" maxOccurs="1" />						
+			<xsd:element name="clients" type="Clients" minOccurs="0" maxOccurs="1" />									
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Parameters">	
+		<xsd:sequence>
+			<xsd:element name="parameter" type="Parameter" maxOccurs="unbounded" minOccurs="0" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+	
+	<xsd:complexType name="Parameter">	
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="value" type="xsd:string" use="required"/>			
+	</xsd:complexType>		
+
+	<xsd:complexType name="Clients">	
+		<xsd:sequence>
+			<xsd:element name="client" type="Client" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+	</xsd:complexType>	
+
+	<xsd:complexType name="Client">	
+		<xsd:sequence>
+			<xsd:element name="parameter" type="Parameter" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>	
+		<xsd:attribute name="name" type="xsd:string" use="required"/>					
+		<xsd:attribute name="connector" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	
+</xsd:schema>

@@ -1,0 +1,48 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework Data Store Service (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.0.1
+
+- Updated 'executeQuery' and 'executeUpdate' methods to provide and replace variables in RDBMS View statements.
+
+2.0.0
+
+- Updated dependencies to CORE 2.0.0.
+- Deprecated methods, constants and classes removed.
+
+1.3.1
+
+- Updated dependencies to CORE 1.3.0.
+
+1.3.0
+
+- Refactor of every class, method and variable name with 'DataStore' to 'Datastore'.  
+- New constant included in DatastoreServiceConstants class.
+
+1.2.1
+
+- Included artifact metadata class. 
+
+1.2.0	
+
+- New Hashtable Data Store included.
+- New parameter included to skip batch operations.
+- New method 'toBean' included in 'AbstractResultRows' class.
+- New class 'AbstractRDBMSView' for common Relational DDBB operations.
+- New method 'size' included in 'KeyValueView' interface.
+- New methods included in 'DataStoreServiceImpl' class to query, update and perform operations with Views.
+- Updated 'RDBMSView' to support callback operations.
+- Updated 'RDBMSView' to load statements from Providers specified by users.
+- Updated 'DataStoreViewProvider' to retrieve Data Store Views by name.
+
+1.1.0	
+
+- New wrapper for RDBMS result sets. Check out ResultRows interface.
+
+1.0.0	First release.
+

@@ -1,0 +1,10 @@
+{
+	
+	services: [
+		{ name: "log-service", service: "log", parameters: [
+			{name: "config-class", value: "ProxyServiceClasspathJson"}, 
+			{name: "config-target", value: "/META-INF/warework-java-core/proxy-service-1.json"}
+		]}
+	]
+
+}

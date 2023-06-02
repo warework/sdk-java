@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scope name="system-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/scope.xsd">
+
+	<parameters>
+		<parameter name="name" value="john"/>
+		<parameter name="color" value="red"/>					
+	</parameters>	
+	
+	<providers>	
+	
+		<provider name="singleton-provider" class="com.warework.provider.SingletonProvider" />
+		
+		<provider name="standard-provider" class="com.warework.provider.StandardProvider">
+			<parameter name="load-objects" value="false" />
+			<parameter name="default-set" value="java.util.HashSet" />
+			<parameter name="default-map" value="java.util.HashMap" />
+			<parameter name="default-list" value="java.util.ArrayList" />
+			<parameter name="string-builder" value="java.lang.StringBuilder" />
+		</provider>		
+		
+	</providers>
+
+	<objects>
+		<object name="string-builder" provider="standard-provider" object="string-builder" />
+	</objects>	
+
+	<services>				
+		<service name="log-service" class="com.warework.service.log.LogServiceImpl" />									
+	</services>	
+	
+	<context>
+		<scope name="system-c1">		
+			<parameters>
+				<parameter name="name" value="david"/>
+				<parameter name="color" value="yellow"/>					
+			</parameters>		
+		</scope>
+		<scope name="system-c2">		
+			<parameters>
+				<parameter name="name" value="rita"/>
+				<parameter name="color" value="cyan"/>					
+			</parameters>		
+		</scope>		
+	</context>
+			
+</scope>

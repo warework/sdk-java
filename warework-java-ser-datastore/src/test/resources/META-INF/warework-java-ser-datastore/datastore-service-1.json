@@ -1,0 +1,13 @@
+{
+	
+	datastores: [
+		{ name: "hashtable-datastore", connector: "hashtable", parameters: [
+				{name: "param1", value: "just-test-the-json-config"}
+			], views: [
+				{name: "default", view: "hashtable", provider: "my-prov", parameters: [
+					{name: "param1", value: "just-test-the-json-config"}
+				]}
+			]}
+	]
+
+}

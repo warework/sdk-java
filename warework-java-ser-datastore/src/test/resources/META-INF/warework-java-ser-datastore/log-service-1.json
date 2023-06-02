@@ -1,0 +1,7 @@
+{
+	
+	clients: [
+		{ name: "default-client", connector: "console"}
+	]
+
+}

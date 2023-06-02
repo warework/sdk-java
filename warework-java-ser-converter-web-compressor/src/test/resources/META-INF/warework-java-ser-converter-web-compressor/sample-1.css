@@ -1,0 +1,1920 @@
+/* FONTS */
+@font-face {
+  font-family: 'pt sans';
+  src: url('pt-sans-regular.eot');
+  src: url('pt-sans-regular.eot?#iefix') format('embedded-opentype'), url('pt-sans-regular.woff') format('woff'), url('pt-sans-regular.ttf') format('truetype'), url('pt-sans-regular.svg#PTSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+/* BODY */
+body {
+	background-color: #432a30;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* PAGE LAYOUT */
+table.page_layout td.top_separator {
+	background-color: #8ba4a8;
+	height: 5px;
+	border-top: 1px solid #d0dedf;
+}
+
+table.page_layout td.bottom_separator {
+	background-color: #8aa6a9;
+	height: 5px;
+	border-top: 1px solid #e3e4e8;
+	border-bottom: 0;
+}
+
+/* MAIN MENU */
+table.menu {
+	background-color: #44555f;
+	border: 1px solid #767f86;
+	border-spacing: 1px;
+	border-radius: 6px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
+}
+
+table.menu td {
+	background-color: #44555f;
+	height: 29px;
+	border-spacing: 0;
+}
+
+table.menu td.content {
+	text-align: center;
+}
+
+table.menu td.content a {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+	text-decoration: none;
+}
+
+table.menu td.content a:hover {
+	color: #fbde8e;
+}
+
+table.menu td.separator_1 {
+	border-right: 1px solid #5c6d75;
+}
+
+table.menu td.separator_2 {
+	border-left: 1px solid #31424a;
+	width: 0;
+}
+
+/* FOOT */
+table.foot td.font_1 {
+	font-family: verdana, helvetica;
+	font-size: 11px;
+	color: white;
+}
+
+table.foot td.font_2 a {
+	font-family: verdana, helvetica;
+	font-size: 11px;
+	color: white;
+}
+
+table.foot td.font_2 a:hover {
+	color: #fbde8e;
+}
+
+table.foot td.font_3 {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 18px;
+	font-style: italic;
+	color: white;
+}
+
+/* LOGOS WAREWORK */
+.logo_ww {
+	background: url(../img/logo-warework.png);
+	background-repeat: no-repeat;
+	display: block;
+	border: 0;
+}
+
+.logo_ww_1 {
+	background-position: 0 0;
+	width: 270px;
+	height: 59px;
+	cursor: pointer;
+}
+
+.logo_ww_2 {
+	background-position: 0 -61px;
+	width: 85px;
+	height: 105px;
+}
+
+.logo_ww_3 {
+	background-position: -86px -61px;
+	width: 94px;
+	height: 115px;
+}
+
+/* ICONS */
+.icon {
+	display: block;
+	border: 0;
+}
+
+/* icon-size-2.png */
+.icon_2 {
+	background: url(../img/icon-size-2.png);
+	background-repeat: no-repeat;
+}
+
+.icon_2_check1 {
+	background-position: 0 0;
+	width: 16px;
+	height: 17px;
+}
+
+.icon_2_check2 {
+	background-position: -17px 0;
+	width: 14px;
+	height: 12px;
+}
+
+.icon_2_download_1 {
+	background-position: -31px 0;
+	width: 12px;
+	height: 10px;
+}
+
+.icon_2_download_2 {
+	background-position: -45px 0;
+	width: 12px;
+	height: 10px;
+}
+
+.icon_2_pdf {
+	background-position: -76px 0;
+	width: 18px;
+	height: 25px;
+}
+
+.icon_2_tutorial {
+	background-position: -97px 0;
+	width: 18px;
+	height: 19px;
+}
+
+.icon_2_api {
+	background-position: -116px 0;
+	width: 20px;
+	height: 19px;
+}
+
+.icon_2_log {
+	background-position: -137px 0;
+	width: 17px;
+	height: 21px;
+}
+
+.icon_2_distribution {
+	background-position: -155px 0;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_2_core {
+	background-position: -179px 0;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_2_provider {
+	background-position: -203px 0;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_2_service {
+	background-position: -227px 0;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_2_service_extension {
+	background-position: -251px 0;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_2_module {
+	background-position: -276px 0;
+	width: 25px;
+	height: 25px;
+}
+
+/* icon-size-3.png */
+.icon_3 {
+	background: url(../img/icon-size-3.png);
+	background-repeat: no-repeat;
+}
+
+.icon_3_distribution {
+	background-position: 0 0;
+	width: 33px;
+	height: 37px;
+}
+
+.icon_3_core {
+	background-position: -34px 0;
+	width: 33px;
+	height: 37px;
+}
+
+.icon_3_provider {
+	background-position: -68px 0;
+	width: 33px;
+	height: 37px;
+}
+
+.icon_3_service {
+	background-position: -102px 0;
+	width: 33px;
+	height: 37px;
+}
+
+.icon_3_service_extension {
+	background-position: -136px 0;
+	width: 33px;
+	height: 37px;
+}
+
+.icon_3_module {
+	background-position: -170px 0;
+	width: 33px;
+	height: 37px;
+}
+
+.icon_3_twitter {
+	background-position: -203px 0;
+	width: 40px;
+	height: 38px;
+	cursor: pointer;
+}
+
+/* icon-size-4.png */
+.icon_4 {
+	background: url(../img/icon-size-4.png);
+	background-repeat: no-repeat;
+}
+
+.icon_4_windows {
+	background-position: 0 0;
+	width: 59px;
+	height: 58px;
+}
+
+.icon_4_mac {
+	background-position: -60px 0;
+	width: 59px;
+	height: 58px;
+}
+
+.icon_4_android {
+	background-position: -120px 0;
+	width: 59px;
+	height: 58px;
+}
+
+.icon_4_smart-card {
+	background-position: -180px 0;
+	width: 59px;
+	height: 58px;
+}
+
+.icon_4_top-download {
+	background-position: -239px 0;
+	width: 64px;
+	height: 63px;
+}
+
+/* icon-size-5.png */
+.icon_5 {
+	background: url(../img/icon-size-5.png);
+	background-repeat: no-repeat;
+}
+
+.icon_5_core {
+	background-position: 0 0;
+	width: 176px;
+	height: 169px;
+}
+
+.icon_5_provider {
+	background-position: -178px 0;
+	width: 176px;
+	height: 169px;
+}
+
+.icon_5_servide {
+	background-position: -356px 0;
+	width: 176px;
+	height: 169px;
+}
+
+.icon_5_servide_extension {
+	background-position: -532px 0;
+	width: 176px;
+	height: 169px;
+}
+
+.icon_5_module {
+	background-position: -708px 0;
+	width: 176px;
+	height: 169px;
+}
+
+.icon_5_distribution {
+	background-position: -885px 0;
+	width: 176px;
+	height: 169px;
+}
+
+.icon_5_multi {
+	background-position: -1063px 0;
+	width: 176px;
+	height: 169px;
+}
+
+.icon_5_twitter {
+	background-position: -1240px 0;
+	width: 69px;
+	height: 68px;
+}
+
+.icon_5_google-calendar {
+	background-position: -1241px -70px;
+	width: 76px;
+	height: 75px;
+}
+
+/* BUTTONS */
+.button {
+	background: url(../img/buttons.png);
+	background-repeat: no-repeat;
+	display: block;
+	border: 0;
+	position: relative;
+}
+
+.button_distribution {
+	background-position: 0 0;
+	width: 469px;
+	height: 89px;
+}
+
+.button_components {
+	background-position: 0 -90px;
+	width: 469px;
+	height: 440px;
+}
+
+.button_get-started {
+	background-position: 0 -530px;
+	width: 461px;
+	height: 120px;
+	cursor: pointer;
+}
+
+.button_view-code {
+	background-position: 0 -651px;
+	width: 284px;
+	height: 102px;
+	text-decoration: none;
+}
+
+.button_download_2 {
+	background-position: 0 -753px;
+	width: 174px;
+	height: 52px;
+	cursor: pointer;
+	padding: 15px 7px 7px 65px;
+	text-align: left;
+}
+
+.button_download_2 span.text_download {
+	font-family: arial, helvetica;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.button_download_2 span.text_distribution {
+	font-family: arial, helvetica;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #445560;
+	cursor: pointer;
+}
+
+.button_gradient { /* http://www.colorzilla.com/gradient-editor/ */
+	background: #89a3a7;
+	background: -moz-linear-gradient(top, #ffffff 1%, #89a3a7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ffffff), color-stop(100%, #89a3a7) );
+	background: -webkit-linear-gradient(top, #ffffff 1%, #89a3a7 100%);
+	background: -o-linear-gradient(top, #ffffff 1%, #89a3a7 100%);
+	background: -ms-linear-gradient(top, #ffffff 1%, #89a3a7 100%);
+	background: linear-gradient(top, #ffffff 1%, #89a3a7 100%);
+}
+
+.button_gradient a {
+	color: #445560;
+	text-decoration: none;
+}
+
+.button_gradient a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.button_download_3 {
+	font-family: verdana, helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid #89a3a7;
+	border-spacing: 1px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	width: 150px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.button_download_4 {
+	font-family: arial, helvetica, verdana, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	text-decoration: none;
+	color: #445560;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	cursor: pointer;
+	padding: 4px 20px 4px 20px;
+}
+
+.button_download_4:hover {
+	color: white;
+}
+
+.button_download_5 {
+	background-position: 0 -829px;
+	cursor: pointer;
+	padding: 10px 0 22px 55px;
+	text-align: left;
+	line-height: 12px;
+}
+
+.button_download_5 span.text_download {
+	font-family: arial, helvetica;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #89b3b0;
+	cursor: pointer;
+}
+
+.button_download_5 span.text_distribution {
+	font-family: arial, helvetica;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #445560;
+	cursor: pointer;
+}
+
+.button_submit_1 {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #939aa0;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	cursor: pointer;
+	padding: 7px;
+	width: 90px;
+	height: 25px;
+	background: #44555f;
+}
+
+.button_submit_1 a {
+	color: white;
+	text-decoration: none;
+}
+
+.button_submit_1 a:hover {
+	color: #fbde8e;
+}
+
+.button_submit_2 {
+	border: 1px solid #939aa0;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	padding: 8px 20px 8px 20px;
+	background: #44555f;
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.button_submit_2:hover {
+	color: #fbde8e;
+}
+
+/* PANELS */
+.panel_code {
+	font-family: courier, arial, helvetica, sans-serif;
+	font-size: 12px;
+	border-spacing: 1px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	width: 100%;
+	background: #dee3e4;
+	text-align: left;
+	vertical-align: middle;
+	line-height: 25px;
+	padding: 20px 5px 20px 15px;		
+}
+
+table.panel_component {
+	background-color: #8ba5a8;
+	border: 1px solid #c5d2d3;
+	border-spacing: 1px;
+	border-radius: 6px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width: 200px;
+}
+
+table.panel_component td {
+	border-spacing: 0;
+}
+
+table.panel_component td a {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	color: #445560;
+}
+
+table.panel_component td a:hover {
+	color: #fbde8e;
+}
+
+table.panel_component td div.panel_component_button {
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	border-spacing: 1px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	cursor: pointer;
+	padding: 5px;
+	width: 90px;
+}
+
+table.panel_component td div.panel_component_button a {
+	font-family: arial, helvetica, verdana, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #445560;
+}
+
+table.panel_component td div.panel_component_button a:hover {
+	color: white;
+}
+
+table.panel_component td span {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	color: #445560;
+	cursor: default;
+}
+
+table.panel_component td ul {
+	margin-top: 3px;
+	list-style-type: disc;
+	color: white;
+	padding-left: 18px;
+}
+
+table.panel_component td ul li a {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	color: white;
+}
+
+table.panel_component td select {
+	width: 97%;
+	font-family: arial, helvetica;
+	font-size: 12px;
+	color: #445560;
+	border: 1px solid #c6cbd0;
+	border-radius: 5px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 5px;
+}
+
+.panel_download {
+	border-spacing: 1px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: #44555f;
+	width: 247px;
+	padding: 15px;
+	text-align: left;
+}
+
+.panel_download span {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: bold;
+	color: #89b3b0;
+	cursor: default;
+}
+
+.panel_quick_download {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 24px;
+	font-style: italic;
+	color: #445560;
+	border: 1px solid #b3b7b8;
+	border-spacing: 1px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	width: 214px;
+	background: #ededed;
+	padding: 10px 15px 10px 15px;
+	text-align: left;
+	cursor: default;
+}
+
+.panel_quick_download select {
+	width: 100%;
+	font-family: arial, helvetica;
+	font-size: 12px;
+	color: #89b3b0;
+	border: 1px solid #c6cbd0;
+	border-radius: 5px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 5px;
+	cursor: default;
+}
+
+.panel_quick_download select option {
+	color: #445560;
+}
+
+.panel_quick_download select option:first-child {
+	color: #89b3b0;
+}
+
+.panel_download_list {
+	border: 0;
+	border-spacing: 4px;
+	width: 100%;
+}
+
+.panel_download_list tr td {
+	border-spacing: 0;
+	vertical-align: top;
+}
+
+.panel_download_list tr td a {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+}
+
+.panel_download_list tr td a:hover {
+	color: #fbde8e;
+}
+
+.panel_quick_view {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 24px;
+	font-style: italic;
+	color: #445560;
+	border: 1px solid #b3b7b8;
+	border-spacing: 1px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	width: 169px;
+	background: #ededed;
+	padding: 10px 15px 10px 15px;
+	text-align: left;
+	cursor: default;
+}
+
+.panel_quick_view select {
+	width: 97%;
+	font-family: arial, helvetica;
+	font-size: 12px;
+	color: #89b3b0;
+	border: 1px solid #c6cbd0;
+	border-radius: 5px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 5px;
+	cursor: default;
+}
+
+.panel_quick_view select option {
+	color: #445560;
+}
+
+.panel_quick_view select option:first-child {
+	color: #89b3b0;
+}
+
+.panel_bug-support {
+	border: 1px solid #c5c6c8;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	height: 345px;
+	background: #ededed;
+	padding: 20px;
+	background: #f4f4f4;
+}
+
+.panel_bug-support select {
+	width: 190px;
+	font-family: arial, helvetica;
+	font-size: 12px;
+	color: #89b3b0;
+	border: 1px solid #c6cbd0;
+	border-radius: 5px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 5px;
+	cursor: default;
+}
+
+.panel_bug-support select option {
+	color: #445560;
+}
+
+.panel_bug-support select option:first-child {
+	color: #89b3b0;
+}
+
+.panel_bug-support input {
+	width: 615px;
+	height: 20px;
+	font-family: arial, helvetica;
+	font-size: 12px;
+	color: #89b3b0;
+	border: 1px solid #c6cbd0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px 5px 5px 20px;
+	cursor: text;
+}
+
+.panel_bug-support textarea {
+	width: 600px;
+	height: 100px;
+	font-family: arial, helvetica;
+	font-size: 12px;
+	color: #89b3b0;
+	border: 1px solid #c6cbd0;
+	border-radius: 6px 0 0 6px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 20px 20px 20px 20px;
+	cursor: text;
+}
+
+.panel_requirements {
+	border: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #f4f4f4;
+	padding: 21px 21px 21px 21px;
+	cursor: default;
+}
+
+.panel_requirements td.library {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 15px;
+	color: #445560;
+	text-decoration: none;
+}
+
+.panel_requirements td.library a {
+	color: #0066cc;
+}
+
+.panel_requirements td.library a:hover {
+	color: #0355a7;
+}
+
+.panel_extensions_1 {
+	border: 1px solid #c6cbd0;
+	border-spacing: 1px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #fbde8e;
+	padding: 10px;
+	cursor: default;
+	background: white;
+}
+
+.panel_extensions_2 {
+	border: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #fbde8e;
+	padding: 10px 10px 10px 10px;
+	cursor: default;
+}
+
+.panel_colum_list_1 {
+	border: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #efefef;
+	padding: 10px 10px 10px 10px;
+	cursor: default;
+}
+
+.panel_bug-report {
+	border: 1px solid #e3e3e5;
+	border-spacing: 1px;
+	background: #44555f;
+	padding: 10px 10px 10px 10px;
+	font-family: courier;
+	font-size: 13px;
+	color: #9ca7ad;
+	cursor: default;
+}
+
+
+.panel_head_tutorial_fixed {
+	position: fixed; 
+}
+
+.panel_head_tutorial {
+	border-spacing: 1px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: #44555f;
+	width: 270px;
+	padding: 8px;
+	text-align: left;		
+}
+
+.panel_head_tutorial_title {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	font-weight: bold;
+	color: #89b3b0;
+	text-decoration: none;
+}
+
+.panel_head_tutorial_title:hover {
+	color: #fbde8e;
+}
+
+.panel_head_tutorial_version {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 11px;	
+	color: #89b3b0;
+	cursor: default;
+}
+
+.panel_head_tutorial_item {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+}
+
+a.text_link_index_l1 {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	color: #0066cc;
+	text-decoration: none;	
+	cursor: pointer;
+}
+
+a.text_link_index_l1:hover {
+	color: #0355a7;
+	text-decoration: underline;
+}
+
+a.text_link_index_l2 {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 11px;
+	color: #0066cc;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.text_link_index_l2:hover {
+	color: #0355a7;
+	text-decoration: underline;
+}
+
+a.text_link_index_l3 {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 11px;
+	color: #0066cc;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.text_link_index_l3:hover {
+	color: #0355a7;
+	text-decoration: underline;
+}
+
+a.text_link_type1 { 
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	color: #8ba5bf;
+}
+
+a.text_link_type1:hover {	
+	text-decoration: underline;
+}
+
+/* SLIDESHOW */
+.slideshow_layer_1 {
+	position: absolute;
+	top: 226px;
+	left: 20px;
+	z-index: 4;
+}
+
+.slideshow_layer_2 {
+	border: 0;
+	width: 990px;
+	height: 311px;
+	z-index: 1;
+}
+
+.slideshow_images {
+	z-index: 2;
+}
+
+.slideshow_layer_3 {
+	background: url(../img/slideshow-layer-3.png);
+	background-repeat: no-repeat;
+	display: block;
+	border: 0;
+	width: 990px;
+	height: 331px;
+	position: relative;
+	z-index: 0;
+}
+
+/* TEXT STYLE */
+.text_style_1 { /* Example: Foot copyright text */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 24px;
+	font-weight: normal;
+	font-style: italic;
+	color: #445560;
+	text-decoration: none;
+}
+
+.text_style_2 { /* Example: Home button text */
+	font-family: 'pt sans', verdana, helvetica;
+	font-size: 13px;
+	color: #445560;
+}
+
+.text_style_3 { /* Example: Home check list text */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	font-weight: bold;
+	color: #8ba5a8;
+}
+
+.text_style_4 { /* Example: Home title check list text */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	color: #445560;
+}
+
+.text_style_5 { /* Example: Home Get started */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 21px;
+	color: #8ba5a8;
+}
+
+.text_style_6 { /* Example: Home Get started */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 23px;
+	font-weight: bold;
+	font-style: italic;
+	color: #445560;
+}
+
+.text_style_7 { /* Example: Home cool examples button text */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 17px;
+	color: #445560;
+}
+
+.text_style_8 { /* Example: Section title */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 32px;
+	font-weight: bold;
+	font-style: italic;
+	color: #445560;
+}
+
+.text_style_9 { /* Example: Text in Overview header box */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 24px;
+	font-style: italic;
+	color: #89b3b0;
+}
+
+.text_style_10 { /* Example: Text in Overview header box 2 */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 15px;
+	color: white;
+}
+
+.text_style_11 { /* Example: Text in Overview header box 3 */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+}
+
+.text_style_12 { /* Example: Overview section title */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 27px;
+	font-weight: bold;
+	font-style: italic;
+	color: #445560;
+}
+
+.text_style_13 { /* Example: Text in Overview section description */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	color: #445560;
+}
+
+.text_style_14 {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 21px;
+	font-style: italic;
+	color: #445560;
+}
+
+.text_style_15 {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 17px;
+	font-weight: bold;
+	color: #445560;
+}
+
+.text_style_16 { /* Example: Home Get started */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	color: #445560;
+}
+
+.text_style_17 { /* Example: Documentation, URL template */
+	font-family: courier;
+	font-size: 13px;
+	color: #4e4efe;
+}
+
+.text_style_18 { /* Example: Documentation, bug report */
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.text_style_19 { /* Example: Support, bug report e-mail field */
+	font-family: arial, helvetica;
+	font-size: 12px;
+	color: #445560;
+}
+
+.text_style_20 { 
+	font-family: 'pt sans', verdana, helvetica;
+	font-size: 12px;
+	color: #445560;
+}
+
+.text_style_21 { 
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 16px;
+	color: #8ba5a8;
+}
+
+.text_style_22 { /* Example: Foot copyright text */
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 17px;
+	font-weight: normal;
+	font-style: italic;
+	color: #445560;
+	text-decoration: none;
+}
+
+.t0 { 
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	color: #445560;
+}
+
+.t1 { 
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 25px;
+	font-weight: bold;
+	font-style: italic;
+	color: #445560;	
+	border: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #efefef;
+	padding: 10px 10px 10px 10px;
+	cursor: default;	
+}
+
+.t2 { 
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 25px;
+	font-weight: bold;
+	font-style: italic;
+	color: #445560;	
+	border: 0;
+	border-spacing: 1px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #fbde8e;
+	padding: 10px 10px 10px 10px;
+	cursor: default;	
+}
+
+.t3 { 
+	font-family: courier;
+	font-size: 14px;
+}
+
+/* SEPARATORS */
+.separator_x {
+	border-bottom: 1px dashed #adaeb0;
+}
+
+.separator_y {
+	border-left: 1px solid #a6abaf;
+	border-right: 1px solid #ececec;
+	width: 0;
+}
+
+/* PAGE CONTROL */
+.page_control_1 {
+	font-family: arial, helvetica, verdana, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 5px 8px 5px 8px;
+}
+
+.page_control_1_current {
+	color: #98b2b1;
+	font-weight: bold;
+	background-color: #ededed;
+	border: 1px solid #e5e5e5;
+}
+
+.page_control_1_current:hover {
+	color: #445560;
+}
+
+.page_control_1_no-current {
+	color: #445560;
+	background-color: #90a5aa;
+	border: 1px solid #7f9b9c;
+}
+
+.page_control_1_no-current:hover {
+	color: white;
+}
+
+.page_control_1_nav {
+	color: #98b2b1;
+	border: 1px solid #e5e5e5;
+}
+
+.page_control_1_nav:hover {
+	color: #445560;
+}
+
+/* COMBOS */
+.combo_style_1 {
+	font-family: arial, helvetica;
+	font-size: 12px;
+	color: #445560;
+	border: 1px solid #c6cbd0;
+	border-radius: 5px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 5px;
+}
+
+/* LISTS */
+.list_style_1 {
+	list-style-position: inside;
+	padding: 0;
+	margin: 0;
+	cursor: default;
+}
+
+.list_style_2 {
+	list-style-position: inside;
+	width: 100%;
+	padding: 0;
+}
+
+.list_style_2 li {
+	float: left;
+	width: 50%;
+}
+
+.component_list {
+	border: 0;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;	
+}
+
+/* TEXT AREAS */
+.text_area_1 {
+	font-family: courier;
+	font-size: 13px;
+	color: #445560;
+	border: 1px solid #c6cbd0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 20px;
+	background: #efefef;
+}
+
+/* LINKS */
+a.text_link {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	color: #0066cc;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a.text_link:hover {
+	color: #0355a7;
+}
+
+/* ---------------------------------- TWEETER ----------------------------- */
+.tweet_box {
+	border: 1px solid #c6cbd0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: white;
+	cursor: default;
+}
+
+.tweet,.query {
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 15px;
+	color: #445560;
+}
+
+.tweet_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	background-color: white;
+	font-family: 'pt sans', arial, helvetica;
+	font-size: 14px;
+	color: #445560;
+}
+
+.tweet_list .awesome,.tweet_list .epic {
+	text-transform: uppercase;
+}
+
+.tweet_list li {
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0.5em;
+	list-style-type: none;
+	text-align: left;
+	font-size: 12px;
+	cursor: default;
+}
+
+.tweet_list li a {
+	color: #0066cc;
+	text-decoration: underline;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.tweet_list li a:hover {
+	color: #0355a7;
+}
+
+.tweet_list .tweet_even {
+	background-color: #f5f5f5;
+}
+
+.tweet_list .tweet_avatar {
+	padding-right: .5em;
+	float: left;
+}
+
+.tweet_list .tweet_avatar img {
+	vertical-align: middle;
+}
+
+/**
+ * ShCore.css
+ * SyntaxHighlighter
+ * http://alexgorbatchev.com/
+ *
+ * @version
+ * 2.0.278 (February 03 2009)
+ *
+ * @author
+ * Alex Gorbatchev
+ * 
+ * @copyright
+ * Copyright (C) 2004-2009 Alex Gorbatchev.
+ *
+ * Licensed under a GNU Lesser General Public License.
+ * http://creativecommons.org/licenses/LGPL/2.1/
+ *
+ * SyntaxHighlighter is donationware. You are allowed to download, modify and distribute 
+ * the source code in accordance with LGPL 2.1 license, however if you want to use 
+ * SyntaxHighlighter on your site or include it in your product, you must donate.
+ * http://alexgorbatchev.com/wiki/SyntaxHighlighter:Donate
+ */
+.syntaxhighlighter,
+.syntaxhighlighter .bold,
+.syntaxhighlighter .italic,
+.syntaxhighlighter .line .number,
+.syntaxhighlighter .line .content,
+.syntaxhighlighter .line .content code,
+.syntaxhighlighter .line .content .block,
+.syntaxhighlighter .line .content .spaces,
+.syntaxhighlighter .bar,
+.syntaxhighlighter .ruler,
+.syntaxhighlighter .toolbar,
+.syntaxhighlighter .toolbar a,
+.syntaxhighlighter .toolbar a:hover
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: none;
+	text-align: left;
+	float: none;
+	vertical-align: baseline;
+	position: static;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	height: auto;
+	width: auto;
+	line-height: normal;
+	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 13px;
+}
+
+.syntaxhighlighter
+{
+	width: 100%;
+	margin: 1em 0 1em 0;
+	padding: 1px; /* adds a little border on top and bottom */
+	position: relative;
+}
+
+.syntaxhighlighter .bold {
+	font-weight: bold;
+}
+
+.syntaxhighlighter .italic {
+	font-style: italic;
+}
+
+.syntaxhighlighter .line .number
+{
+	float: left; 
+	width: 3em; 
+	padding-right: .3em;
+	text-align: right;
+	display: block;
+}
+
+/* Disable numbers when no gutter option is set */
+.syntaxhighlighter.nogutter .line .number
+{
+	display: none;
+}
+
+.syntaxhighlighter .line .content
+{
+	margin-left: 3.3em; 
+	padding-left: .5em;
+	display: block;
+}
+
+.syntaxhighlighter .line .content .block
+{
+	display: block;
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+}
+
+.syntaxhighlighter .line .content .spaces
+{
+	display: none;
+}
+
+/* Disable border and margin on the lines when no gutter option is set */
+.syntaxhighlighter.nogutter .line .content
+{
+	margin-left: 0; 
+	border-left: none;
+}
+
+.syntaxhighlighter .bar
+{
+}
+
+.syntaxhighlighter.collapsed .bar
+{
+
+}
+
+.syntaxhighlighter.nogutter .ruler
+{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.syntaxhighlighter .ruler
+{
+	padding: 0 0 .5em .5em;
+	margin-left: 3.3em;
+	overflow: hidden;
+}
+
+/* Adjust some properties when collapsed */
+
+.syntaxhighlighter.collapsed .lines,
+.syntaxhighlighter.collapsed .ruler
+{
+	display: none;
+}
+
+/* Styles for the toolbar */
+
+.syntaxhighlighter .toolbar
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 1px;
+	padding: 8px 8px 8px 0; /* in px because images don't scale with ems */
+}
+
+.syntaxhighlighter.collapsed .toolbar
+{
+	font-size: 80%;
+	padding: .2em 0 .5em .5em;
+	position: static;
+}
+
+.syntaxhighlighter .toolbar a.item,
+.syntaxhighlighter .toolbar .item
+{
+	display: block;
+	float: left;
+	margin-left: 8px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-indent: -5000px;
+}
+
+.syntaxhighlighter.collapsed .toolbar .item
+{
+	display: none;
+}
+
+.syntaxhighlighter.collapsed .toolbar .item.expandSource
+{
+	background-image: url(magnifier.png);
+	display: inline;
+	text-indent: 0;
+	width: auto;
+	float: none;
+	height: 16px;
+	padding-left: 20px;
+}
+
+/** 
+ * Print view.
+ * Colors are based on the default theme without background.
+ */
+
+.syntaxhighlighter.printing,
+.syntaxhighlighter.printing .line.alt1 .content,
+.syntaxhighlighter.printing .line.alt2 .content,
+.syntaxhighlighter.printing .line.highlighted .number,
+.syntaxhighlighter.printing .line.highlighted.alt1 .content,
+.syntaxhighlighter.printing .line.highlighted.alt2 .content,
+.syntaxhighlighter.printing .line .content .block
+{
+	background: none;
+}
+
+/* Gutter line numbers */
+.syntaxhighlighter.printing .line .number
+{
+	color: #bbb;
+}
+
+/* Add border to the lines */
+.syntaxhighlighter.printing .line .content
+{
+	color: #000;
+}
+
+/* Toolbar when visible */
+.syntaxhighlighter.printing .toolbar,
+.syntaxhighlighter.printing .ruler
+{
+	display: none;
+}
+
+.syntaxhighlighter.printing a
+{
+	text-decoration: none;
+}
+
+.syntaxhighlighter.printing .plain,
+.syntaxhighlighter.printing .plain a
+{ 
+	color: #000;
+}
+
+.syntaxhighlighter.printing .comments,
+.syntaxhighlighter.printing .comments a
+{ 
+	color: #008200;
+}
+
+.syntaxhighlighter.printing .string,
+.syntaxhighlighter.printing .string a
+{
+	color: blue; 
+}
+
+.syntaxhighlighter.printing .keyword
+{ 
+	color: #069; 
+	font-weight: bold; 
+}
+
+.syntaxhighlighter.printing .preprocessor 
+{ 
+	color: gray; 
+}
+
+.syntaxhighlighter.printing .variable 
+{ 
+	color: #a70; 
+}
+
+.syntaxhighlighter.printing .value
+{ 
+	color: #090; 
+}
+
+.syntaxhighlighter.printing .functions
+{ 
+	color: #ff1493; 
+}
+
+.syntaxhighlighter.printing .constants
+{ 
+	color: #0066CC; 
+}
+
+.syntaxhighlighter.printing .script
+{
+	font-weight: bold;
+}
+
+.syntaxhighlighter.printing .color1,
+.syntaxhighlighter.printing .color1 a
+{ 
+	color: #808080; 
+}
+
+.syntaxhighlighter.printing .color2,
+.syntaxhighlighter.printing .color2 a
+{ 
+	color: #ff1493; 
+}
+
+.syntaxhighlighter.printing .color3,
+.syntaxhighlighter.printing .color3 a
+{ 
+	color: red; 
+}
+
+/**
+ * shThemeDefault.css
+ * SyntaxHighlighter
+ * http://alexgorbatchev.com/
+ *
+ * @version
+ * 2.0.278 (February 03 2009)
+ *
+ * @author
+ * Alex Gorbatchev
+ * 
+ * @copyright
+ * Copyright (C) 2004-2009 Alex Gorbatchev.
+ *
+ * Licensed under a GNU Lesser General Public License.
+ * http://creativecommons.org/licenses/LGPL/2.1/
+ *
+ * SyntaxHighlighter is donationware. You are allowed to download, modify and distribute 
+ * the source code in accordance with LGPL 2.1 license, however if you want to use 
+ * SyntaxHighlighter on your site or include it in your product, you must donate.
+ * http://alexgorbatchev.com/wiki/SyntaxHighlighter:Donate
+ */
+/************************************
+ * Default Syntax Highlighter theme.
+ * 
+ * Interface elements.
+ ************************************/
+
+.syntaxhighlighter
+{
+	background-color: #E7E5DC;
+}
+
+/* Highlighed line number */
+.syntaxhighlighter .line.highlighted .number
+{
+	background-color: #6CE26C;
+	color: black;
+}
+
+/* Highlighed line */
+.syntaxhighlighter .line.highlighted.alt1 .content,
+.syntaxhighlighter .line.highlighted.alt2 .content
+{
+	background-color: #6CE26C;
+}
+
+/* Gutter line numbers */
+.syntaxhighlighter .line .number
+{
+	color: #5C5C5C;
+}
+
+/* Add border to the lines */
+.syntaxhighlighter .line .content
+{
+	border-left: 3px solid #6CE26C;
+	color: #000;
+}
+
+.syntaxhighlighter.printing .line .content 
+{
+	border: 0;
+}
+
+/* First line */
+.syntaxhighlighter .line.alt1 .content
+{
+	background-color: #fff;
+}
+
+/* Second line */
+.syntaxhighlighter .line.alt2 .content
+{
+	background-color: #F8F8F8;
+}
+
+.syntaxhighlighter .line .content .block
+{
+	background: url(wrapping.png) 0 1.1em no-repeat;
+}
+
+.syntaxhighlighter .ruler
+{
+	color: silver;
+	background-color: #F8F8F8;
+	border-left: 3px solid #6CE26C;
+}
+
+.syntaxhighlighter.nogutter .ruler
+{
+	border: 0;
+}
+
+.syntaxhighlighter .toolbar
+{
+	background-color: #F8F8F8;
+	border: #E7E5DC solid 1px;
+}
+
+.syntaxhighlighter .toolbar a
+{
+	color: #a0a0a0;
+}
+
+.syntaxhighlighter .toolbar a:hover
+{
+	color: red;
+}
+
+/************************************
+ * Actual syntax highlighter colors.
+ ************************************/
+.syntaxhighlighter .plain,
+.syntaxhighlighter .plain a
+{ 
+	color: #000;
+}
+
+.syntaxhighlighter .comments,
+.syntaxhighlighter .comments a
+{ 
+	color: #008200;
+}
+
+.syntaxhighlighter .string,
+.syntaxhighlighter .string a
+{
+	color: blue; 
+}
+
+.syntaxhighlighter .keyword
+{ 
+	color: #069; 
+	font-weight: bold; 
+}
+
+.syntaxhighlighter .preprocessor 
+{ 
+	color: gray; 
+}
+
+.syntaxhighlighter .variable 
+{ 
+	color: #a70; 
+}
+
+.syntaxhighlighter .value
+{ 
+	color: #090; 
+}
+
+.syntaxhighlighter .functions
+{ 
+	color: #ff1493; 
+}
+
+.syntaxhighlighter .constants
+{ 
+	color: #0066CC; 
+}
+
+.syntaxhighlighter .script
+{ 
+	background-color: yellow !important;
+}
+
+.syntaxhighlighter .color1,
+.syntaxhighlighter .color1 a
+{ 
+	color: #808080; 
+}
+
+.syntaxhighlighter .color2,
+.syntaxhighlighter .color2 a
+{ 
+	color: #ff1493; 
+}
+
+.syntaxhighlighter .color3,
+.syntaxhighlighter .color3 a
+{ 
+	color: red; 
+}

@@ -1,0 +1,26 @@
+----------------------------------------------------------------------
+CHANGES LOG - Warework Pooler for c3p0 (Java Ed.)
+----------------------------------------------------------------------
+
+3.0.0
+
+- License changed to Apache version 2.0.
+
+2.0.1
+
+- Updated Pooler constants.
+
+2.0.0
+
+- Updated dependencies to CORE 2.0.0.
+- Deprecated methods, constants and classes removed.
+
+1.0.2
+
+- Updated dependencies to CORE 1.3.0.
+
+1.0.1
+
+- Included artifact metadata class. 
+
+1.0.0	First release.
