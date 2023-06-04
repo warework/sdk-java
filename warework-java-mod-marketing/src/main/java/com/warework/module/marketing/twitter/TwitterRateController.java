@@ -13,7 +13,7 @@ import twitter4j.User;
 /**
  * 
  * @author Jose Schiaffino
- * @version ${project.version}
+ * @version 3.0.0
  */
 final class TwitterRateController implements TwitterDelegate {
 

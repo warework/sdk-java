@@ -15,7 +15,7 @@ import twitter4j.conf.ConfigurationBuilder;
 /**
  * 
  * @author Jose Schiaffino
- * @version ${project.version}
+ * @version 3.0.0
  */
 final class TwitterHandler implements TwitterDelegate {
 
