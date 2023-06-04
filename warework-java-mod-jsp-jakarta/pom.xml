@@ -83,8 +83,8 @@
 	        		<artifactId>maven-resources-plugin</artifactId>
  					<executions>      
           				<execution>
-            				<id>default-resources</id>
-            				<phase>generate-source-tags</phase>
+            				<id>generate-source-tags</id>
+            				<phase>generate-resources</phase>
             				<goals>
               					<goal>resources</goal>
             				</goals>
@@ -99,8 +99,8 @@
             				</configuration>            
           				</execution>   
           				<execution>
-            				<id>generate-classes-resources</id>
-            				<phase>generate-classes-tags</phase>
+            				<id>generate-classes-tags</id>
+            				<phase>generate-resources</phase>
             				<goals>
               					<goal>resources</goal>
             				</goals>
