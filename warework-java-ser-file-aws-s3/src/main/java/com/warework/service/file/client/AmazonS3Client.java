@@ -1667,16 +1667,28 @@ public final class AmazonS3Client extends AbstractFileClient {
 				// Process each token.
 				if (resource.equals(CommonValueL1Constants.STRING_EMPTY)) {
 					continue;
-				} else {
+				} else if ((i < (resources.length - 1)) || (resource.indexOf(CommonValueL1Constants.CHAR_PERIOD) < 0)) {
 
-					// Add file or directory.
-					updated.append(resources[i]);
+					/*
+					 * Process directory.
+					 */
+
+					// Add directory.
+					updated.append(resource);
 
 					// Add '/' character at the end when required.
-					if ((i < (resources.length - 1)) || (resource.indexOf(CommonValueL1Constants.CHAR_PERIOD) < 0)) {
-						updated.append(FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE);
-					}
+					updated.append(FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE);
 
+				} else if (resource.endsWith(ResourceL2Helper.FILE_EXTENSION_SEPARATOR)) {
+					/*
+					 * Process file that ends with a period character.
+					 */
+					updated.append(resource.substring(0, resource.length() - 1));
+				} else {
+					/*
+					 * Process file.
+					 */
+					updated.append(resource);
 				}
 
 			}
