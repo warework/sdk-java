@@ -1723,7 +1723,7 @@ public final class AmazonS3Client extends AbstractFileClient {
 		final int indexOfSlash = path.lastIndexOf(CommonValueL2Constants.CHAR_FORWARD_SLASH);
 
 		// Return the name of the file.
-		return (indexOfSlash < 0) ? path : path.substring(indexOfSlash, path.length());
+		return (indexOfSlash < 0) ? path : path.substring(indexOfSlash + 1, path.length());
 
 	}
 
