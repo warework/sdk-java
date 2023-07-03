@@ -654,6 +654,9 @@ public final class AmazonS3Client extends AbstractFileClient {
 			final ListObjectsRequest request = new ListObjectsRequest().withBucketName(bucketName).withPrefix(target)
 					.withDelimiter(FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE);
 
+			// Flag to specify if path have to be translated.
+			final boolean updatePath = getConnector().isInitParameter(AmazonS3Connector.PARAMETER_PATH_TRANSFORM);
+
 			// Execute request.
 			ObjectListing objectListing = null;
 			do {
@@ -671,9 +674,25 @@ public final class AmazonS3Client extends AbstractFileClient {
 
 					// Wrap each S3 object that represents a file.
 					for (final S3ObjectSummary objectSummary : objectListing.getObjectSummaries()) {
-						if (!objectSummary.getKey().equals(target)) {
+
+						// Get object path/key.
+						final String key = objectSummary.getKey();
+
+						/*
+						 * When "update-path" is configured, only add AWS S3 files found that do not end
+						 * with "." character in the result. This is because in standard paths you add
+						 * "." at the end to differentiate that, for example, "john" is a file in
+						 * "/test/john." path. In AWS S3 you can have "john" file as "john" or "john"
+						 * but both cannot be translated to standard paths, just one, and the one to be
+						 * used is the file that ends with ".".
+						 * 
+						 * Also do not add requested resource.
+						 */
+						if ((!key.equals(target)) && ((!key.endsWith(ResourceL2Helper.FILE_EXTENSION_SEPARATOR))
+								|| ((!updatePath) && (key.endsWith(ResourceL2Helper.FILE_EXTENSION_SEPARATOR))))) {
 							files.add(new FileRefAmazonS3Impl(this, objectSummary, orderBy));
 						}
+
 					}
 
 					// Set marker indicating where in the bucket to begin listing.
