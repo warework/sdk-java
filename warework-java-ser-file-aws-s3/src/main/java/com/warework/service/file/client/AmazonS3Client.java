@@ -704,6 +704,54 @@ public final class AmazonS3Client extends AbstractFileClient {
 					e, LogServiceConstants.LOG_LEVEL_WARN);
 		}
 	}
+	
+
+
+	/**
+	 * Gets a resource (file or directory) reference.
+	 * 
+	 * @param path    Path to the resource in the file storage.<br>
+	 *                <br>
+	 * @param options Options to find the file in the Client. Check out the
+	 *                underlying File Client to review which options it may accept.
+	 *                This argument is not mandatory.<br>
+	 *                <br>
+	 * @return A reference to the resource.<br>
+	 *         <br>
+	 * @throws ClientException If there is an error when trying to find the
+	 *                         resource.<br>
+	 *                         <br>
+	 */
+	public FileRef find(final String path, final Map<String, Object> options) throws ClientException {
+
+		// Get the resources.
+		final List<FileRef> resources = list(getPathDirectories(path), options, null);
+
+		// Find resource.
+		if (resources != null) {
+			
+			// Update path.
+			final String updatedPath = updatePath(path);
+			
+			// Search for resource.
+			for (final Iterator<FileRef> iterator = resources.iterator(); iterator.hasNext();) {
+
+				// Get one resource found.
+				final FileRef fileRef = iterator.next();
+
+				// Validate it is the resource we are looking for.
+				if (fileRef.getPath().equals(updatedPath)) {
+					return fileRef;
+				}
+
+			}
+			
+		}
+
+		// At this point, no resources are found.
+		return null;
+
+	}
 
 	// ///////////////////////////////////////////////////////////////////
 
