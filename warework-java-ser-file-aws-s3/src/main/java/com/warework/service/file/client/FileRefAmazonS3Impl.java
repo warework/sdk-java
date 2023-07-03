@@ -4,6 +4,7 @@ import java.util.Date;
 
 import com.amazonaws.services.s3.model.Owner;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
+import com.warework.core.util.helper.ResourceL2Helper;
 import com.warework.service.file.FileServiceConstants;
 import com.warework.service.file.client.connector.AmazonS3Connector;
 
@@ -206,6 +207,10 @@ public final class FileRefAmazonS3Impl extends AbstractFileRef {
 			if (getClient().getConnector().getInitParameter(AmazonS3Connector.PARAMETER_BASE_PATH) == null) {
 				if (path.endsWith(FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE)) {
 					return FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE + path.substring(0, path.length() - 1);
+				} else if (path.lastIndexOf(FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE) > path
+						.lastIndexOf(ResourceL2Helper.FILE_EXTENSION_SEPARATOR)) {
+					return FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE + path
+							+ ResourceL2Helper.FILE_EXTENSION_SEPARATOR;
 				} else {
 					return FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE + path;
 				}
@@ -225,6 +230,10 @@ public final class FileRefAmazonS3Impl extends AbstractFileRef {
 				if (path.endsWith(FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE)) {
 					updatedPath = FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE
 							+ path.substring(0, path.length() - 1);
+				} else if (path.lastIndexOf(FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE) > path
+						.lastIndexOf(ResourceL2Helper.FILE_EXTENSION_SEPARATOR)) {
+					updatedPath = FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE + path
+							+ ResourceL2Helper.FILE_EXTENSION_SEPARATOR;
 				} else {
 					updatedPath = FileServiceConstants.DIRECTORY_SEPARATOR_UNIX_STYLE + path;
 				}
