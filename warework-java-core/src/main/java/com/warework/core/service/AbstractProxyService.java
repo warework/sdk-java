@@ -83,15 +83,15 @@ public abstract class AbstractProxyService extends AbstractService implements Pr
 	public void createClient(final String clientName, final Class<? extends ConnectorFacade> connectorType,
 			final Map<String, Object> connectionParameters) throws ServiceException {
 
-		// Create and initialize the Connector.
-		final AbstractConnector connector = createConnector(clientName, connectorType, connectionParameters);
-
 		// Validate that no Client already exists with this name.
 		if ((clients != null) && (clients.containsKey(clientName))) {
 			throw new ServiceException(getScopeFacade(), "WAREWORK cannot create Client '" + clientName
 					+ "' in Service '" + getName() + "' as a Client with this name already exists.", null,
 					LogServiceConstants.LOG_LEVEL_WARN);
 		}
+
+		// Create and initialize the Connector.
+		final AbstractConnector connector = createConnector(clientName, connectorType, connectionParameters);
 
 		// Create the context when needed.
 		if (clients == null) {
@@ -110,6 +110,34 @@ public abstract class AbstractProxyService extends AbstractService implements Pr
 		if (connectClient(connectionParameters)) {
 			connect(clientName);
 		}
+
+	}
+
+	/**
+	 * Gets a Client.<br>
+	 * <br>
+	 * Most of the times you should not directly work with Clients facades. Instead,
+	 * you should perform Client operations with the Proxy Service Facade.<br>
+	 * <br>
+	 * Anyway, this method can be usefull in certain cases, for example: to handle
+	 * synchronization with Clients (with this method you can get the instance of
+	 * the Client to synchronize).
+	 * 
+	 * @param clientName The name to which the Client is bound in the Service.<br>
+	 *                   <br>
+	 * @return A Client or <code>null</code> if it does not exists.<br>
+	 *         <br>
+	 */
+	public ClientFacade getClient(final String clientName) {
+
+		// Return the Client.
+		if ((clientName != null) && (!clientName.equals(CommonValueL1Constants.STRING_EMPTY))
+				&& ((clients != null) && (clients.containsKey(clientName)))) {
+			return clients.get(clientName);
+		}
+
+		// Nothing to return at this point.
+		return null;
 
 	}
 
@@ -166,7 +194,7 @@ public abstract class AbstractProxyService extends AbstractService implements Pr
 	public void removeClient(final String clientName) throws ServiceException {
 
 		// Get the Client.
-		final AbstractClient client = getClient(clientName);
+		final ClientFacade client = (ClientFacade) getClient(clientName);
 
 		// Remove the Client.
 		if (client != null) {
@@ -185,14 +213,16 @@ public abstract class AbstractProxyService extends AbstractService implements Pr
 			}
 
 			// Destroy Client.
-			try {
-				client.destroy();
-			} catch (final ClientException e) {
-				throw new ServiceException(getScopeFacade(),
-						"WAREWORK cannot remove Client '" + clientName + "' in Service '" + getName()
-								+ "' because Client cannot be destroyed. Check out the following exception: "
-								+ e.getMessage(),
-						e, LogServiceConstants.LOG_LEVEL_WARN);
+			if (client instanceof AbstractClient) {
+				try {
+					((AbstractClient) client).destroy();
+				} catch (final ClientException e) {
+					throw new ServiceException(getScopeFacade(),
+							"WAREWORK cannot remove Client '" + clientName + "' in Service '" + getName()
+									+ "' because Client cannot be destroyed. Check out the following exception: "
+									+ e.getMessage(),
+							e, LogServiceConstants.LOG_LEVEL_WARN);
+				}
 			}
 
 			// Remove the data source.
@@ -532,27 +562,6 @@ public abstract class AbstractProxyService extends AbstractService implements Pr
 			}
 
 		}
-	}
-
-	/**
-	 * Gets a Client.
-	 * 
-	 * @param clientName The name to which the Client is bound in the Service.<br>
-	 *                   <br>
-	 * @return A Client or <code>null</code> if it does not exists.<br>
-	 *         <br>
-	 */
-	protected AbstractClient getClient(final String clientName) {
-
-		// Return the Client.
-		if ((clientName != null) && (!clientName.equals(CommonValueL1Constants.STRING_EMPTY))
-				&& ((clients != null) && (clients.containsKey(clientName)))) {
-			return (AbstractClient) clients.get(clientName);
-		}
-
-		// Nothing to return at this point.
-		return null;
-
 	}
 
 	// ///////////////////////////////////////////////////////////////////

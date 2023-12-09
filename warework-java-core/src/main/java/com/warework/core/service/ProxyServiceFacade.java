@@ -39,6 +39,23 @@ public interface ProxyServiceFacade extends ServiceFacade {
 			final Map<String, Object> connectionParameters) throws ServiceException;
 
 	/**
+	 * Gets a Client.<br>
+	 * <br>
+	 * Most of the times you should not directly work with Clients facades. Instead,
+	 * you should perform Client operations with the Proxy Service Facade.<br>
+	 * <br>
+	 * Anyway, this method can be usefull in certain cases, for example: to handle
+	 * synchronization with Clients (with this method you can get the instance of
+	 * the Client to synchronize).
+	 * 
+	 * @param clientName The name to which the Client is bound in the Service.<br>
+	 *                   <br>
+	 * @return A Client or <code>null</code> if it does not exists.<br>
+	 *         <br>
+	 */
+	ClientFacade getClient(final String clientName);
+
+	/**
 	 * Gets the names of all the clients bound to this Service.
 	 * 
 	 * @return Names of the clients.<br>
