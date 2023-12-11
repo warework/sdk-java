@@ -811,6 +811,34 @@ public final class DatastoreServiceImpl extends AbstractService implements Datas
 	}
 
 	/**
+	 * Gets a Client.<br>
+	 * <br>
+	 * Most of the times you should not directly work with Clients facades. Instead,
+	 * you should perform Client operations with the Proxy Service Facade.<br>
+	 * <br>
+	 * Anyway, this method can be usefull in certain cases, for example: to handle
+	 * synchronization with Clients (with this method you can get the instance of
+	 * the Client to synchronize).
+	 * 
+	 * @param clientName The name to which the Client is bound in the Service.<br>
+	 *                   <br>
+	 * @return A Client or <code>null</code> if it does not exists.<br>
+	 *         <br>
+	 */
+	public ClientFacade getClient(final String clientName) {
+
+		// Return the Client.
+		if ((clientName != null) && (!clientName.equals(CommonValueL1Constants.STRING_EMPTY))
+				&& ((clients != null) && (clients.containsKey(clientName)))) {
+			return clients.get(clientName).getDatastore();
+		}
+
+		// Nothing to return at this point.
+		return null;
+
+	}
+
+	/**
 	 * Gets the names of all the Data Stores bound to this Service.
 	 * 
 	 * @return Names of the Data Stores or <code>null</code> if no one exist.<br>
