@@ -85,12 +85,15 @@ public abstract class AbstractEntityBusiness<T> extends AbstractBusiness {
 	// ///////////////////////////////////////////////////////////////////
 
 	/**
+	 * Saves an entity in the database.
 	 * 
-	 * @param entity
-	 * @return
+	 * @param entity Object to store in the relational database.<br>
+	 *               <br>
+	 * @return Object stored in database.<br>
+	 *         <br>
 	 * @throws AbstractBusinessException
 	 */
-	public final T save(final T entity) throws AbstractBusinessException {
+	public T save(final T entity) throws AbstractBusinessException {
 
 		// Begin business operation.
 		boolean transaction = businessBegin(OPERATION_SAVE, true);
@@ -129,12 +132,15 @@ public abstract class AbstractEntityBusiness<T> extends AbstractBusiness {
 	}
 
 	/**
+	 * Updates an entity in the database.
 	 * 
-	 * @param entity
-	 * @return
+	 * @param entity Object to update in the relational database.<br>
+	 *               <br>
+	 * @return Object updated in database.<br>
+	 *         <br>
 	 * @throws AbstractBusinessException
 	 */
-	public final T update(final T entity) throws AbstractBusinessException {
+	public T update(final T entity) throws AbstractBusinessException {
 
 		// Begin business operation.
 		boolean transaction = businessBegin(OPERATION_UPDATE, true);
@@ -173,11 +179,15 @@ public abstract class AbstractEntityBusiness<T> extends AbstractBusiness {
 	}
 
 	/**
+	 * Deletes an entity in the database.
 	 * 
-	 * @param entity
+	 * @param entity Object to delete in the relational database.<br>
+	 *               <br>
+	 * @return Object deleted in database.<br>
+	 *         <br>
 	 * @throws AbstractBusinessException
 	 */
-	public final void delete(final T entity) throws AbstractBusinessException {
+	public void delete(final T entity) throws AbstractBusinessException {
 
 		// Begin business operation.
 		boolean transaction = businessBegin(OPERATION_DELETE, true);
