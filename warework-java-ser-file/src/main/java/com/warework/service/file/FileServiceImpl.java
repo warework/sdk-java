@@ -276,8 +276,8 @@ public final class FileServiceImpl extends AbstractProxyService implements FileS
 	 * 
 	 * @param clientName Name of the File Client where to write the file.<br>
 	 *                   <br>
-	 * @param source     Source file to read. Input stream is not closed when
-	 *                   operation is successfully completed.<br>
+	 * @param source     Source file to read. <b>Stream is not closed</b> when
+	 *                   operation is completed.<br>
 	 *                   <br>
 	 * @param size       Bytes of the source file.<br>
 	 *                   <br>
@@ -393,26 +393,27 @@ public final class FileServiceImpl extends AbstractProxyService implements FileS
 	 */
 	public boolean write(final String clientName, final byte[] source, final Map<String, Object> options,
 			final String target) throws ServiceException {
-
-		// Create input stream from source bytes.
-		final InputStream stream = new ByteArrayInputStream(source);
-
-		// Write file.
-		final boolean result = write(clientName, new ByteArrayInputStream(source), source.length, options, target);
-
-		// Close input stream.
+		InputStream stream = null;
 		try {
-			stream.close();
-		} catch (final IOException e) {
-			throw new ServiceException(getScopeFacade(),
-					"WAREWORK cannot write text file in Client '" + clientName + "' at Service '" + getName()
-							+ "' because stream created from given source bytes cannot be closed.",
-					e, LogServiceConstants.LOG_LEVEL_WARN);
+
+			// Create input stream from source bytes.
+			stream = new ByteArrayInputStream(source);
+
+			// Write file.
+			return write(clientName, stream, source.length, options, target);
+
+		} finally {
+			if (stream != null) {
+				try {
+					stream.close();
+				} catch (final IOException e) {
+					throw new ServiceException(getScopeFacade(),
+							"WAREWORK cannot write text file in Client '" + clientName + "' at Service '" + getName()
+									+ "' because stream created from given source bytes cannot be closed.",
+							e, LogServiceConstants.LOG_LEVEL_WARN);
+				}
+			}
 		}
-
-		// Return operation success.
-		return result;
-
 	}
 
 	/**
