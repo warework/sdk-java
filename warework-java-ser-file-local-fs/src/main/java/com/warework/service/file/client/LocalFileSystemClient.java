@@ -82,6 +82,7 @@ public final class LocalFileSystemClient extends AbstractFileClient {
 	 */
 	public boolean write(final InputStream source, final long size, final Map<String, Object> options,
 			final String target) throws ClientException {
+		BufferedOutputStream buffer = null;
 		try {
 
 			/*
@@ -96,20 +97,11 @@ public final class LocalFileSystemClient extends AbstractFileClient {
 			// Create target file.
 			final File file = new File(updatePath(target));
 
-			// Create output stream.
-			final FileOutputStream stream = new FileOutputStream(file);
-
 			// Create buffered target stream.
-			final BufferedOutputStream buffer = new BufferedOutputStream(stream);
+			buffer = new BufferedOutputStream(new FileOutputStream(file));
 
 			// Copy source stream bytes into target output stream.
 			copy(source, buffer, getBufferSize(options), true);
-
-			// Close target stream.
-			stream.close();
-
-			// Close buffered target stream.
-			buffer.close();
 
 			// Update file.
 			update(file, options);
@@ -133,6 +125,18 @@ public final class LocalFileSystemClient extends AbstractFileClient {
 							+ getService().getName() + "' because the following security exception is thrown: "
 							+ e.getMessage(),
 					e, LogServiceConstants.LOG_LEVEL_WARN);
+		} finally {
+			if (buffer != null) {
+				try {
+					buffer.close();
+				} catch (final IOException e) {
+					throw new ClientException(getScopeFacade(),
+							"WAREWORK cannot close stream after writting file '" + target + "' in File Client '"
+									+ getName() + "' at Service '" + getService().getName()
+									+ "' because the following I/O exception is thrown: " + e.getMessage(),
+							e, LogServiceConstants.LOG_LEVEL_WARN);
+				}
+			}
 		}
 	}
 
