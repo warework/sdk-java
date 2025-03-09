@@ -73,7 +73,7 @@
     	<snapshotRepository>
       		<id>snapshots.warework.com</id>
       		<name>snapshots</name>
-      		<url>https://repo.warework.com/maven/snapshots</url>
+      		<url>ftp://repo.warework.com/maven/snapshots</url>
       		<uniqueVersion>false</uniqueVersion>
     	</snapshotRepository>
   	</distributionManagement>		
