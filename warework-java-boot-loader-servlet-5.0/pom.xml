@@ -28,7 +28,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
     	<maven.compiler.source>1.8</maven.compiler.source>
 		<project.build.jdk.spec>1.8</project.build.jdk.spec>
-		<project.build.jdk.version>1.8.0</project.build.jdk.version>
+		<project.build.jdk.version>1.8</project.build.jdk.version>
 		<project.build.jdk.vendor>oracle</project.build.jdk.vendor>
 	</properties>
 
